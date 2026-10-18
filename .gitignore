@@ -205,6 +205,19 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Student Feedback AI: local data and trusted trained artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+*.joblib
+.env.*
+!.env.example
+.local-tests/
+.superpowers/
+
 # Ruff stuff:
 .ruff_cache/
 
