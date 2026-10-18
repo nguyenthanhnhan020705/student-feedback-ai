@@ -1,2 +1,0 @@
-# Optional browser verification; not required to run the application or pytest.
-playwright==1.64.0
