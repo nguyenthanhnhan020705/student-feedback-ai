@@ -1,0 +1,4 @@
+# Leader inferred from the repository owner. Update if the leader account differs.
+# Enforced only when the target branch contains this file and GitHub requires
+# code-owner approval. This file alone does not enable branch protection.
+* @nguyenthanhnhan020705
