@@ -59,3 +59,7 @@ Không reset/force push để đồng bộ. Nếu nhánh đã có commit riêng 
 ## 5. Leader giao việc
 
 Phase 0 đã chốt. Mời 5 tài khoản, điền tên và hạn vào Issue, rồi giao mỗi người một nhánh/chức năng. Các tài liệu chỉ phân vai; không tự gửi lời mời hoặc gán một tài khoản vào nhánh. Nhánh Git không tạo giới hạn quyền sửa file; nhóm tuân thủ phân công và leader kiểm tra PR.
+
+## 6. Review trước khi hợp nhất
+
+Mỗi hướng dẫn vai trò đã có đầy đủ quy trình nhận việc, nội dung PR, bằng chứng kiểm thử và sửa lỗi sau review. Thành viên push nhánh riêng và gửi link PR vào develop cho leader. Leader có thể lấy PR về máy để kiểm tra trước khi duyệt; không cần merge trước để kiểm tra. Nếu có lỗi, tác giả sửa trên cùng PR rồi gửi kiểm tra lại. Chỉ khi được duyệt mới hợp nhất; main nhận bản tích hợp ổn định qua PR riêng.
