@@ -41,6 +41,8 @@
 
 **Dành cho nhóm phát triển:** đọc [hướng dẫn bắt đầu](docs/team-start.md), [phân công 5 thành viên](docs/team-assignments.md), [quy trình PR](CONTRIBUTING.md) và [lộ trình các phase](docs/roadmap/README.md).
 
+**Phân công theo chức năng:** Data, Sentiment, Topic, Backend và Frontend có 5 nhánh riêng; xem [quyền sở hữu file](docs/function-ownership.md). Leader tự chốt [Phase 0](docs/phase-0-leader-checklist.md); trạng thái hiện tại là chờ leader chốt đặc tả.
+
 - [Kiểm soát tài liệu](#brd-document-control)
 
 1. [Bối cảnh và vấn đề nghiệp vụ](#brd-context)
@@ -537,7 +539,7 @@ Khi chạy đúng, tài liệu API FastAPI thường xuất hiện tại `http:/
 Xem [quy trình GitHub và bảo vệ nhánh](CONTRIBUTING.md), [phân công 5 thành viên](docs/team-assignments.md) và [mẫu Pull Request](.github/pull_request_template.md). Quy tắc bảo vệ phải được bật trên GitHub; file tài liệu và CODEOWNERS tự chúng chưa chặn push trực tiếp.
 
 1. Leader duy trì `main` ở trạng thái ổn định, dùng `develop` để tích hợp; tạo **GitHub Issues** cho từng đầu việc có tiêu chí nghiệm thu.
-2. Mỗi người cập nhật `origin/develop` rồi tạo nhánh `feature/...` mới cho phần việc của mình.
+2. Mỗi người checkout đúng nhánh chức năng leader đã tạo và đồng bộ phần đã duyệt từ `origin/develop`; chỉ sửa file thuộc phạm vi được giao.
 3. Thành viên commit/push nhánh riêng và tạo **Pull Request vào `develop`** khi có phần code có thể review.
 4. Leader xem diff, yêu cầu test hoặc sửa, chỉ merge sau khi đạt tiêu chí. Khi bản tích hợp ổn định, mở PR từ `develop` vào `main` để leader duyệt; người mở PR này phải khác leader nếu yêu cầu approval của leader duy nhất.
 5. Nếu thành viên gặp khó khăn, Leader hỗ trợ hoặc tiếp quản từ code đã push; **ghi nhận đúng đóng góp thực tế** trong báo cáo cuối kỳ.
@@ -546,12 +548,12 @@ Xem [quy trình GitHub và bảo vệ nhánh](CONTRIBUTING.md), [phân công 5 t
 # Ví dụ dành cho thành viên đã clone repository
 
 git fetch origin
-git switch -c feature/sentiment-baseline origin/develop
+git switch --track origin/feature/sentiment-model
 
 # Sau khi làm và tự kiểm tra
 git add .
 git commit -m "Implement sentiment baseline"
-git push -u origin feature/sentiment-baseline
+git push -u origin feature/sentiment-model
 # Sau đó mở Pull Request trên GitHub vào nhánh develop và yêu cầu leader review
 ```
 

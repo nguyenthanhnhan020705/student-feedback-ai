@@ -13,21 +13,21 @@ Tài liệu chia dự án thành các phase để theo dõi phát triển và ng
 - Ưu tiên P0: dữ liệu hợp lệ, so sánh ba thuật toán cho mỗi nhiệm vụ, hai pipeline thật, web phân tích một câu, kiểm thử và báo cáo.
 - P1 gồm CSV, xuất kết quả và Dashboard; có thể bỏ Phase 5 để bảo vệ thời gian nghiệm thu.
 - P2 như ABSA, PhoBERT, tài khoản, database và cloud chưa nằm trong lộ trình này.
-- Hiện repository chỉ có README và `.gitignore`; các đường dẫn sản phẩm trong từng phase là dự kiến, không phải file đã tồn tại.
+- Repository hiện có bộ tài liệu và quy tắc cộng tác; các đường dẫn sản phẩm trong từng phase là dự kiến, chưa phải mã ứng dụng đã triển khai.
 
 ## 2. Cách tổ chức công việc
 
-Chọn cách chia theo đầu ra kiểm chứng được, kết hợp làm song song sau khi thống nhất giao diện dữ liệu/API. Cách này giúp phát hiện sớm vấn đề tích hợp và vẫn tận dụng được phân công TV1–TV6.
+Leader tự chốt Phase 0. Năm thành viên phụ trách độc lập Data, Sentiment, Topic, Backend và Frontend trên năm nhánh chức năng; xem [quyền sở hữu file](../function-ownership.md). Các phase mô tả mốc thời gian/kiểm chứng, không yêu cầu nhiều người cùng sửa một file.
 
-Hai phương án khác đã cân nhắc: chia riêng theo thành viên dễ giao việc nhưng khó thấy phụ thuộc; làm tuần tự toàn bộ ML rồi mới làm web dễ quản lý nhưng dồn rủi ro tích hợp vào cuối. Lộ trình bên dưới cho phép chuẩn bị khung API/UI trong khi làm dữ liệu, rồi tích hợp bằng pipeline thật.
+Mỗi phần bàn giao qua hợp đồng và PR vào `develop`. Backend/Frontend có thể chuẩn bị theo đặc tả trong lúc Data/ML thực hiện; tích hợp cuối phải dùng pipeline thật. Các file chung do leader sở hữu để hạn chế xung đột.
 
 ## 3. Tổng quan các phase
 
 | Phase | Thời gian dự kiến | Đầu ra chính | Phụ thuộc | Phụ trách chính | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
-| [0 — Chốt phạm vi và đặc tả](phase-0-specification.md) | Ngày 1 | Đặc tả đầu vào, nhãn, API và tiêu chí nghiệm thu | BRD | TV1, cả nhóm | Chưa bắt đầu |
+| [0 — Chốt phạm vi và đặc tả](phase-0-specification.md) | Ngày 1 | Đặc tả đầu vào, nhãn, API và tiêu chí nghiệm thu | BRD | TV1 tự chốt | Chờ leader chốt |
 | [1 — Nền tảng dự án](phase-1-foundation.md) | Ngày 2–3 | Môi trường chạy được, khung ứng dụng và kiểm thử | Phase 0 | TV5, TV6, TV1 | Chưa bắt đầu |
-| [2 — Dữ liệu và tiền xử lý](phase-2-data.md) | Ngày 3–6 | Dataset được xác minh, EDA, tiền xử lý dùng chung | Phase 0; môi trường Phase 1 | TV2, TV3, TV4 | Chưa bắt đầu |
+| [2 — Dữ liệu và tiền xử lý](phase-2-data.md) | Ngày 3–6 | Dataset được xác minh, EDA, tiền xử lý dùng chung | Phase 0; môi trường Phase 1 | TV2 | Chưa bắt đầu |
 | [3 — Huấn luyện và đánh giá](phase-3-models.md) | Ngày 6–10 | So sánh 6 cấu hình thuật toán/nhiệm vụ, xuất 2 pipeline đã chọn | Phase 2 | TV3, TV4 | Chưa bắt đầu |
 | [4 — API và website MVP](phase-4-mvp.md) | Ngày 11–14 | Nhập câu mới trên web, nhận 2 nhãn từ mô hình thật | Phase 1, Phase 3 | TV5, TV6, TV1 | Chưa bắt đầu |
 | [5 — CSV và Dashboard, P1](phase-5-batch-dashboard.md) | Ngày 15–17, nếu đủ thời gian | Phân tích hàng loạt, xuất dữ liệu, thống kê | Phase 4 đạt; đủ thời gian cho Phase 6 | TV5, TV6 | Chưa bắt đầu — tùy chọn |

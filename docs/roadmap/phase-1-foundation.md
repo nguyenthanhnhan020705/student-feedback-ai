@@ -6,6 +6,8 @@
 **Phụ thuộc:** Phase 0 đã thống nhất đặc tả.  
 **Quay lại:** [Lộ trình](README.md).
 
+Theo [quyền sở hữu file](../function-ownership.md): leader tạo/cập nhật cấu hình và dependencies gốc, TV5 chỉ triển khai Backend, TV6 chỉ triển khai Frontend. Mỗi người tạo các file thuộc phần của mình; không giao cả cấu trúc repo cho hai người cùng sửa.
+
 ## Mục tiêu
 
 Có môi trường phát triển tái lập được, ứng dụng khởi động được khi chưa có model và hệ thống kiểm thử cơ bản. Đáp ứng phần nền tảng của FR-06, NFR-02–04 và AC-07.

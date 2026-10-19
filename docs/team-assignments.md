@@ -1,7 +1,19 @@
-# Phân công leader và 5 thành viên
+# Phân công theo chức năng — một người phụ trách một phần
 
-**Trạng thái:** Phân công theo vai trò; leader điền tên và tài khoản thực tế khi giao việc.  
+**Cập nhật 2026-10-19:** Leader tự chốt Phase 0; mỗi thành viên phụ trách trọn một chức năng và sửa các file thuộc phạm vi của mình. Leader điền tên/tài khoản thực tế khi giao việc.  
 **Tài liệu chung:** [BRD](../README.md), [roadmap](roadmap/README.md), [quy trình GitHub](../CONTRIBUTING.md).
+
+## Nhánh và phạm vi độc lập
+
+| Thành viên | Nhánh riêng | Công việc trọn phần |
+| --- | --- | --- |
+| TV2 | `feature/data-preprocessing` | Toàn bộ Data: nguồn, EDA, loader, chuẩn hóa, bảng nhãn và kiểm thử Data |
+| TV3 | `feature/sentiment-model` | Toàn bộ Sentiment: huấn luyện, đánh giá, artifact, tests và báo cáo cảm xúc |
+| TV4 | `feature/topic-model` | Toàn bộ Topic: huấn luyện, đánh giá, artifact, tests và báo cáo chủ đề |
+| TV5 | `feature/backend-api` | Toàn bộ Backend: API, model service, lỗi, kiểm thử API, batch nếu có P1 |
+| TV6 | `feature/frontend-dashboard` | Toàn bộ Frontend: giao diện, gọi API, kiểm tra UI, CSV/Dashboard nếu có P1 |
+
+Xem [quyền sở hữu file và bàn giao](function-ownership.md), [hướng dẫn bắt đầu](team-start.md) và [checklist leader chốt Phase 0](phase-0-leader-checklist.md). Các nhánh có cùng nền `develop` và cùng commit hướng dẫn này; hướng dẫn được đưa vào `develop` qua PR được leader duyệt.
 
 ## 1. Phân công chính
 
@@ -18,25 +30,25 @@ Mỗi người viết phần báo cáo và cung cấp minh chứng cho phần vi
 
 ## 2. Đợt giao việc đầu tiên
 
-Trước khi viết code, cả nhóm đọc Phase 0 và cùng chốt giao diện dữ liệu/API. Leader có thể tạo các Issue sau trên GitHub; danh sách này chưa được tự động đăng hoặc gửi cho thành viên.
+Trước khi viết code, leader tự chốt đặc tả Phase 0 và giao mỗi chức năng cho một người. Thành viên có thể góp ý hoặc cung cấp dữ kiện, leader là người duy nhất sửa bộ đặc tả chung. Leader có thể tạo các Issue sau; danh sách này chưa được tự động đăng hoặc gửi cho thành viên.
 
 | Mã giao việc | Người nhận | Đầu việc khởi đầu | Sản phẩm đưa vào PR | Điều kiện trước khi làm |
 | --- | --- | --- | --- | --- |
 | TEAM-01 | TV2 | Xác minh nguồn, quyền sử dụng, split và bảng mã UIT-VSFC | `docs/data/dataset.md`, đề xuất hợp đồng dữ liệu | Có thể khảo sát ngay, chưa huấn luyện khi nguồn chưa rõ |
-| TEAM-02 | TV3 | Lập thiết kế thí nghiệm sentiment: 3 thuật toán, metrics, cấu hình và artifact | Phần sentiment của đặc tả/thí nghiệm; kế hoạch kiểm thử tải lại | Dùng nhãn dự kiến có ghi chú; chờ TV2 xác minh trước training |
-| TEAM-03 | TV4 | Lập thiết kế thí nghiệm topic và thống nhất khung dùng chung với TV3 | Phần topic; đề xuất trách nhiệm module chung | Chốt cách chia file với TV3 trước khi cùng sửa module |
-| TEAM-04 | TV5 | Đề xuất API health/predict, lỗi, cách tải artifact và môi trường | `docs/specs/api-contract.md`, sau khi chốt mới triển khai Phase 1 | Hợp đồng được leader và TV3/TV4/TV6 rà soát |
-| TEAM-05 | TV6 | Đề xuất luồng nhập câu, chờ, lỗi, kết quả và kết nối backend | Mô tả UI trong đặc tả; khung frontend sau khi chốt | Phối hợp TV5 về request/response và cách phục vụ UI |
+| TEAM-02 | TV3 | Chuẩn bị thí nghiệm sentiment: 3 thuật toán, metrics và artifact theo hợp đồng leader chốt | Tài liệu sentiment riêng và kế hoạch kiểm thử tải lại | Chờ Data được duyệt trước training thực tế |
+| TEAM-03 | TV4 | Chuẩn bị thí nghiệm topic với code/tests/metadata riêng | Tài liệu topic riêng và kế hoạch kiểm thử tải lại | Chờ Data được duyệt trước training thực tế; không sửa module Sentiment |
+| TEAM-04 | TV5 | Xây khung health/predict và model service theo hợp đồng leader chốt | `backend/`, tests API và `docs/backend/` | Leader chốt API/môi trường trước; tích hợp thật khi có hai artifact |
+| TEAM-05 | TV6 | Xây giao diện theo luồng UI và JSON leader chốt | `frontend/`, kiểm tra UI và `docs/frontend/` | Khung UI có thể làm theo hợp đồng; nghiệm thu cần API thật |
 
 Leader gắn người nhận, hạn thực tế, phase, mã BRD và điều kiện nghiệm thu vào từng Issue. Mốc ngày 1–21 trong roadmap là dự kiến, không thay thế hạn giao việc đã thống nhất với thành viên.
 
 ## 3. Các điểm cần phối hợp
 
 - TV2 bàn giao bảng mã và split cho TV3/TV4 trước huấn luyện; thay đổi tiền xử lý phải báo nhóm ML/backend.
-- TV3/TV4 dùng chung giao diện nhưng mỗi người sở hữu pipeline riêng. Chỉ định một người thực hiện mỗi thay đổi ở `ml/training.py` hoặc `ml/evaluation.py`, người còn lại review; không cùng viết hai phiên bản cạnh tranh.
+- TV3/TV4 có code huấn luyện, đánh giá, suy luận, metadata và tests riêng theo bảng quyền sở hữu. Không dùng chung `ml/training.py`, `ml/evaluation.py` hoặc `models/metadata.json`.
 - TV3/TV4 bàn giao artifact + metadata + lệnh tải cho TV5; chỉ gửi notebook chưa đủ để tích hợp.
 - TV5/TV6 làm theo cùng hợp đồng. Khi chưa có model, ứng dụng báo chưa sẵn sàng; dữ liệu mock phục vụ phát triển phải được nhận diện rõ.
-- TV1 rà soát thay đổi ở dependencies, cấu hình, hợp đồng chung và phạm vi; không tự động tăng P1 thành bắt buộc.
+- TV1 là chủ sở hữu duy nhất của dependencies/cấu hình gốc, hợp đồng chung và tài liệu quản trị. Mỗi thành viên đề xuất dependencies trong file riêng; leader tổng hợp. Không tự động tăng P1 thành bắt buộc.
 - Phase 5 chỉ bắt đầu sau khi Phase 4 ổn định; mọi thành viên tiếp tục bổ sung báo cáo và minh chứng cho Phase 6.
 
 ## 4. Nội dung có thể gửi cho nhóm

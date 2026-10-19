@@ -10,10 +10,12 @@ Luồng công việc: `feature/*` → Pull Request vào `develop` → Pull Reque
 | --- | --- | --- |
 | `main` | Bản tích hợp ổn định để demo/bàn giao | Chỉ cập nhật qua PR đã được leader duyệt và đạt kiểm tra |
 | `develop` | Tích hợp công việc trong quá trình phát triển | PR từ nhánh công việc, leader review trước khi merge |
-| `feature/<vai-tro>-<task>` | Công việc của từng thành viên | Thành viên commit/push vào nhánh của mình |
+| 5 nhánh `feature/*` theo chức năng | Data, Sentiment, Topic, Backend, Frontend | Một người phụ trách mỗi nhánh và sửa file thuộc phạm vi của mình |
 | `chore/*`, `docs/*`, `fix/*` | Thiết lập, tài liệu hoặc sửa lỗi | Cùng quy trình PR như nhánh feature |
 
 Không push trực tiếp lên `main` hoặc `develop`, kể cả sau khi được duyệt. Dùng chức năng merge PR để cập nhật nhánh đích. Theo quy trình nhóm, leader thực hiện merge; khả năng chỉ cho leader bấm merge còn phụ thuộc cấu hình quyền trên GitHub.
+
+Danh sách nhánh cố định nằm trong [hướng dẫn bắt đầu](docs/team-start.md); [bảng quyền sở hữu file](docs/function-ownership.md) xác định người sửa từng phần. Leader tự chốt Phase 0 và sở hữu file đặc tả/cấu hình chung. Sentiment/Topic có code training, evaluation, metadata và tests riêng.
 
 Leader dự kiến là `@nguyenthanhnhan020705`, theo chủ repository. File `.github/CODEOWNERS` chỉ có một người duyệt toàn bộ mã nguồn. Nếu leader dùng tài khoản khác, sửa file trước khi bật yêu cầu review của code owner.
 
@@ -58,22 +60,20 @@ Nguồn: [Protected branches](https://docs.github.com/en/repositories/configurin
 Chỉ thực hiện sau khi leader thông báo `develop` đã sẵn sàng. Ví dụ cho TV3:
 
 ```bash
-git clone https://github.com/nguyenthanhnhan020705/student-feedback-ai.git
+git clone --branch feature/sentiment-model https://github.com/nguyenthanhnhan020705/student-feedback-ai.git
 cd student-feedback-ai
-git fetch origin
-git switch -c feature/sentiment-baseline origin/develop
 ```
 
-Nếu đã clone, dùng repository đang có và tạo nhánh mới từ `origin/develop` sau khi fetch. Repo từng có các nhánh feature cũ; không dùng lại hoặc merge nhánh cũ vào nền dự án mới khi chưa được rà soát.
+Nếu đã clone, fetch rồi dùng `git switch --track origin/feature/sentiment-model`; nếu nhánh đã có ở máy thì `git switch feature/sentiment-model`. Mỗi người dùng đúng nhánh chức năng được leader giao. Không dùng lại nhánh cũ ở máy từ đợt bộ khung trước mà chưa kiểm tra nền commit.
 
 ```bash
 git status
 git diff
 # Chỉ thêm đúng file của đầu việc; ví dụ khi các file sau đã được tạo:
-git add ml/training.py notebooks/02_sentiment.ipynb
+git add ml/train_sentiment.py notebooks/02_sentiment.ipynb
 git diff --cached
 git commit -m "feat: add sentiment baseline"
-git push -u origin feature/sentiment-baseline
+git push -u origin feature/sentiment-model
 ```
 
 Trên GitHub, mở PR với **base: develop**, chọn nhánh vừa push làm compare và yêu cầu leader review. Dùng Draft PR nếu chưa sẵn sàng. Khi được yêu cầu sửa, tiếp tục commit/push vào chính nhánh đó, không mở PR mới cho cùng đầu việc.
@@ -86,7 +86,7 @@ git merge origin/develop
 # Nếu có conflict: xử lý, kiểm tra lại, rồi commit và push nhánh công việc.
 ```
 
-Không force push nhánh dùng chung, không tự sửa hợp đồng dữ liệu/API hoặc file thành viên khác đang phụ trách mà chưa trao đổi trong Issue/PR.
+Không force push nhánh chức năng, không tự sửa hợp đồng dữ liệu/API hoặc file thành viên khác phụ trách. Nhánh chức năng dùng qua nhiều PR nhỏ; sau khi merge, đồng bộ `develop` rồi tiếp tục. Với quy trình này, ưu tiên merge commit khi tích hợp để giữ quan hệ lịch sử; nếu chọn squash/rebase thì leader cần thống nhất cách làm nhánh tiếp theo để tránh đưa lại commit cũ vào PR.
 
 ## 5. Điều kiện gửi review
 

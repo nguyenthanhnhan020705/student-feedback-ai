@@ -2,7 +2,7 @@
 
 **Trạng thái:** Chưa bắt đầu.  
 **Thời gian:** Ngày 3–6; có thể xác minh nguồn sau Phase 0.  
-**Phụ trách:** TV2; TV3, TV4 đối chiếu nhãn và đầu vào mô hình.  
+**Phụ trách:** TV2 sở hữu toàn bộ Data; TV3/TV4 nhận bàn giao, không sửa file Data.  
 **Phụ thuộc:** Hợp đồng Phase 0 và môi trường Phase 1 để chạy xử lý.  
 **Quay lại:** [Lộ trình](README.md).
 
