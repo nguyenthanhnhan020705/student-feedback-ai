@@ -1,6 +1,6 @@
 # Phân công 5 thành viên và kế hoạch làm song song
 
-**Cập nhật:** 2026-10-19. **Trạng thái:** Đã chuẩn bị khung trống; Phase 0 chờ leader chốt, sản phẩm chưa được triển khai.
+**Cập nhật:** 2026-10-19. **Trạng thái:** Đã chuẩn bị khung trống; Phase 0 có [bộ đặc tả v1.0](specs/README.md) chờ leader duyệt; sản phẩm chưa được triển khai.
 
 ## 1. Một người phụ trách trọn một chức năng
 

@@ -1,39 +1,33 @@
-# Checklist Phase 0 — Leader tự chốt đặc tả
+# Phase 0 — Checklist của leader
 
-**Người quyết định:** TV1 / leader `@nguyenthanhnhan020705`.  
-**Trạng thái:** Chờ leader chốt nội dung; chưa ghi nhận Phase 0 hoàn thành.
+**Người phê duyệt:** `@nguyenthanhnhan020705`. **Bộ đề xuất:** v1.0, soạn 2026-10-19.  
+**Trạng thái:** Đã soạn và tự rà soát, chờ leader duyệt; chưa công bố M0 hoàn thành.
 
-Leader có thể tự quyết định yêu cầu trong phạm vi BRD. Quyết định làm thay đổi cam kết học phần cần đối chiếu yêu cầu giảng viên. Các thành viên cung cấp dữ kiện/góp ý kỹ thuật; leader là người duy nhất cập nhật và phê duyệt bộ đặc tả chung.
+## 1. Nội dung đã chuẩn bị để duyệt
 
-## 1. Các quyết định cần chốt
+- [x] Phạm vi P0 và CSV/Dashboard giữ ở P1 chưa giao triển khai.
+- [x] Người dùng demo, kiến trúc FastAPI phục vụ cả UI/API và luồng lỗi/kết quả.
+- [x] Hợp đồng loader/nhãn/split/chuẩn hóa, mốc M1 và xử lý rỗng/trùng.
+- [x] Baseline NB/LR/SVM, tham số, chọn validation/tie-break và cách đánh giá test cuối.
+- [x] Pipeline/metadata riêng, checksum/môi trường/tập nhãn và quy tắc readiness.
+- [x] API JSON, giới hạn 5000 code point, error envelope và P1 dự phòng 2 MiB/1000 record.
+- [x] Python 3.13.x 64-bit, constraints, quy trình khóa môi trường và lệnh mục tiêu Phase 1.
+- [x] Tiêu chí AC-01–AC-08 và cách bàn giao M0/M1/M2-S/M2-T/M3/M4 để làm song song.
+- [x] Phân loại thông tin nguồn cần xác minh, giao rõ người/mốc; không tự điền số liệu hoặc phê duyệt thay nhóm.
+- [ ] Leader duyệt toàn bộ [bộ đặc tả v1.0](specs/README.md), hoặc ghi chỉnh sửa cần có.
 
-- [ ] Phạm vi P0 và việc CSV/Dashboard giữ ở P1 hay được cam kết thêm.
-- [ ] Đối tượng dùng demo, đầu vào tiếng Việt và đầu ra một nhãn cảm xúc/một nhãn chủ đề.
-- [ ] Hợp đồng loader, trường dữ liệu, nhãn và split. Giao Data xác minh nguồn/quyền sử dụng/mã số thực tế trước training.
-- [ ] Giao diện pipeline/metadata, vị trí artifact riêng, quy tắc chuẩn hóa và cách bàn giao cho Backend.
-- [ ] Thí nghiệm: ba thuật toán/nhiệm vụ, chỉ fit trên train, chọn Macro F1 validation, cách xử lý kết quả ngang nhau và giữ test cho cuối.
-- [ ] API health/predict: JSON request/response, giới hạn input, lỗi rỗng/sai kiểu/vượt giới hạn/thiếu model. Batch chốt trước khi làm P1.
-- [ ] UI: form nhập, trạng thái chờ, kết quả, lỗi; địa chỉ API và cách phục vụ frontend khi demo.
-- [ ] Phiên bản Python/dependencies chung, lệnh cài/chạy/test, đường dẫn artifact; kiểm chứng cài thật ở Phase 1.
-- [ ] Nghiệm thu AC-01–AC-08 theo phạm vi; không tự ghi ngưỡng Accuracy/F1 chưa được thống nhất.
-- [ ] Tên/tài khoản từng người, ngày bắt đầu, hạn giao việc và quyền sở hữu file theo [phân công](team-assignments.md).
+Các dấu [x] chỉ xác nhận đã soạn quyết định trong tài liệu, không xác nhận đã chạy ứng dụng/test/dataset/model hoặc được leader phê duyệt.
 
-## 2. Tài liệu leader hoàn thiện
+## 2. Đọc theo thứ tự
 
-| File đầu ra | Nội dung cần có |
-| --- | --- |
-| `docs/specs/mvp.md` | Phạm vi chốt, kiến trúc, luồng demo, UI và nghiệm thu |
-| `docs/specs/api-contract.md` | JSON request/response, lỗi, giới hạn và health |
-| `docs/specs/data-contract.md` | Giao diện dữ liệu, nhãn, split và pipeline/metadata |
-| `docs/decisions.md` | Quyết định, người chốt, ngày chốt và đầu mối xử lý việc chưa chặn triển khai |
+1. [MVP](specs/mvp.md): phạm vi, luồng, kiến trúc và nghiệm thu.
+2. [API](specs/api-contract.md): nhãn chuỗi, JSON, giới hạn và lỗi.
+3. [Data/model](specs/data-contract.md): chữ ký hàm, baseline, split, artifact/metadata.
+4. [Môi trường](specs/environment.md): runtime, constraints và lock ở Phase 1.
+5. [Nhật ký quyết định](decisions.md): các quyết định và việc chuyển giao cho phase sau.
 
-Các file đầu ra đã có mẫu trong [bộ đặc tả](specs/README.md), chờ leader điền và phê duyệt. Checklist không thay thế đặc tả và chưa tự chốt giá trị kỹ thuật thay leader.
+## 3. Sau khi leader duyệt
 
-## 3. Điều kiện hoàn thành
+Ghi ngày/phiên bản duyệt, cập nhật M0 và phân phối cùng bản hợp đồng đến 5 nhánh chức năng. Điền tên/tài khoản và hạn thực tế vào Issue trước khi giao người. Giữ PR/review khi đưa vào develop/main; không tắt bảo vệ để tự hợp nhất.
 
-- Đặc tả có quyết định cụ thể cho các giao diện chặn P0; ví dụ API hợp lệ/lỗi khớp luồng UI.
-- Phần xác minh dữ liệu/môi trường được giao rõ cho Phase 1–2; P1 chưa chốt không chặn P0.
-- Leader ghi phiên bản/ngày chốt, thông báo thành viên và cập nhật trạng thái trong roadmap.
-- Đưa đặc tả vào các nhánh làm việc để dùng cùng phiên bản. Khi đưa vào `develop`, tiếp tục dùng PR cần leader review; với leader là code owner duy nhất, nhờ thành viên mở PR từ commit đặc tả leader chuẩn bị để bạn duyệt.
-
-Xem [Phase 0](roadmap/phase-0-specification.md) và [quy trình PR](../CONTRIBUTING.md).
+Data xác minh quyền dùng/source/mapping và manifest trước M1; leader kiểm chứng/công bố bộ lock ở Phase 1 trước train. Đây là đầu ra triển khai tiếp theo, không phải yêu cầu phải tự tạo dữ liệu hoặc cài dependencies trong Phase 0.

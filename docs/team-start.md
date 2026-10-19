@@ -2,7 +2,7 @@
 
 ## 1. Trạng thái của repository
 
-Đã có khung file trống cho cả năm chức năng. File code và tests chưa có nội dung; notebook không có cell/output; chưa có dataset, model hay metrics thực nghiệm. Các phase triển khai chưa được nghiệm thu. Leader chốt hợp đồng Phase 0 trước khi các thành viên viết phần cần kết nối.
+Đã có khung file trống cho cả năm chức năng. File code và tests chưa có nội dung; notebook không có cell/output; chưa có dataset, model hay metrics thực nghiệm. Các phase triển khai chưa được nghiệm thu. Đã soạn [hợp đồng Phase 0 v1.0](specs/README.md), chờ leader duyệt trước khi các thành viên viết phần cần kết nối.
 
 ## 2. Vào đúng nhánh
 
@@ -43,7 +43,7 @@ Không reset/force push để đồng bộ. Nếu nhánh đã có commit riêng 
 2. [Phân công làm song song](team-assignments.md): việc làm ngay và các mốc bàn giao.
 3. Hướng dẫn vai trò của mình trong bảng trên: file nào sửa, việc nào làm trước, đầu ra nào bàn giao.
 4. [Quyền sở hữu file](function-ownership.md) và [quy trình PR](../CONTRIBUTING.md).
-5. Bộ [đặc tả Phase 0](specs/README.md) đã được leader chốt; hiện các file là mẫu chờ hoàn thiện.
+5. Bộ [đặc tả Phase 0](specs/README.md) đã được leader chốt; hiện đã có quyết định cụ thể v1.0, chờ leader duyệt, không còn chỉ là mẫu để điền.
 
 Đọc [hướng dẫn môi trường](development.md) trước khi chạy lệnh. Requirements/config đang trống, chưa có dependencies hay lệnh khởi động ứng dụng được kiểm chứng. Tạo đủ file không đồng nghĩa có ứng dụng chạy được.
 
