@@ -1,6 +1,6 @@
 # Môi trường và cách vận hành v1.0
 
-**Trạng thái:** Đề xuất duyệt cùng Phase 0. Chỉ runtime máy hiện tại đã được đọc: Python 3.13.3, 64-bit; chưa cài/chạy bộ dependencies hoặc ứng dụng cho bản triển khai này.
+**Trạng thái:** Leader đã duyệt cùng Phase 0 v1.0 ngày 2026-10-19. Chỉ runtime máy hiện tại đã được đọc: Python 3.13.3, 64-bit; chưa cài/chạy bộ dependencies hoặc ứng dụng cho bản triển khai này.
 
 ## 1. Quyết định môi trường
 

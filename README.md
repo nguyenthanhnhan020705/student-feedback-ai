@@ -12,8 +12,8 @@
 | Thuộc tính | Nội dung |
 | --- | --- |
 | Mã tài liệu | BRD-SFAI |
-| Phiên bản | 0.4 — Đặc tả Phase 0 v1.0 đề xuất duyệt |
-| Trạng thái | Chờ rà soát và xác nhận yêu cầu |
+| Phiên bản | 0.5 — Phase 0 v1.0 đã được leader chốt |
+| Trạng thái | Đã duyệt Phase 0; ứng dụng chưa triển khai/nghiệm thu |
 | Học phần | Cơ sở và Ứng dụng Trí tuệ nhân tạo |
 | Nhóm thực hiện | 06 sinh viên; TV1 phụ trách Leader |
 | Thời gian dự kiến | 03 tuần / 21 ngày; ngày bắt đầu cần xác nhận |
@@ -29,21 +29,22 @@
 | 0.2 | Chuẩn hóa phân cấp đề mục, bổ sung kiểm soát tài liệu và thuật ngữ; chuyển hướng dẫn cộng tác vào phụ lục. | Chờ rà soát và xác nhận yêu cầu. |
 | 0.3 | Thống nhất phân công song song, hướng dẫn từng vai trò, mẫu Phase 0 và khung file trống. | Đã chuẩn bị khung; chưa triển khai/nghiệm thu sản phẩm. |
 | 0.4 | Soạn đủ hợp đồng MVP/API/Data/model/môi trường v1.0 và nhật ký quyết định. | Chờ leader duyệt; chưa thay đổi code thành viên. |
+| 0.5 | Ghi nhận leader chốt v1.0 ngày 2026-10-19, đồng bộ 5 nhánh và dọn tài liệu/nhánh tạm. | M0 hoàn thành; các thành viên bắt đầu triển khai. |
 
 ### Theo dõi rà soát và phê duyệt
 
 | Hoạt động | Đầu mối | Trạng thái | Ngày xác nhận |
 | --- | --- | --- | --- |
-| Rà soát yêu cầu | TV1 — Leader / nhóm thực hiện | Chờ rà soát | Chưa xác nhận |
-| Phê duyệt BRD | TV1 — Leader | Chưa phê duyệt | Chưa xác nhận |
+| Rà soát yêu cầu Phase 0 | TV1 — Leader | Đã rà soát/chốt v1.0 | 2026-10-19 |
+| Phê duyệt Phase 0 v1.0 | TV1 — Leader | Đã chốt nội dung trong hội thoại | 2026-10-19 |
 
-> Hiện dự án có bộ tài liệu, hướng dẫn vai trò và khung code/tests/requirements trống; notebook chưa có cell/output. Phase 0 đã có bộ đặc tả v1.0 chờ leader duyệt; chưa có ứng dụng/model/metrics thật hoặc kết quả nghiệm thu sản phẩm. Mọi chỉ số mô hình phải được đo thực tế.
+> Hiện dự án có bộ tài liệu, hướng dẫn vai trò và khung code/tests/requirements trống; notebook chưa có cell/output. Phase 0 v1.0 đã được leader chốt ngày 2026-10-19; chưa có ứng dụng/model/metrics thật hoặc kết quả nghiệm thu sản phẩm. Mọi chỉ số mô hình phải được đo thực tế.
 
 ## Mục lục
 
 **Dành cho nhóm phát triển:** bắt đầu từ [hướng dẫn chung](docs/team-start.md), [phân công song song](docs/team-assignments.md), [hướng dẫn từng vai trò và quyền sở hữu file](docs/function-ownership.md), [quy trình PR](CONTRIBUTING.md) và [roadmap](docs/roadmap/README.md). [Manifest](docs/scaffold-manifest.json) liệt kê các file khởi đầu trống đã tạo.
 
-**Phân công theo chức năng:** Data, Sentiment, Topic, Backend và Frontend có 5 nhánh riêng; xem [quyền sở hữu file](docs/function-ownership.md). Leader duyệt [bộ đặc tả Phase 0 v1.0](docs/specs/README.md); [checklist](docs/phase-0-leader-checklist.md) phân biệt phần đã soạn và bước phê duyệt còn lại.
+**Phân công theo chức năng:** Data, Sentiment, Topic, Backend và Frontend có 5 nhánh riêng; xem [quyền sở hữu file](docs/function-ownership.md). [Bộ đặc tả Phase 0 v1.0](docs/specs/README.md) đã được leader chốt; [trang theo dõi Phase 0](docs/roadmap/phase-0-specification.md) ghi bằng chứng duyệt và đầu ra bàn giao.
 
 - [Kiểm soát tài liệu](#brd-document-control)
 
@@ -148,7 +149,7 @@ Mỗi câu chỉ nhận **một nhãn cảm xúc chính và một nhãn chủ đ
 3. Người dùng xem và xuất bảng kết quả.
 4. Dashboard tổng hợp phân bố cảm xúc/chủ đề của dữ liệu vừa phân tích.
 
-Hợp đồng P1 dự phòng đã được đề xuất tại [API v1.0](docs/specs/api-contract.md): 2 MiB/1000 record, lỗi từng dòng và summary; chỉ triển khai sau khi leader duyệt bộ đặc tả và cho phép P1.
+Hợp đồng P1 dự phòng đã được duyệt tại [API v1.0](docs/specs/api-contract.md): 2 MiB/1000 record, lỗi từng dòng và summary; chỉ triển khai sau khi leader cho phép P1; việc chốt đặc tả không tự bật phạm vi này.
 
 ### 5.3. Ví dụ nghiệp vụ
 
@@ -212,7 +213,7 @@ Các nhãn trên chỉ minh họa mong muốn, không phải kết quả đã đ
 | NFR-04 | Bảo vệ dữ liệu | Không công bố `.env`, API key, thông tin cá nhân; kiểm tra quyền phân phối dataset/model. | Rà soát nội dung trước khi commit/push và bàn giao. |
 | NFR-05 | Tính kiểm chứng | Metrics, biểu đồ và ảnh demo phải có bằng chứng thực tế tương ứng. | Đối chiếu notebook/script, file metrics, log và ảnh chạy thật. |
 
-Đặc tả v1.0 đề xuất input tối đa 5000 Unicode code point, CSV P1 tối đa 2 MiB/1000 record và Chrome/Edge desktop stable tại thời điểm nghiệm thu. Đây là lựa chọn thiết kế chờ leader duyệt, không phải số đo; không đặt SLA/số người dùng đồng thời mới ngoài BRD. Xem [MVP](docs/specs/mvp.md) và [API](docs/specs/api-contract.md).
+Đặc tả v1.0 quy định input tối đa 5000 Unicode code point, CSV P1 tối đa 2 MiB/1000 record và Chrome/Edge desktop stable tại thời điểm nghiệm thu. Đây là lựa chọn thiết kế đã duyệt, không phải số đo; không đặt SLA/số người dùng đồng thời mới ngoài BRD. Xem [MVP](docs/specs/mvp.md) và [API](docs/specs/api-contract.md).
 
 <a id="brd-acceptance"></a>
 
@@ -303,7 +304,7 @@ Các rủi ro dưới đây được tổng hợp từ giới hạn và điều 
 
 ## 12. Các nội dung cần xác nhận
 
-Nguồn yêu cầu ban đầu và đầu mối được giữ ở bảng dưới. Cách xử lý từng TBD trong Phase 0 đã được ghi tại [nhật ký quyết định v1.0](docs/decisions.md); API/giới hạn/môi trường không còn để trống trong bản đề xuất, nhưng vẫn chờ leader duyệt. Quyền dùng dữ liệu, tên thành viên và lịch thực tế chưa được tự xác nhận thay nhóm.
+Nguồn yêu cầu ban đầu và đầu mối được giữ ở bảng dưới. Cách xử lý từng TBD trong Phase 0 đã được ghi tại [nhật ký quyết định v1.0](docs/decisions.md); API/giới hạn/môi trường đã được chốt trong bộ đặc tả v1.0. Quyền dùng dữ liệu, tên thành viên và lịch thực tế chưa được tự xác nhận thay nhóm.
 
 | Mã | Nội dung | Đầu mối dự kiến |
 | --- | --- | --- |
@@ -403,7 +404,7 @@ flowchart TB
 
 ### B.4. Hợp đồng API dự kiến
 
-[API v1.0](docs/specs/api-contract.md) là hợp đồng chi tiết đề xuất duyệt; các ví dụ dưới đây chỉ minh họa và chưa chứng minh endpoint đã triển khai. Khi chốt v1.0, Backend/Frontend dùng cùng JSON/error envelope và contract_version.
+[API v1.0](docs/specs/api-contract.md) là hợp đồng chi tiết đã duyệt; các ví dụ dưới đây chỉ minh họa và chưa chứng minh endpoint đã triển khai. Backend/Frontend triển khai theo cùng JSON/error envelope và contract_version.
 
 | Phương thức | Endpoint | Chức năng |
 | --- | --- | --- |
@@ -429,7 +430,7 @@ flowchart TB
 }
 ```
 
-Tên field, nhãn và batch đã có đề xuất cụ thể trong bộ đặc tả v1.0, chờ leader duyệt trước khi các thành viên triển khai giao diện kết nối. **Không hard-code nhãn dự đoán hoặc điểm tin cậy giả.** Nếu chưa có mô hình, API phải báo rõ *model chưa sẵn sàng* thay vì giả lập kết quả là thật.
+Tên field, nhãn và batch đã được leader chốt trong bộ đặc tả v1.0; các thành viên dùng cùng phiên bản để triển khai giao diện kết nối. **Không hard-code nhãn dự đoán hoặc điểm tin cậy giả.** Nếu chưa có mô hình, API phải báo rõ *model chưa sẵn sàng* thay vì giả lập kết quả là thật.
 
 <a id="appendix-c"></a>
 
@@ -504,7 +505,7 @@ student-feedback-ai/
 
 ### D.2. Môi trường và cách chạy
 
-[Môi trường v1.0](docs/specs/environment.md) đề xuất CPython 3.13.x 64-bit và bộ constraints chung; leader duyệt, kiểm chứng/khóa dependencies ở Phase 1 và duy trì [hướng dẫn phát triển](docs/development.md). Hiện requirements/config trống, `backend/main.py` chưa có ứng dụng, giao diện/tests chưa có nội dung; chưa có lệnh khởi động được nghiệm thu.
+[Môi trường v1.0](docs/specs/environment.md) quy định CPython 3.13.x 64-bit và bộ constraints chung; leader kiểm chứng/khóa dependencies ở Phase 1 và duy trì [hướng dẫn phát triển](docs/development.md). Hiện requirements/config trống, `backend/main.py` chưa có ứng dụng, giao diện/tests chưa có nội dung; chưa có lệnh khởi động được nghiệm thu.
 
 Mỗi thành viên đọc hướng dẫn phần mình: [Data](docs/data/README.md), [Sentiment](docs/sentiment/README.md), [Topic](docs/topic/README.md), [Backend](docs/backend/README.md), [Frontend](docs/frontend/README.md). Không coi cài requirements trống, notebook rỗng hoặc pytest không thu thập bài nào là đã hoàn thành phần việc.
 

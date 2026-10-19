@@ -1,6 +1,6 @@
 # Đặc tả MVP v1.0
 
-**Ngày soạn:** 2026-10-19. **Trạng thái:** Đề xuất để leader duyệt; các quyết định dưới đây cụ thể cho phiên bản 1.0, chưa phải minh chứng triển khai.
+**Ngày soạn:** 2026-10-19. **Trạng thái:** Leader đã duyệt v1.0 ngày 2026-10-19; quyết định có hiệu lực cho triển khai, chưa phải minh chứng ứng dụng đã chạy.
 
 ## 1. Mục đích và người dùng
 

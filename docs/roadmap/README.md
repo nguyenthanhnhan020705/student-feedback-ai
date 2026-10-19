@@ -2,7 +2,7 @@
 
 **Nguồn yêu cầu:** [BRD](../../README.md).  
 **Ngày lập:** 2026-10-18.  
-**Trạng thái:** Đã có phân công và khung file trống; Phase 0 đã soạn đặc tả v1.0 chờ leader duyệt; sản phẩm chưa triển khai/nghiệm thu.
+**Trạng thái:** Đã có phân công và khung file trống; Phase 0 v1.0 đã được leader duyệt ngày 2026-10-19; sản phẩm chưa triển khai/nghiệm thu.
 
 Tài liệu chia dự án thành các phase để theo dõi phát triển và nghiệm thu. Đây là lộ trình cấp dự án; thiết kế chi tiết và kế hoạch lập trình từng bước được hoàn thiện khi bắt đầu mỗi phase, dựa trên đầu ra thực tế của phase trước.
 
@@ -25,7 +25,7 @@ Sau M0, cả 5 người bắt đầu phần độc lập cùng lúc. Sentiment/T
 
 | Phase | Thời gian dự kiến | Đầu ra chính | Phụ thuộc | Phụ trách chính | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
-| [0 — Chốt phạm vi và đặc tả](phase-0-specification.md) | Ngày 1 | Đặc tả đầu vào, nhãn, API và tiêu chí nghiệm thu | BRD | TV1 duyệt bộ v1.0 | Đã soạn; chờ duyệt |
+| [0 — Chốt phạm vi và đặc tả](phase-0-specification.md) | Ngày 1 | Đặc tả đầu vào, nhãn, API và tiêu chí nghiệm thu | BRD | TV1 đã duyệt bộ v1.0 | Hoàn thành M0 — 2026-10-19 |
 | [1 — Nền tảng dự án](phase-1-foundation.md) | Ngày 2–3 | Môi trường chạy được, khung ứng dụng và kiểm thử | M0 | TV5, TV6, TV1 | Có file trống; chưa triển khai |
 | [2 — Dữ liệu và tiền xử lý](phase-2-data.md) | Ngày 3–6 | Dataset được xác minh, EDA, tiền xử lý dùng chung | Phase 0; môi trường Phase 1 | TV2 | Chưa bắt đầu |
 | [3 — Huấn luyện và đánh giá](phase-3-models.md) | Code/tests từ M0; train dự kiến ngày 6–10 | So sánh 3 thuật toán/nhiệm vụ, xuất 2 pipeline đã chọn | M1 để train thật | TV3, TV4 độc lập | Chưa triển khai |

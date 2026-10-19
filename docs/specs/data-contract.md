@@ -1,6 +1,6 @@
 # Hợp đồng Data, mô hình và artifact v1.0
 
-**Trạng thái:** Đề xuất duyệt cùng Phase 0. Chưa tải/kiểm đếm dataset hoặc huấn luyện mô hình trong phase này.
+**Trạng thái:** Leader đã duyệt cùng Phase 0 v1.0 ngày 2026-10-19. Chưa tải/kiểm đếm dataset hoặc huấn luyện mô hình trong phase này.
 
 ## 1. Nguồn và quy tắc nhãn
 

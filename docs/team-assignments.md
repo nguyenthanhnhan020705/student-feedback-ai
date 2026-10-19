@@ -1,12 +1,12 @@
 # Phân công 5 thành viên và kế hoạch làm song song
 
-**Cập nhật:** 2026-10-19. **Trạng thái:** Đã chuẩn bị khung trống; Phase 0 có [bộ đặc tả v1.0](specs/README.md) chờ leader duyệt; sản phẩm chưa được triển khai.
+**Cập nhật:** 2026-10-19. **Trạng thái:** Đã chuẩn bị khung trống; Phase 0 đã chốt [bộ đặc tả v1.0](specs/README.md) ngày 2026-10-19; thành viên bắt đầu công việc, sản phẩm chưa được triển khai.
 
 ## 1. Một người phụ trách trọn một chức năng
 
 | Vai trò | Nhánh | Đầu mối hướng dẫn | Công việc trọn phần |
 | --- | --- | --- | --- |
-| TV1 — Leader | Điều phối PR và file chung | [Phase 0](phase-0-leader-checklist.md) | Chốt đặc tả, môi trường chung, review, tích hợp, nghiệm thu và tổng hợp báo cáo |
+| TV1 — Leader | Điều phối PR và file chung | [Phase 0](roadmap/phase-0-specification.md) | Chốt đặc tả, môi trường chung, review, tích hợp, nghiệm thu và tổng hợp báo cáo |
 | TV2 — Data | `feature/data-preprocessing` | [Hướng dẫn Data](data/README.md) | Dataset, EDA, loader, chuẩn hóa, bảng nhãn và tests Data |
 | TV3 — Sentiment | `feature/sentiment-model` | [Hướng dẫn Sentiment](sentiment/README.md) | Training/evaluation/inference, pipeline và báo cáo cảm xúc |
 | TV4 — Topic | `feature/topic-model` | [Hướng dẫn Topic](topic/README.md) | Training/evaluation/inference, pipeline và báo cáo chủ đề |

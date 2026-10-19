@@ -1,6 +1,6 @@
 # Hợp đồng API v1.0
 
-**Trạng thái:** Đề xuất duyệt cùng bộ Phase 0. Ví dụ JSON trong tài liệu là hợp đồng minh họa, không phải kết quả mô hình đã chạy. Base demo: `http://127.0.0.1:8000`. Tất cả response thuộc hợp đồng có `contract_version: "1.0"`.
+**Trạng thái:** Leader đã duyệt cùng bộ Phase 0 v1.0 ngày 2026-10-19. Ví dụ JSON trong tài liệu là hợp đồng minh họa, không phải kết quả mô hình đã chạy. Base demo: `http://127.0.0.1:8000`. Tất cả response thuộc hợp đồng có `contract_version: "1.0"`.
 
 ## 1. Bộ nhãn chuỗi
 
