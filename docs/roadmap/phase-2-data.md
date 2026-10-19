@@ -6,6 +6,8 @@
 **Phụ thuộc:** Hợp đồng Phase 0 và môi trường Phase 1 để chạy xử lý.  
 **Quay lại:** [Lộ trình](README.md).
 
+File khung đã có; xem [hướng dẫn Data](../data/README.md). Bàn giao M1 sớm gồm nguồn/nhãn/split đã xác minh và loader/chuẩn hóa có tests. Sentiment/Topic dùng M1 để train trong khi TV2 tiếp tục EDA/báo cáo, không chờ toàn bộ Phase 2 hoàn tất.
+
 ## Mục tiêu
 
 Cung cấp dữ liệu được xác minh, EDA và tiền xử lý dùng chung, đáp ứng DR-01–03, RULE-01/03, AC-01. Không suy diễn mã nhãn từ ví dụ trong BRD.
@@ -33,7 +35,7 @@ Cung cấp dữ liệu được xác minh, EDA và tiền xử lý dùng chung, 
 ## Điều kiện hoàn thành và kiểm chứng
 
 - Đạt AC-01 với notebook/biểu đồ và nguồn dữ liệu có thể đối chiếu; số lượng ghi theo bản thực tế, không chép số tham khảo thành kết quả.
-- Lệnh dự kiến `python -m pytest tests/test_data.py tests/test_preprocessing.py -q` chạy đạt.
+- Lệnh mục tiêu sau khi viết tests là `python -m pytest tests/test_data.py tests/test_preprocessing.py tests/test_labels.py -q`; hiện tests còn trống, chưa có kết quả đạt.
 - Kiểm thử bao gồm văn bản tiếng Việt tổ hợp Unicode, khoảng trắng, phủ định, dữ liệu rỗng, nhãn không hợp lệ và lệch số dòng.
 - Các nguy cơ trùng lặp giữa train/validation/test có kết luận và cách xử lý được ghi nhận trước huấn luyện.
 - Không có bước học tham số hoặc `fit` trên validation/test.

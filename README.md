@@ -12,13 +12,13 @@
 | Thuộc tính | Nội dung |
 | --- | --- |
 | Mã tài liệu | BRD-SFAI |
-| Phiên bản | 0.2 — Chuẩn hóa cấu trúc và trình bày BRD |
+| Phiên bản | 0.3 — Phân công song song và khung file trống theo vai trò |
 | Trạng thái | Chờ rà soát và xác nhận yêu cầu |
 | Học phần | Cơ sở và Ứng dụng Trí tuệ nhân tạo |
 | Nhóm thực hiện | 06 sinh viên; TV1 phụ trách Leader |
 | Thời gian dự kiến | 03 tuần / 21 ngày; ngày bắt đầu cần xác nhận |
 | Đầu mối quản lý yêu cầu | TV1 — Leader |
-| Người phê duyệt | Cần xác nhận |
+| Người phê duyệt | TV1 — Leader, trong phạm vi yêu cầu học phần |
 | Nguồn nội dung | README và bản thảo báo cáo dự án đã cung cấp |
 
 ### Lịch sử phiên bản
@@ -27,19 +27,20 @@
 | --- | --- | --- |
 | 0.1 | Tổ chức nội dung README thành bản dự thảo BRD. | Bản dự thảo trước khi chuẩn hóa. |
 | 0.2 | Chuẩn hóa phân cấp đề mục, bổ sung kiểm soát tài liệu và thuật ngữ; chuyển hướng dẫn cộng tác vào phụ lục. | Chờ rà soát và xác nhận yêu cầu. |
+| 0.3 | Thống nhất phân công song song, hướng dẫn từng vai trò, mẫu Phase 0 và khung file trống. | Đã chuẩn bị khung; chưa triển khai/nghiệm thu sản phẩm. |
 
 ### Theo dõi rà soát và phê duyệt
 
 | Hoạt động | Đầu mối | Trạng thái | Ngày xác nhận |
 | --- | --- | --- | --- |
 | Rà soát yêu cầu | TV1 — Leader / nhóm thực hiện | Chờ rà soát | Chưa xác nhận |
-| Phê duyệt BRD | Cần xác nhận | Chưa phê duyệt | Chưa xác nhận |
+| Phê duyệt BRD | TV1 — Leader | Chưa phê duyệt | Chưa xác nhận |
 
-> Tài liệu mô tả yêu cầu và phương án dự kiến, không xác nhận tính năng đã hoàn thành. Sau khi dọn lại dự án, bộ khung cũ đã được xóa; việc triển khai mới cần có minh chứng riêng. Mọi chỉ số mô hình phải được đo thực tế.
+> Hiện dự án có bộ tài liệu, hướng dẫn vai trò và khung code/tests/requirements trống; notebook chưa có cell/output. Phase 0 chờ leader chốt, chưa có ứng dụng/model/metrics thật hoặc kết quả nghiệm thu sản phẩm. Mọi chỉ số mô hình phải được đo thực tế.
 
 ## Mục lục
 
-**Dành cho nhóm phát triển:** đọc [hướng dẫn bắt đầu](docs/team-start.md), [phân công 5 thành viên](docs/team-assignments.md), [quy trình PR](CONTRIBUTING.md) và [lộ trình các phase](docs/roadmap/README.md).
+**Dành cho nhóm phát triển:** bắt đầu từ [hướng dẫn chung](docs/team-start.md), [phân công song song](docs/team-assignments.md), [hướng dẫn từng vai trò và quyền sở hữu file](docs/function-ownership.md), [quy trình PR](CONTRIBUTING.md) và [roadmap](docs/roadmap/README.md). [Manifest](docs/scaffold-manifest.json) liệt kê các file khởi đầu trống đã tạo.
 
 **Phân công theo chức năng:** Data, Sentiment, Topic, Backend và Frontend có 5 nhánh riêng; xem [quyền sở hữu file](docs/function-ownership.md). Leader tự chốt [Phase 0](docs/phase-0-leader-checklist.md); trạng thái hiện tại là chờ leader chốt đặc tả.
 
@@ -263,7 +264,7 @@ Báo cáo phải theo 6 phần nghiên cứu:
 
 ### 10.1. Kế hoạch thực hiện
 
-Kế hoạch phát triển được chia thành **7 phase (Phase 0–6)**, mỗi phase có đầu việc, phụ thuộc, sản phẩm bàn giao và tiêu chí hoàn thành riêng. Xem [lộ trình chi tiết](docs/roadmap/README.md); bắt đầu từ [Phase 0 — Chốt phạm vi và đặc tả](docs/roadmap/phase-0-specification.md). Các phase hiện chưa triển khai; Phase 5 (CSV/Dashboard) thuộc P1 và chỉ thực hiện khi đủ thời gian.
+Kế hoạch phát triển được chia thành **7 phase (Phase 0–6)**, mỗi phase có đầu việc, phụ thuộc, sản phẩm bàn giao và tiêu chí hoàn thành riêng. Xem [lộ trình chi tiết](docs/roadmap/README.md); bắt đầu từ [Phase 0 — Chốt phạm vi và đặc tả](docs/roadmap/phase-0-specification.md). Khung file đã được chuẩn bị; các phase sản phẩm chưa triển khai/nghiệm thu. Cả 5 vai trò làm phần độc lập song song sau M0, chỉ chờ ở bước cần đầu ra thật. Phase 5 (CSV/Dashboard) thuộc P1 và chỉ thực hiện khi đủ thời gian.
 
 | Giai đoạn | Công việc song song | Mốc phải đạt |
 | --- | --- | --- |
@@ -470,61 +471,38 @@ Các minh chứng cần lưu gồm log kiểm thử, hình chạy thật, notebo
 
 ## Phụ lục D — Repository và môi trường dự kiến
 
-### D.1. Tổ chức thư mục dự kiến
+### D.1. Cấu trúc khởi đầu hiện có
 
-Cấu trúc sau là phương án dự kiến cho lần triển khai mới; các thư mục này hiện chưa được tạo lại. **Tên file bên trong có thể thay đổi khi Codex/nhóm triển khai; README cần cập nhật theo code thực tế.**
+Các thư mục và file khung đã được tạo. Code/tests/requirements còn trống; notebook là notebook rỗng hợp lệ. Đây chưa phải bản triển khai ứng dụng. Danh sách chính xác và chủ sở hữu có trong [manifest](docs/scaffold-manifest.json).
 
 ```text
 student-feedback-ai/
-├── backend/               # Dịch vụ FastAPI
-├── frontend/              # Giao diện web
-├── data/
-│   ├── raw/               # Dữ liệu gốc (không commit tùy tiện)
-│   └── processed/         # Dữ liệu sau xử lý
-├── ml/                    # Các module dùng chung cho pipeline ML
-├── models/                # Pipeline đã huấn luyện (nếu được phép lưu)
-├── notebooks/             # EDA, huấn luyện, đánh giá
-├── tests/                 # Kiểm thử
-├── docs/                  # Đặc tả kỹ thuật, sơ đồ, tài liệu nhóm
-├── reports/               # Báo cáo, biểu đồ và kết quả thí nghiệm
-├── .gitignore
-├── pytest.ini
-├── requirements.txt
-├── requirements-test.txt
-├── requirements-browser.txt
-└── README.md
+├── backend/                 # TV5: main/config/schema/model_service/routes
+├── frontend/                # TV6: index/styles/app/api, P1 batch/dashboard
+├── ml/                      # TV2: data/preprocessing/labels
+│                            # TV3: train/evaluate/predict_sentiment
+│                            # TV4: train/evaluate/predict_topic
+├── data/raw/                # Dataset local, ignore trừ .gitkeep
+├── data/processed/          # Dataset local, ignore trừ .gitkeep
+├── models/                  # Chưa có artifact; có hướng dẫn bàn giao
+├── notebooks/               # 3 notebook rỗng theo vai trò
+├── tests/                   # Tests phần riêng, frontend và integration
+├── requirements/            # Dependencies riêng của Data/ML/Backend
+├── docs/specs/              # Mẫu đặc tả để leader chốt Phase 0
+├── docs/{data,sentiment,topic,backend,frontend}/
+│                            # Hướng dẫn, tài liệu và phần báo cáo riêng
+├── docs/roadmap/            # Mốc phát triển/nghiệm thu
+├── reports/                 # Nơi lưu kết quả thật, hiện có marker thư mục
+├── .github/                 # CODEOWNERS, mẫu Issue/PR
+├── CONTRIBUTING.md
+└── README.md                # BRD
 ```
 
-### D.2. Thiết lập môi trường trên Windows (PowerShell)
+### D.2. Môi trường và cách chạy
 
-**Lệnh tham khảo**; chỉ chạy sau khi đối chiếu với phiên bản Python và các dependencies thực tế của project.
+Leader chốt Python/dependencies/cách chạy trong Phase 0, kiểm chứng môi trường ở Phase 1 và duy trì [hướng dẫn phát triển](docs/development.md). Hiện requirements/config trống, `backend/main.py` chưa có ứng dụng, giao diện/tests chưa có nội dung; chưa có lệnh khởi động được nghiệm thu.
 
-```powershell
-# Từ thư mục gốc của repository
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-Nếu máy chưa có Python 3.12, cần cài phiên bản phù hợp hoặc kiểm tra khả năng tương thích của Python đang dùng; không cần gỡ phiên bản Python hệ thống.
-
-**Kiểm thử (khi đã cài dependency test):**
-
-```powershell
-python -m pip install -r requirements-test.txt
-python -m pytest -q
-```
-
-**Chạy Backend:** cần xem file khởi tạo ứng dụng thực tế trong `backend/`. *Nếu* ứng dụng FastAPI được khai báo dưới dạng `app` trong `backend/main.py`, lệnh ví dụ là:
-
-```powershell
-python -m uvicorn backend.main:app --reload
-```
-
-Khi chạy đúng, tài liệu API FastAPI thường xuất hiện tại `http://127.0.0.1:8000/docs`. Nếu repo sử dụng entrypoint khác, hãy dùng lệnh do chính code/nhóm xác nhận.
-
-**Chạy Frontend:** dùng phương án được triển khai trong `frontend/` (ví dụ static server hoặc extension Live Server). Khi chạy frontend trên một cổng khác, backend phải được cấu hình CORS phù hợp. Đừng coi giao diện có dữ liệu mẫu là bằng chứng rằng API hoặc mô hình đã hoàn thành.
+Mỗi thành viên đọc hướng dẫn phần mình: [Data](docs/data/README.md), [Sentiment](docs/sentiment/README.md), [Topic](docs/topic/README.md), [Backend](docs/backend/README.md), [Frontend](docs/frontend/README.md). Không coi cài requirements trống, notebook rỗng hoặc pytest không thu thập bài nào là đã hoàn thành phần việc.
 
 ### D.3. Bảo vệ dữ liệu và khả năng tái lập
 
@@ -565,7 +543,7 @@ git push -u origin feature/sentiment-model
 
 ### E.1. Trạng thái và bảng kết quả chờ đo
 
-Bộ khung cũ đã được xóa để bắt đầu lại. Tài liệu này chưa có minh chứng huấn luyện hoặc chạy end-to-end cho bản triển khai mới. Dataset/EDA, mô hình, API, website, CSV/Dashboard và báo cáo hoàn chỉnh đều cần bổ sung bằng chứng trước nghiệm thu.
+Đã chuẩn bị lại khung file trống và tài liệu làm việc song song cho 5 vai trò. Chưa có minh chứng huấn luyện hoặc chạy end-to-end. Dataset/EDA, mô hình, API, website, CSV/Dashboard và báo cáo hoàn chỉnh đều cần kết quả thực tế trước nghiệm thu; xem [bảng nghiệm thu](docs/acceptance.md).
 
 **Bảng kết quả – Sentiment (chờ đo):**
 

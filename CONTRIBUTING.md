@@ -1,98 +1,60 @@
-# Quy trình làm việc của nhóm
+# Quy trình đóng góp
 
-Xem [phân công 5 thành viên](docs/team-assignments.md), [BRD](README.md) và [lộ trình](docs/roadmap/README.md).
+Đọc [hướng dẫn bắt đầu](docs/team-start.md), [phân công song song](docs/team-assignments.md), [quyền sở hữu file](docs/function-ownership.md) và hướng dẫn vai trò trước khi sửa file.
 
 ## 1. Nhánh và quyền duyệt
 
-Luồng công việc: `feature/*` → Pull Request vào `develop` → Pull Request vào `main`.
+Luồng cố định: nhánh chức năng → PR vào `develop` → leader duyệt; bản tích hợp ổn định → PR vào `main` → leader duyệt.
 
-| Nhánh | Mục đích | Quy tắc |
-| --- | --- | --- |
-| `main` | Bản tích hợp ổn định để demo/bàn giao | Chỉ cập nhật qua PR đã được leader duyệt và đạt kiểm tra |
-| `develop` | Tích hợp công việc trong quá trình phát triển | PR từ nhánh công việc, leader review trước khi merge |
-| 5 nhánh `feature/*` theo chức năng | Data, Sentiment, Topic, Backend, Frontend | Một người phụ trách mỗi nhánh và sửa file thuộc phạm vi của mình |
-| `chore/*`, `docs/*`, `fix/*` | Thiết lập, tài liệu hoặc sửa lỗi | Cùng quy trình PR như nhánh feature |
+| Vai trò | Nhánh |
+| --- | --- |
+| Data | `feature/data-preprocessing` |
+| Sentiment | `feature/sentiment-model` |
+| Topic | `feature/topic-model` |
+| Backend | `feature/backend-api` |
+| Frontend | `feature/frontend-dashboard` |
 
-Không push trực tiếp lên `main` hoặc `develop`, kể cả sau khi được duyệt. Dùng chức năng merge PR để cập nhật nhánh đích. Theo quy trình nhóm, leader thực hiện merge; khả năng chỉ cho leader bấm merge còn phụ thuộc cấu hình quyền trên GitHub.
+Leader/code owner là `@nguyenthanhnhan020705`. Không push trực tiếp vào `main`/`develop`, không tự merge hoặc force push. Quy tắc phân công không tự khóa quyền sửa file theo thư mục; leader kiểm tra phạm vi trên mỗi PR. Cấu hình bảo vệ và hướng dẫn ban đầu nằm trong [quản trị GitHub](docs/github-admin.md).
 
-Danh sách nhánh cố định nằm trong [hướng dẫn bắt đầu](docs/team-start.md); [bảng quyền sở hữu file](docs/function-ownership.md) xác định người sửa từng phần. Leader tự chốt Phase 0 và sở hữu file đặc tả/cấu hình chung. Sentiment/Topic có code training, evaluation, metadata và tests riêng.
+## 2. Làm việc trên nhánh đã có
 
-Leader dự kiến là `@nguyenthanhnhan020705`, theo chủ repository. File `.github/CODEOWNERS` chỉ có một người duyệt toàn bộ mã nguồn. Nếu leader dùng tài khoản khác, sửa file trước khi bật yêu cầu review của code owner.
-
-## 2. Trước khi mời thành viên bắt đầu
-
-Leader thực hiện lần thiết lập ban đầu:
-
-1. Đưa BRD, roadmap, phân công và quy trình này lên nhánh chuẩn bị để rà soát.
-2. Rà soát lịch sử/diff với `main` hiện có, đặc biệt vì repository có lịch sử xóa bộ khung cũ. Không merge toàn bộ nhánh chuẩn bị chỉ vì tài liệu mới đã đúng.
-3. Tạo `develop` từ nền dự án đã chọn; đưa các tài liệu và `.github/CODEOWNERS` vào nhánh này.
-4. Đưa riêng quy tắc quản trị, nhất là `.github/CODEOWNERS`, vào `main` trong lần thiết lập. `main` có thể chứa tài liệu quản trị trước khi có bản ứng dụng ổn định.
-5. Bật bảo vệ cho cả `main` và `develop`, sau đó kiểm chứng trước khi cấp quyền làm việc cho thành viên.
-6. Mời đúng 5 tài khoản làm cộng tác viên; không cấp quyền Admin hoặc quyền bỏ qua quy tắc cho thành viên.
-
-CODEOWNERS được đọc từ **nhánh đích của PR**. File chỉ nằm trên nhánh chuẩn bị sẽ chưa bảo đảm yêu cầu review cho `main`/`develop`.
-
-## 3. Cấu hình GitHub bắt buộc
-
-Vào repository → Settings → Branches → Add branch protection rule. Tạo một rule cho `main` và một rule cho `develop`:
-
-- Bật **Require a pull request before merging**.
-- Bật **Require approvals**, đặt ít nhất **1**.
-- Bật **Require review from Code Owners** để approval phải đến từ leader; một approval bất kỳ không đủ đáp ứng yêu cầu này.
-- Bật **Dismiss stale pull request approvals when new commits are pushed** để thay đổi sau review phải được duyệt lại.
-- Bật **Require conversation resolution before merging**.
-- Không cho phép force push hoặc xóa nhánh được bảo vệ.
-- Không cấp bypass cho thành viên. Nếu bật **Do not allow bypassing the above settings**, quy tắc áp dụng cả với admin.
-- Khi Phase 1 có CI chạy thực tế, thêm đúng tên check vào **Require status checks to pass before merging**. Không yêu cầu tên check chưa tồn tại.
-
-Nếu repository thuộc organization và có tùy chọn **Restrict who can push to matching branches**, có thể giới hạn leader để kiểm soát người thực hiện merge. Với repository cá nhân, yêu cầu approval của leader không đồng nghĩa chỉ leader có nút merge: người có quyền ghi vẫn có thể merge khi mọi điều kiện đã đạt. Quy tắc nhóm là để leader thực hiện thao tác đó.
-
-GitHub Free hỗ trợ bảo vệ nhánh trên repository public; repository private cần gói hỗ trợ tương ứng. Nếu gói hiện tại không hỗ trợ, không coi README/CODEOWNERS là biện pháp chặn kỹ thuật. Cần chọn gói phù hợp hoặc cách cấp quyền đóng góp không cho thành viên ghi trực tiếp vào repository gốc; không tự đổi repository private thành public.
-
-**PR do leader mở:** GitHub không cho tác giả tự approve PR của mình. Với leader là code owner duy nhất và không có bypass, nhờ thành viên mở PR tích hợp `develop` → `main` để leader review. Nếu muốn leader trực tiếp mở PR, phải thống nhất cơ chế reviewer/bypass riêng trước; không tự tắt bảo vệ để giải quyết.
-
-**Kiểm chứng cấu hình:** dùng một PR thử do thành viên mở và kiểm tra GitHub chặn merge khi chưa được leader approve; sau approval, thêm một thay đổi và xác nhận cần review lại. Kiểm tra giao diện rules/protection và quyền thành viên; không cần thử push phá quy tắc lên `main`.
-
-Nguồn: [Protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), [Code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
-
-## 4. Các bước của thành viên
-
-Chỉ thực hiện sau khi leader thông báo `develop` đã sẵn sàng. Ví dụ cho TV3:
+Ví dụ Sentiment:
 
 ```bash
 git clone --branch feature/sentiment-model https://github.com/nguyenthanhnhan020705/student-feedback-ai.git
 cd student-feedback-ai
-```
-
-Nếu đã clone, fetch rồi dùng `git switch --track origin/feature/sentiment-model`; nếu nhánh đã có ở máy thì `git switch feature/sentiment-model`. Mỗi người dùng đúng nhánh chức năng được leader giao. Không dùng lại nhánh cũ ở máy từ đợt bộ khung trước mà chưa kiểm tra nền commit.
-
-```bash
 git status
+# Viết code/tests/tài liệu phần mình, chạy kiểm tra liên quan rồi:
 git diff
-# Chỉ thêm đúng file của đầu việc; ví dụ khi các file sau đã được tạo:
-git add ml/train_sentiment.py notebooks/02_sentiment.ipynb
+git add ml/train_sentiment.py tests/test_sentiment_training.py docs/sentiment/experiment.md
 git diff --cached
 git commit -m "feat: add sentiment baseline"
-git push -u origin feature/sentiment-model
+git push origin feature/sentiment-model
 ```
 
-Trên GitHub, mở PR với **base: develop**, chọn nhánh vừa push làm compare và yêu cầu leader review. Dùng Draft PR nếu chưa sẵn sàng. Khi được yêu cầu sửa, tiếp tục commit/push vào chính nhánh đó, không mở PR mới cho cùng đầu việc.
+Mở PR với base `develop`, điền mẫu và yêu cầu leader review. PR có thể nhỏ theo mốc bàn giao, không cần đợi xong cả chức năng. Khi được yêu cầu sửa, tiếp tục commit/push cùng nhánh, không mở PR trùng cho cùng đầu việc.
 
-Đồng bộ thay đổi mới khi cần, sau khi đã lưu công việc:
+## 3. Đồng bộ phần đã duyệt
+
+Lưu công việc trước khi đồng bộ:
 
 ```bash
 git fetch origin
 git merge origin/develop
-# Nếu có conflict: xử lý, kiểm tra lại, rồi commit và push nhánh công việc.
+# Xử lý conflict nếu có, chạy lại kiểm tra liên quan rồi push nhánh mình.
 ```
 
-Không force push nhánh chức năng, không tự sửa hợp đồng dữ liệu/API hoặc file thành viên khác phụ trách. Nhánh chức năng dùng qua nhiều PR nhỏ; sau khi merge, đồng bộ `develop` rồi tiếp tục. Với quy trình này, ưu tiên merge commit khi tích hợp để giữ quan hệ lịch sử; nếu chọn squash/rebase thì leader cần thống nhất cách làm nhánh tiếp theo để tránh đưa lại commit cũ vào PR.
+Không merge trực tiếp nhánh người khác. Nhóm ưu tiên merge commit cho PR từ 5 nhánh dùng qua nhiều đầu việc; nếu dùng squash/rebase, leader cần thống nhất nhánh tiếp theo để tránh đưa lại commit cũ vào PR. Không tự đổi chiến lược hoặc force push để sửa lịch sử.
 
-## 5. Điều kiện gửi review
+## 4. Điều kiện gửi review
 
-- Mỗi PR gắn với một đầu việc có mã task và tiêu chí nghiệm thu; tránh dồn toàn bộ phase vào một PR lớn.
-- Có hướng dẫn chạy, lệnh kiểm tra và kết quả thật. Nếu chưa chạy được, ghi rõ lý do và giữ Draft.
-- Cung cấp phần báo cáo tương ứng: nguồn dữ liệu/EDA cho TV2, metrics và phân tích lỗi cho TV3/TV4, log API cho TV5, ảnh hoặc video thao tác thật cho TV6.
-- Không commit `.env`, môi trường ảo, dữ liệu cá nhân hoặc dataset/model chưa được phép phân phối; không sử dụng số liệu hay dự đoán giả làm bằng chứng.
-- Mỗi ngày cập nhật ngắn trong Issue: đã làm, sẽ làm, đang vướng; báo sớm khi phụ thuộc bị chặn.
-- Hoàn thành khi leader đã duyệt, kiểm tra đạt và PR được merge; push code lên nhánh riêng chưa phải nghiệm thu.
+- Gắn task/Issue, đúng phạm vi file của một vai trò, có mô tả và tiêu chí nghiệm thu.
+- Có lệnh/cách kiểm tra và kết quả thật. File test trống, bài không được thu thập hoặc skip do thiếu artifact không được ghi là đạt.
+- Fixture/mock dành tests/UI development phải được phân biệt rõ; không thay model thật trong API/nghiệm thu.
+- Cập nhật tài liệu/báo cáo riêng và dependencies riêng; đề xuất leader khi cần thay đổi hợp đồng/config gốc.
+- Không đưa bí mật, dữ liệu riêng tư hoặc dataset/model chưa được phép lên repo public.
+- Báo tiến độ và vướng mắc trong Issue; hoàn thành được ghi nhận sau review và merge.
+
+## 5. PR của leader
+
+GitHub không cho tác giả tự approve PR của mình. Khi leader là code owner duy nhất, nhờ thành viên mở PR từ commit/nhánh chứa tài liệu leader đã chuẩn bị, rồi leader review. Không tắt bảo vệ để tự hợp nhất. Bản mới của khung/hướng dẫn đang ở 5 nhánh chức năng và đi vào `develop` bằng PR, trước khi được đưa lên `main` cùng bản ổn định.

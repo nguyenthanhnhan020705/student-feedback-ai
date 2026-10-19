@@ -27,7 +27,7 @@ Leader có thể tự quyết định yêu cầu trong phạm vi BRD. Quyết đ
 | `docs/specs/data-contract.md` | Giao diện dữ liệu, nhãn, split và pipeline/metadata |
 | `docs/decisions.md` | Quyết định, người chốt, ngày chốt và đầu mối xử lý việc chưa chặn triển khai |
 
-Đây là các đầu ra cần hoàn thiện, không phải file đã tồn tại. Checklist không thay thế đặc tả và chưa tự chốt giá trị kỹ thuật thay leader.
+Các file đầu ra đã có mẫu trong [bộ đặc tả](specs/README.md), chờ leader điền và phê duyệt. Checklist không thay thế đặc tả và chưa tự chốt giá trị kỹ thuật thay leader.
 
 ## 3. Điều kiện hoàn thành
 

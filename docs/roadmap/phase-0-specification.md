@@ -1,6 +1,6 @@
 # Phase 0 — Chốt phạm vi và đặc tả
 
-**Trạng thái:** Chưa bắt đầu.  
+**Trạng thái:** Đã có mẫu tài liệu; chờ leader chốt nội dung.  
 **Thời gian:** Ngày 1.  
 **Phụ trách:** TV1 — leader tự chốt và sửa đặc tả; TV2–TV6 cung cấp thông tin/góp ý theo chức năng.  
 **Nguồn:** [BRD](../../README.md), mục 4–9 và 12.  
@@ -11,6 +11,8 @@
 Chuyển BRD thành đặc tả đủ rõ để triển khai từng thành phần. Đầu vào là BRD hiện tại; thông tin chưa xác nhận phải được ghi thành quyết định còn mở, kèm người xử lý và mốc cần chốt.
 
 Leader dùng [checklist chốt Phase 0](../phase-0-leader-checklist.md). Việc tạo nhánh/phân công không đồng nghĩa Phase 0 đã hoàn thành; chỉ đổi trạng thái sau khi có bộ đặc tả cụ thể được leader xác nhận.
+
+Các mẫu đã nằm trong [bộ đặc tả](../specs/README.md). Đầu ra M0 phải giúp cả 5 người bắt đầu phần độc lập cùng lúc, theo [phân công song song](../team-assignments.md).
 
 ## Công việc
 

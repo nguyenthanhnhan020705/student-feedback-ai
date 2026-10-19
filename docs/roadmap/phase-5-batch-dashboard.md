@@ -6,6 +6,8 @@
 **Phụ thuộc:** Phase 4 đạt; bảo đảm thời gian bàn giao Phase 6.  
 **Quay lại:** [Lộ trình](README.md).
 
+File P1 đã được dành chỗ trong [manifest](../scaffold-manifest.json) nhưng vẫn trống. Backend sở hữu xử lý CSV/export và dữ liệu thống kê; Frontend sở hữu UI/biểu đồ. Chỉ triển khai sau khi leader cho phép, không coi sự tồn tại file là đã cam kết P1.
+
 ## Mục tiêu
 
 Phân tích CSV có cột `text`, xuất kết quả và xem phân bố nhãn của tập vừa phân tích. Đáp ứng BR-04, FR-03/04, AC-05/06. Nếu bỏ qua phase này, ghi rõ P1 chưa triển khai trong báo cáo.
@@ -26,7 +28,7 @@ Phân tích CSV có cột `text`, xuất kết quả và xem phân bố nhãn c�
 | `backend/batch_service.py`, `backend/routes/batch.py` | Kiểm tra CSV, suy luận và xuất kết quả |
 | `frontend/batch.js`, `frontend/dashboard.js` | Tải file, bảng kết quả và thống kê |
 | `tests/test_batch.py`, `tests/test_dashboard_data.py` | Lỗi CSV, đối chiếu số dòng và tổng số nhãn |
-| `reports/evidence/phase-5/` | File mẫu không chứa dữ liệu riêng tư, file xuất và ảnh |
+| `reports/evidence/backend/`, `reports/evidence/frontend/` | Minh chứng P1 theo đúng chủ sở hữu |
 
 ## Điều kiện hoàn thành và kiểm chứng
 
