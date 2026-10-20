@@ -1,0 +1,104 @@
+{
+  "source_dir": "data\\raw",
+  "splits": {
+    "train": {
+      "rows": 11426,
+      "label_counts": {
+        "positive": 5643,
+        "negative": 5325,
+        "neutral": 458
+      },
+      "unique_texts": 11425,
+      "duplicate_rows": 2,
+      "file_bytes": 1010046,
+      "sha256": "9e839fb8f13a5251f8a465243d52e46f25794fc8ace4f265de41c1609fe564f0"
+    },
+    "valid": {
+      "rows": 1583,
+      "label_counts": {
+        "positive": 805,
+        "negative": 705,
+        "neutral": 73
+      },
+      "unique_texts": 1583,
+      "duplicate_rows": 0,
+      "file_bytes": 134178,
+      "sha256": "b1d5833efd5f28ad62a24541183d5c7292e72a5b6f786a5d6544c1634a980ea8"
+    },
+    "test": {
+      "rows": 3166,
+      "label_counts": {
+        "positive": 1590,
+        "negative": 1409,
+        "neutral": 167
+      },
+      "unique_texts": 3166,
+      "duplicate_rows": 0,
+      "file_bytes": 278746,
+      "sha256": "e528e33091e5ef0f933d6064ad432dac98ebac13576595961d50dcaac46c59cf"
+    }
+  },
+  "duplicates": {
+    "within_split": {
+      "train": {
+        "thầy dạy hay , tuy nhiên còn nhiều chỗ chưa thật sự giải đáp hoàn toàn cho sinh viên vì chưa đủ thời gian .": 2
+      },
+      "valid": {},
+      "test": {}
+    },
+    "across_splits": [
+      {
+        "split_a": "train",
+        "split_b": "valid",
+        "overlap_unique_texts": 0,
+        "examples": []
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "overlap_unique_texts": 0,
+        "examples": []
+      },
+      {
+        "split_a": "valid",
+        "split_b": "test",
+        "overlap_unique_texts": 0,
+        "examples": []
+      }
+    ]
+  },
+  "data_quality": {
+    "train": {
+      "source_rows": 11426,
+      "empty_text_rows": 0,
+      "empty_label_rows": 0,
+      "unknown_label_rows": 0,
+      "invalid_rows": 0,
+      "invalid_csv_lines": []
+    },
+    "valid": {
+      "source_rows": 1584,
+      "empty_text_rows": 1,
+      "empty_label_rows": 1,
+      "unknown_label_rows": 0,
+      "invalid_rows": 1,
+      "invalid_csv_lines": [
+        1585
+      ]
+    },
+    "test": {
+      "source_rows": 3166,
+      "empty_text_rows": 0,
+      "empty_label_rows": 0,
+      "unknown_label_rows": 0,
+      "invalid_rows": 0,
+      "invalid_csv_lines": []
+    }
+  },
+  "policy": {
+    "duplicates": "Report only; do not automatically remove",
+    "split_membership": "Preserve original train/valid/test",
+    "text_normalization": "Unicode NFC and whitespace only",
+    "empty_records": "Report only; do not modify source CSV"
+  }
+}
