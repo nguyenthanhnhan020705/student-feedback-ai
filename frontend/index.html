@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Feedback AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <strong>Student Feedback AI</strong>
+  <span><span id="health" role="status">Đang kiểm tra máy chủ…</span>
+  <button id="recheck" type="button" class="link">Kiểm tra lại kết nối</button></span>
+</header>
+<main>
+  <h1>Phân tích phản hồi sinh viên</h1>
+  <p class="sub">Nhập một câu phản hồi tiếng Việt để xem cảm xúc và chủ đề.</p>
+  <div id="mockBanner" class="banner" hidden>Đang dùng dữ liệu MOCK để phát triển giao diện. Đây không phải kết quả của mô hình thật.</div>
+  <label for="text">Nội dung phản hồi</label>
+  <textarea id="text" rows="4" placeholder="Ví dụ: Giảng viên giảng bài rất dễ hiểu."></textarea>
+  <div class="row"><span id="hint" class="hint"></span><span id="count" class="hint">0 / 5000</span></div>
+  <button id="go" type="button" disabled>Phân tích</button>
+  <section id="out" class="out" aria-live="polite"></section>
+</main>
+<script src="api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
