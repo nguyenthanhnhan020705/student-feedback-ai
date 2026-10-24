@@ -1,10 +1,12 @@
 # Phase 1 — Nền tảng dự án
 
-**Trạng thái:** Chưa bắt đầu.  
+**Trạng thái:** Đã có khung file trống; chưa triển khai hoặc nghiệm thu nền tảng.  
 **Thời gian:** Ngày 2–3.  
 **Phụ trách:** TV5, TV6; TV1 rà soát tích hợp.  
 **Phụ thuộc:** Phase 0 đã thống nhất đặc tả.  
 **Quay lại:** [Lộ trình](README.md).
+
+Theo [quyền sở hữu file](../function-ownership.md): leader cập nhật cấu hình/dependencies gốc, TV5 chỉ triển khai Backend, TV6 chỉ triển khai Frontend. File code/tests/requirements hiện trống. Cả Data, Sentiment và Topic cũng có thể chuẩn bị code/tests theo M0 trong thời gian này; chưa cần chờ toàn bộ nền tảng API/UI hoàn thành.
 
 ## Mục tiêu
 
@@ -13,7 +15,7 @@ Có môi trường phát triển tái lập được, ứng dụng khởi độn
 ## Công việc
 
 - [ ] P1.1: Xác minh phiên bản Python và bộ dependencies tương thích; lưu cấu hình môi trường và hướng dẫn cài đặt thực tế.
-- [ ] P1.2: Tạo cấu trúc `backend/`, `frontend/`, `ml/`, `tests/`, `notebooks/`, `reports/`; cấu hình `.gitignore` cho dữ liệu, model, môi trường ảo và bí mật.
+- [x] P1.2: Tạo cấu trúc và file khởi đầu trống theo [manifest](../scaffold-manifest.json); `.gitignore` giữ dataset/model local và cho phép `.gitkeep`. Đây chỉ là bước chuẩn bị, không phải nghiệm thu Phase 1.
 - [ ] P1.3: Viết kiểm thử health khi chưa có artifact; triển khai khung FastAPI và trạng thái sẵn sàng theo hợp đồng Phase 0.
 - [ ] P1.4: Tạo giao diện nhập phản hồi và vùng thông báo trạng thái; kết nối tới health, biểu thị đúng khi chưa có mô hình.
 - [ ] P1.5: Cấu hình pytest, đường dẫn artifact và phục vụ frontend theo quyết định Phase 0; bổ sung hướng dẫn khởi động.

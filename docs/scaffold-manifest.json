@@ -1,0 +1,482 @@
+{
+    "version":  1,
+    "created":  "2026-10-19",
+    "status":  "empty-scaffold",
+    "description":  "Ownership inventory of empty starter files, not implementation or test results.",
+    "files":  [
+                  {
+                      "path":  "ml/__init__.py",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements.txt",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements-test.txt",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements-browser.txt",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "pytest.ini",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  ".env.example",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/integration/test_prediction_flow.py",
+                      "owner":  "Leader",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/data.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/preprocessing.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/labels.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_data.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_preprocessing.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_labels.py",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements/data.txt",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/data/dataset.md",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/data/preprocessing.md",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/data/report.md",
+                      "owner":  "Data",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/train_sentiment.py",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/evaluate_sentiment.py",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/predict_sentiment.py",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_sentiment_training.py",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_sentiment_artifacts.py",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements/sentiment.txt",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/sentiment/experiment.md",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/sentiment/report.md",
+                      "owner":  "Sentiment",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/train_topic.py",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/evaluate_topic.py",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "ml/predict_topic.py",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_topic_training.py",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_topic_artifacts.py",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "requirements/topic.txt",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/topic/experiment.md",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/topic/report.md",
+                      "owner":  "Topic",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/__init__.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/main.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/config.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/schemas.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/model_service.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/batch_service.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "backend/dashboard_service.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "backend/routes/__init__.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/routes/health.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/routes/predict.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "backend/routes/batch.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "tests/test_health.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_model_service.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_predict.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "tests/test_batch.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "tests/test_dashboard_data.py",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "requirements/backend.txt",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/backend/api-notes.md",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/backend/report.md",
+                      "owner":  "Backend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "frontend/index.html",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "frontend/styles.css",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "frontend/app.js",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "frontend/api.js",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "frontend/batch.js",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "frontend/dashboard.js",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P1"
+                  },
+                  {
+                      "path":  "tests/frontend/test_ui.py",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/frontend/ui-notes.md",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "docs/frontend/report.md",
+                      "owner":  "Frontend",
+                      "kind":  "empty",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "notebooks/01_eda.ipynb",
+                      "owner":  "Data",
+                      "kind":  "empty-notebook",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "notebooks/02_sentiment.ipynb",
+                      "owner":  "Sentiment",
+                      "kind":  "empty-notebook",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "notebooks/03_topic.ipynb",
+                      "owner":  "Topic",
+                      "kind":  "empty-notebook",
+                      "scope":  "P0"
+                  },
+                  {
+                      "path":  "data/raw/.gitkeep",
+                      "owner":  "Data",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "data/processed/.gitkeep",
+                      "owner":  "Data",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/data/.gitkeep",
+                      "owner":  "Data",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/data/.gitkeep",
+                      "owner":  "Data",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/metrics/sentiment/.gitkeep",
+                      "owner":  "Sentiment",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/figures/sentiment/.gitkeep",
+                      "owner":  "Sentiment",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/sentiment/.gitkeep",
+                      "owner":  "Sentiment",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/metrics/topic/.gitkeep",
+                      "owner":  "Topic",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/figures/topic/.gitkeep",
+                      "owner":  "Topic",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/topic/.gitkeep",
+                      "owner":  "Topic",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/backend/.gitkeep",
+                      "owner":  "Backend",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/frontend/.gitkeep",
+                      "owner":  "Frontend",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "models/.gitkeep",
+                      "owner":  "Leader",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/integration/.gitkeep",
+                      "owner":  "Leader",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  },
+                  {
+                      "path":  "reports/evidence/phase-6/.gitkeep",
+                      "owner":  "Leader",
+                      "kind":  "directory-marker",
+                      "scope":  "support"
+                  }
+              ]
+}
