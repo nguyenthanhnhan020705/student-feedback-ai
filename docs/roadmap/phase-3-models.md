@@ -1,9 +1,9 @@
 # Phase 3 — Huấn luyện và đánh giá mô hình
 
 **Trạng thái:** Chưa bắt đầu.  
-**Thời gian:** Ngày 6–10.  
-**Phụ trách:** TV3 — sentiment; TV4 — topic; TV2 hỗ trợ dữ liệu.  
-**Phụ thuộc:** Phase 2 đạt, bảng mã và split đã xác minh.  
+**Thời gian:** Chuẩn bị code/tests cùng Phase 1–2; huấn luyện thực tế dự kiến ngày 6–10.  
+**Phụ trách:** TV3 sở hữu Sentiment; TV4 sở hữu Topic; mỗi người sửa code/tests/metadata của nhiệm vụ mình, dùng Data đã được TV2 bàn giao.  
+**Phụ thuộc:** M0 để chuẩn bị code/tests; M1 của Data để train thật. Sentiment/Topic độc lập, không chờ nhau hoặc toàn bộ EDA/báo cáo Data.  
 **Quay lại:** [Lộ trình](README.md).
 
 ## Mục tiêu
@@ -12,6 +12,7 @@ So sánh Multinomial Naive Bayes, Logistic Regression và Linear SVM cho từng 
 
 ## Công việc
 
+- [ ] Chuẩn bị song song: viết pipeline/cấu hình/đánh giá/lưu-tải và tests bằng fixture theo M0; không ghi kết quả fixture thành thí nghiệm thật. Xem [Sentiment](../sentiment/README.md), [Topic](../topic/README.md).
 - [ ] P3.1: Định nghĩa cấu hình thí nghiệm dùng chung, seed nếu có và cách lưu kết quả; viết kiểm thử ranh giới train/validation/test.
 - [ ] P3.2: Tạo pipeline TF-IDF + classifier cho ba thuật toán; mỗi nhiệm vụ có pipeline độc lập, dùng lại tiền xử lý Phase 2.
 - [ ] P3.3: Huấn luyện sentiment và topic trên train; ghi chỉ số validation cho từng thuật toán và cấu hình.
@@ -24,17 +25,20 @@ So sánh Multinomial Naive Bayes, Logistic Regression và Linear SVM cho từng 
 
 | File | Trách nhiệm |
 | --- | --- |
-| `ml/training.py`, `ml/evaluation.py` | Huấn luyện, so sánh và đánh giá |
+| `ml/train_sentiment.py`, `ml/evaluate_sentiment.py`, `ml/predict_sentiment.py` | TV3: huấn luyện, đánh giá, suy luận sentiment |
+| `ml/train_topic.py`, `ml/evaluate_topic.py`, `ml/predict_topic.py` | TV4: huấn luyện, đánh giá, suy luận topic |
 | `notebooks/02_sentiment.ipynb`, `notebooks/03_topic.ipynb` | Tái hiện thí nghiệm cho từng nhiệm vụ |
 | `models/sentiment_pipeline.joblib`, `models/topic_pipeline.joblib` | Hai pipeline đã chọn; chỉ phân phối theo quyền phù hợp |
-| `models/metadata.json` | Phiên bản môi trường, dữ liệu, nhãn và cấu hình |
-| `reports/metrics/`, `reports/figures/` | Bảng chỉ số và biểu đồ được sinh từ mã |
-| `tests/test_training.py`, `tests/test_model_artifacts.py` | Ranh giới fit và tính nhất quán khi lưu/tải |
+| `models/sentiment_metadata.json`, `models/topic_metadata.json` | Metadata riêng từng nhiệm vụ, do chủ mô hình tương ứng quản lý |
+| `reports/metrics/sentiment/`, `reports/figures/sentiment/` | TV3: chỉ số/biểu đồ sentiment thật |
+| `reports/metrics/topic/`, `reports/figures/topic/` | TV4: chỉ số/biểu đồ topic thật |
+| `tests/test_sentiment_training.py`, `tests/test_sentiment_artifacts.py` | TV3: ranh giới fit và lưu/tải sentiment |
+| `tests/test_topic_training.py`, `tests/test_topic_artifacts.py` | TV4: ranh giới fit và lưu/tải topic |
 
 ## Điều kiện hoàn thành và kiểm chứng
 
 - Có hai bảng so sánh, mỗi bảng đủ ba thuật toán; metadata nối được kết quả với dữ liệu/cấu hình cụ thể.
-- Lệnh dự kiến `python -m pytest tests/test_training.py tests/test_model_artifacts.py -q` chạy đạt. Kiểm thử nhanh có thể dùng dữ liệu nhỏ, nhưng không thay thế thí nghiệm trên dataset thực.
+- Mỗi người chạy tests nhiệm vụ mình; lệnh dự kiến khi đã có tests là `python -m pytest tests/test_sentiment_training.py tests/test_sentiment_artifacts.py -q` hoặc `python -m pytest tests/test_topic_training.py tests/test_topic_artifacts.py -q`. Kiểm thử nhanh bằng dữ liệu nhỏ không thay thế thí nghiệm trên dataset thực.
 - Hai pipeline tải được trên môi trường phục vụ API và giữ nguyên nhãn dự đoán cho tập đối chiếu cố định.
 - Có chỉ số thực tế và phân tích lỗi; không đặt thêm ngưỡng Accuracy/F1 nghiệm thu khi BRD chưa quy định.
 
