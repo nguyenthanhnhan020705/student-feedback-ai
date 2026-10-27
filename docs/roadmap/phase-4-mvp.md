@@ -3,8 +3,10 @@
 **Trạng thái:** Chưa bắt đầu.  
 **Thời gian:** Ngày 11–14; có thể chuẩn bị theo hợp đồng trong Phase 2–3.  
 **Phụ trách:** TV5 — API; TV6 — UI; TV1 — tích hợp.  
-**Phụ thuộc:** Khung Phase 1 và hai pipeline đã kiểm chứng ở Phase 3.  
+**Phụ thuộc:** M0 để viết API/UI song song ngay từ Phase 1; chỉ tích hợp/nghiệm thu dự đoán thật mới cần hai pipeline M2-S/M2-T.  
 **Quay lại:** [Lộ trình](README.md).
+
+Xem hướng dẫn riêng [Backend](../backend/README.md), [Frontend](../frontend/README.md). Backend làm health/validation/lỗi và unit tests trước khi có model; Frontend dựng UI/trạng thái theo hợp đồng trước khi API hoàn tất. Test double/fixture chỉ dùng cho tests/phát triển, không thay model thật trên bản nghiệm thu.
 
 ## Mục tiêu
 
@@ -29,7 +31,7 @@ Người dùng nhập phản hồi mới trên website và nhận một nhãn c�
 | `frontend/index.html`, `frontend/styles.css`, `frontend/app.js` | Luồng phân tích một câu hoàn chỉnh |
 | `tests/test_model_service.py`, `tests/test_predict.py` | Lỗi artifact, đầu vào và suy luận |
 | `tests/integration/test_prediction_flow.py` | API tích hợp với artifact thật |
-| `reports/evidence/phase-4/` | Log kiểm thử và ảnh demo thực tế |
+| `reports/evidence/backend/`, `reports/evidence/frontend/`, `reports/evidence/integration/` | Minh chứng riêng của TV5, TV6 và kiểm tra tích hợp do leader sở hữu |
 
 ## Điều kiện hoàn thành và kiểm chứng
 

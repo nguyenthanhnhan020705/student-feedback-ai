@@ -6,6 +6,8 @@
 **Phụ thuộc:** Phase 4 đạt; bổ sung Phase 5 nếu triển khai.  
 **Quay lại:** [Lộ trình](README.md).
 
+Mỗi người viết phần báo cáo riêng ở `docs/<vai-tro>/report.md`, leader là người duy nhất ghép báo cáo/slide tổng hợp. Đã có [bảng nghiệm thu](../acceptance.md); hiện chưa có tiêu chí sản phẩm nào được nghiệm thu từ khung trống.
+
 ## Mục tiêu
 
 Bàn giao sản phẩm chạy được, có thể tái lập và có báo cáo phản ánh kết quả thật. Kiểm tra lại AC-01–AC-08 theo phạm vi đã triển khai, hoàn tất NFR-02/04/05 và BO-04.
