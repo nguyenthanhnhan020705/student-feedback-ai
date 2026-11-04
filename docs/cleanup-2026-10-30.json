@@ -1,0 +1,30 @@
+{
+  "archived": {
+    "README.md": "docs/archive/README-brd-phase0.md",
+    "docs/scaffold-manifest.json": "docs/archive/scaffold-manifest-phase0.json",
+    "docs/superpowers/plans/2026-10-29-p0-completion.md": "docs/archive/2026-10-29-p0-completion.md",
+    "docs/superpowers/plans/p0-progress.md": "docs/archive/p0-progress.md",
+    "docs/roadmap/phase-1-foundation.md": "docs/archive/roadmap/phase-1-foundation.md",
+    "docs/roadmap/phase-2-data.md": "docs/archive/roadmap/phase-2-data.md",
+    "docs/roadmap/phase-3-models.md": "docs/archive/roadmap/phase-3-models.md",
+    "docs/roadmap/phase-4-mvp.md": "docs/archive/roadmap/phase-4-mvp.md",
+    "docs/roadmap/phase-5-batch-dashboard.md": "docs/archive/roadmap/phase-5-batch-dashboard.md",
+    "docs/roadmap/phase-6-delivery.md": "docs/archive/roadmap/phase-6-delivery.md"
+  },
+  "removed_empty_p1": [
+    "backend/batch_service.py",
+    "backend/dashboard_service.py",
+    "backend/routes/batch.py",
+    "tests/test_batch.py",
+    "tests/test_dashboard_data.py",
+    "frontend/batch.js",
+    "frontend/dashboard.js"
+  ],
+  "retained": [
+    "P0 code/tests",
+    "data/model/metrics/evidence",
+    "Phase 0 contracts",
+    "role implementation history",
+    "current six-phase plan"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "archive": "D:\\N.ThanhNhan\\Project_AI\\student-feedback-ai\\.local-tools\\integration-p0\\.local-tools\\phase5-delivery\\student-feedback-ai-local.zip",
+  "archive_sha256": "c7905ea0da9f0ed77663792f92412f8c6c40b38a8f3b795544289f3a49a313fc",
+  "archive_bytes": 2360983,
+  "verified_files": 252,
+  "extracted_application": {
+    "name": "extracted-package",
+    "startup_seconds": 4.336752700000034,
+    "health": {
+      "status": "ok",
+      "ready": true,
+      "models": {
+        "sentiment": "ready",
+        "topic": "ready"
+      },
+      "contract_version": "1.0"
+    },
+    "cwd_outside_project": true,
+    "network_guard_control_blocked": true,
+    "application_external_attempts": 0,
+    "process_stopped": true
+  },
+  "assets_bytes": {
+    "/": 1276,
+    "/app.js": 3462,
+    "/api.js": 3017,
+    "/styles.css": 1770
+  },
+  "prediction": {
+    "sentiment": "positive",
+    "topic": "lecturer",
+    "contract_version": "1.0"
+  },
+  "environment": "Existing locked Python venv; not a new install on a different computer"
+}

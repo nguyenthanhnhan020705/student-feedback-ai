@@ -1,0 +1,124 @@
+{
+  "contract_version": "1.0",
+  "task": "topic",
+  "algorithm": "linear_svm",
+  "artifact_filename": "topic_pipeline.joblib",
+  "artifact_sha256": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+  "labels": [
+    "lecturer",
+    "curriculum",
+    "facility",
+    "other"
+  ],
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+  "preprocessing": {
+    "name": "ml.preprocessing.normalize_text",
+    "version": "1.0"
+  },
+  "parameters": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "strip_accents": null,
+      "lowercase": false,
+      "preprocessor": "ml.preprocessing.normalize_text",
+      "token_pattern": "(?u)\\b\\w+\\b"
+    },
+    "classifier": {
+      "name": "LinearSVC",
+      "C": 1.0,
+      "dual": "auto",
+      "max_iter": 5000,
+      "class_weight": null,
+      "random_state": 42
+    }
+  },
+  "selection": {
+    "algorithm": "linear_svm",
+    "metric": "macro_f1",
+    "validation_metrics": {
+      "accuracy": 0.8799747315224258,
+      "macro_precision": 0.810246847136926,
+      "macro_recall": 0.7372909609315511,
+      "macro_f1": 0.7541730105033849,
+      "per_class": [
+        {
+          "label": "lecturer",
+          "precision": 0.9205409974640744,
+          "recall": 0.946133796698523,
+          "f1": 0.9331619537275064,
+          "support": 1151
+        },
+        {
+          "label": "curriculum",
+          "precision": 0.7361111111111112,
+          "recall": 0.7940074906367042,
+          "f1": 0.7639639639639639,
+          "support": 267
+        },
+        {
+          "label": "facility",
+          "precision": 0.9014084507042254,
+          "recall": 0.9142857142857143,
+          "f1": 0.9078014184397163,
+          "support": 70
+        },
+        {
+          "label": "other",
+          "precision": 0.6829268292682927,
+          "recall": 0.29473684210526313,
+          "f1": 0.4117647058823529,
+          "support": 95
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1089,
+          52,
+          3,
+          7
+        ],
+        [
+          47,
+          212,
+          2,
+          6
+        ],
+        [
+          3,
+          3,
+          64,
+          0
+        ],
+        [
+          44,
+          21,
+          2,
+          28
+        ]
+      ],
+      "label_order": [
+        "lecturer",
+        "curriculum",
+        "facility",
+        "other"
+      ],
+      "n_rows": 1583
+    }
+  },
+  "trained_at": "2026-10-29T08:21:15+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "browser": "msedge",
+  "browser_version": "156.0.4314.50",
+  "input": "Thầy giảng bài rõ ràng và phòng học thì nóng.",
+  "response": {
+    "contract_version": "3.0",
+    "sentiment": "mixed",
+    "topic": "education_quality"
+  },
+  "fixture": false
+}

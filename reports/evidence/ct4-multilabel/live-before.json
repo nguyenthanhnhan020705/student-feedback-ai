@@ -1,0 +1,17 @@
+[
+  {
+    "port": 8000,
+    "reachable": false,
+    "error_type": "URLError"
+  },
+  {
+    "port": 8001,
+    "reachable": false,
+    "error_type": "URLError"
+  },
+  {
+    "port": 8002,
+    "reachable": false,
+    "error_type": "URLError"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "browser": "msedge",
+  "browser_version": "156.0.4314.50",
+  "input": "Tốt.",
+  "response": {
+    "contract_version": "3.0",
+    "sentiment": "positive",
+    "topic": "other_domain"
+  },
+  "fixture": false
+}

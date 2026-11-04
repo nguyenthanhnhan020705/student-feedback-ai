@@ -1,0 +1,22 @@
+{
+  "status": "engineering_complete_independent_evaluation_pending",
+  "independent_final_set": "not_available",
+  "human_reviewed_answerability": "not_available",
+  "semantic_false_reject": null,
+  "semantic_unsafe_accept": null,
+  "missing": [
+    "independent naturally sampled feedback with permission",
+    "two independent reviewers and resolved disagreements",
+    "task answerability labels and reviewer/source provenance",
+    "development/final source-group separation and duplicate audit",
+    "user coverage/risk decision before deployment proposal"
+  ],
+  "validation": "repeatedly_exposed_development_only",
+  "known": "assistant_proposed_not_human_reviewed",
+  "stress": "synthetic_inherited_labels_not_independent",
+  "recommended_policy": null,
+  "decision_status": "needs_coverage_risk_decision",
+  "promotion": "not_deployed",
+  "deployment": "offline_research_only",
+  "source_license": "unknown"
+}

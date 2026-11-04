@@ -1,0 +1,106 @@
+{
+  "contract_version": "1.0",
+  "task": "sentiment",
+  "algorithm": "linear_svm",
+  "artifact_filename": "sentiment_pipeline.joblib",
+  "artifact_sha256": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+  "preprocessing": {
+    "name": "ml.preprocessing.normalize_text",
+    "version": "1.0"
+  },
+  "parameters": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "strip_accents": null,
+      "lowercase": false,
+      "token_pattern": "(?u)\\b\\w+\\b",
+      "preprocessor": "ml.preprocessing.normalize_text"
+    },
+    "classifier": {
+      "name": "linear_svm",
+      "C": 1.0,
+      "dual": "auto",
+      "max_iter": 5000,
+      "class_weight": null,
+      "random_state": 42
+    }
+  },
+  "selection": {
+    "algorithm": "linear_svm",
+    "metric": "macro_f1",
+    "validation_metrics": {
+      "accuracy": 0.9147188881869868,
+      "macro_precision": 0.8499784538140703,
+      "macro_recall": 0.7216282991174326,
+      "macro_f1": 0.752966152304506,
+      "per_class": [
+        {
+          "label": "negative",
+          "precision": 0.9095890410958904,
+          "recall": 0.9418439716312057,
+          "f1": 0.9254355400696864,
+          "support": 705
+        },
+        {
+          "label": "neutral",
+          "precision": 0.7142857142857143,
+          "recall": 0.273972602739726,
+          "f1": 0.39603960396039606,
+          "support": 73
+        },
+        {
+          "label": "positive",
+          "precision": 0.926060606060606,
+          "recall": 0.9490683229813665,
+          "f1": 0.9374233128834356,
+          "support": 805
+        }
+      ],
+      "confusion_matrix": [
+        [
+          664,
+          4,
+          37
+        ],
+        [
+          29,
+          20,
+          24
+        ],
+        [
+          37,
+          4,
+          764
+        ]
+      ],
+      "label_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "n_rows": 1583
+    }
+  },
+  "trained_at": "2026-10-28T02:34:37.529455+00:00"
+}

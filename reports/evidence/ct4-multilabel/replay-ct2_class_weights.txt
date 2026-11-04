@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "candidates": 6,
+  "selection": {
+    "sentiment": "balanced",
+    "topic": "sqrt_balanced"
+  },
+  "promotion": "not_deployed"
+}

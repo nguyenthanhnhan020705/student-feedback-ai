@@ -1,0 +1,78 @@
+{
+  "browser": "147.0.7727.101",
+  "mock": false,
+  "cases": [
+    {
+      "text": "Không có ý kiến.",
+      "api": {
+        "sentiment": "neutral",
+        "topic": "other",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Trung tính",
+        "Khác"
+      ]
+    },
+    {
+      "text": "Bình thường.",
+      "api": {
+        "sentiment": "neutral",
+        "topic": "other",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Trung tính",
+        "Khác"
+      ]
+    },
+    {
+      "text": "Các hoạt động ngoại khóa rất bổ ích.",
+      "api": {
+        "sentiment": "positive",
+        "topic": "other",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Tích cực",
+        "Khác"
+      ]
+    },
+    {
+      "text": "Giảng viên giảng bài không dễ hiểu.",
+      "api": {
+        "sentiment": "positive",
+        "topic": "lecturer",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Tích cực",
+        "Giảng viên"
+      ]
+    },
+    {
+      "text": "abcxyz qwerty 123456",
+      "api": {
+        "sentiment": "negative",
+        "topic": "lecturer",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Tiêu cực",
+        "Giảng viên"
+      ]
+    },
+    {
+      "text": "Tốt.",
+      "api": {
+        "sentiment": "positive",
+        "topic": "lecturer",
+        "contract_version": "1.0"
+      },
+      "displayed": [
+        "Tích cực",
+        "Giảng viên"
+      ]
+    }
+  ]
+}

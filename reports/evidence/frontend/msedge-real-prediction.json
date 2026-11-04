@@ -1,0 +1,11 @@
+{
+  "browser": "msedge",
+  "version": "156.0.4314.50",
+  "input": "Giảng viên giải thích rất dễ hiểu.",
+  "response": {
+    "sentiment": "positive",
+    "topic": "lecturer",
+    "contract_version": "1.0"
+  },
+  "fixture": false
+}

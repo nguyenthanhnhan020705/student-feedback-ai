@@ -1,0 +1,23 @@
+........................................................................ [ 11%]
+........................................................................ [ 22%]
+........................................................................ [ 34%]
+........................................................................ [ 45%]
+........................................................................ [ 56%]
+........................................................................ [ 68%]
+........................................................................ [ 79%]
+........................................................................ [ 90%]
+..........................................................               [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  D:\N.ThanhNhan\Project_AI\student-feedback-ai\.local-tools\integration-p0\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_ct2_class_weights.py: 2 warnings
+tests/test_sentiment_artifacts.py: 6 warnings
+tests/test_sentiment_training.py: 4 warnings
+tests/test_topic_training.py: 1 warning
+  D:\N.ThanhNhan\Project_AI\student-feedback-ai\.local-tools\integration-p0\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+    opt_res = optimize.minimize(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+634 passed, 14 warnings in 653.69s (0:10:53)

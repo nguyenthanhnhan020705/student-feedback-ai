@@ -1,0 +1,4 @@
+﻿split,source_rows,valid_rows,empty_text_rows,empty_label_rows,unknown_label_rows,negative,negative_pct,neutral,neutral_pct,positive,positive_pct,unique_texts,duplicate_rows,avg_text_length,min_text_length,max_text_length
+train,11426,11426,0,0,0,5325,46.6,458,4.01,5643,49.39,11425,2,59.08,4,660
+valid,1584,1583,1,1,0,705,44.54,73,4.61,805,50.85,1583,0,56.36,4,718
+test,3166,3166,0,0,0,1409,44.5,167,5.27,1590,50.22,3166,0,58.84,4,411

@@ -1,0 +1,20 @@
+{
+  "preexisting_files": 335,
+  "preexisting_match": true,
+  "restored_files": [],
+  "browser_evidence_copied": [
+    "reports/evidence/frontend/chrome-real-prediction.json",
+    "reports/evidence/frontend/chrome-real-prediction.png",
+    "reports/evidence/frontend/msedge-real-prediction.json",
+    "reports/evidence/frontend/msedge-real-prediction.png",
+    "reports/evidence/phase-4/chrome-mobile-mock.png",
+    "reports/evidence/phase-4/msedge-mobile-mock.png"
+  ],
+  "ct1_live_and_snapshot_files_each": 49,
+  "payloads_checked": {
+    "ct2": 19,
+    "ct3": 31,
+    "ct4": 41
+  },
+  "serving_models_unchanged": true
+}

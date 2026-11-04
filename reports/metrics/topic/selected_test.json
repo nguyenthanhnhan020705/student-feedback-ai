@@ -1,0 +1,75 @@
+{
+  "contract_version": "1.0",
+  "task": "topic",
+  "algorithm": "linear_svm",
+  "dataset_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+  "test": {
+    "accuracy": 0.8616550852811118,
+    "macro_precision": 0.7802037491130546,
+    "macro_recall": 0.7138685486987416,
+    "macro_f1": 0.7353817115066393,
+    "per_class": [
+      {
+        "label": "lecturer",
+        "precision": 0.9095925297113752,
+        "recall": 0.9358078602620087,
+        "f1": 0.9225139905294877,
+        "support": 2290
+      },
+      {
+        "label": "curriculum",
+        "precision": 0.6911262798634812,
+        "recall": 0.708041958041958,
+        "f1": 0.6994818652849741,
+        "support": 572
+      },
+      {
+        "label": "facility",
+        "precision": 0.9225352112676056,
+        "recall": 0.903448275862069,
+        "f1": 0.9128919860627178,
+        "support": 145
+      },
+      {
+        "label": "other",
+        "precision": 0.5975609756097561,
+        "recall": 0.3081761006289308,
+        "f1": 0.4066390041493776,
+        "support": 159
+      }
+    ],
+    "confusion_matrix": [
+      [
+        2143,
+        123,
+        5,
+        19
+      ],
+      [
+        151,
+        405,
+        3,
+        13
+      ],
+      [
+        3,
+        10,
+        131,
+        1
+      ],
+      [
+        59,
+        48,
+        3,
+        49
+      ]
+    ],
+    "label_order": [
+      "lecturer",
+      "curriculum",
+      "facility",
+      "other"
+    ],
+    "n_rows": 3166
+  }
+}

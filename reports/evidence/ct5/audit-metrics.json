@@ -1,0 +1,4448 @@
+{
+  "original": {
+    "always_answer": {
+      "input_count": 791,
+      "accepted_pair_count": 791,
+      "rejected_pair_count": 0,
+      "pair_coverage": 1.0,
+      "abstention_rate": 0.0,
+      "joint": {
+        "correct_answered": 653,
+        "wrong_answered": 138,
+        "rejected_correct": 0,
+        "rejected_wrong": 0,
+        "n_labeled": 791,
+        "accepted_labeled": 791,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8255372945638433,
+        "selective_risk": 0.17446270543615677,
+        "correct_and_answered_rate": 0.8255372945638433,
+        "answered_wrong_rate": 0.17446270543615677,
+        "rejected_correct_rate": 0.0,
+        "rejected_wrong_rate": 0.0
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 791,
+          "coverage": 1.0,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          }
+        },
+        "topic": {
+          "accepted_count": 791,
+          "coverage": 1.0,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {},
+      "groups": {}
+    },
+    "zero_features": {
+      "input_count": 791,
+      "accepted_pair_count": 789,
+      "rejected_pair_count": 2,
+      "pair_coverage": 0.9974715549936789,
+      "abstention_rate": 0.0025284450063211127,
+      "joint": {
+        "correct_answered": 653,
+        "wrong_answered": 136,
+        "rejected_correct": 0,
+        "rejected_wrong": 2,
+        "n_labeled": 791,
+        "accepted_labeled": 789,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8276299112801014,
+        "selective_risk": 0.17237008871989862,
+        "correct_and_answered_rate": 0.8255372945638433,
+        "answered_wrong_rate": 0.17193426042983564,
+        "rejected_correct_rate": 0.0,
+        "rejected_wrong_rate": 0.0025284450063211127
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 789,
+          "coverage": 0.9974715549936789,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.908745247148289,
+            "macro_precision": 0.8376941113936996,
+            "macro_recall": 0.7195773638968482,
+            "macro_f1": 0.7490180583400923,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9052924791086351,
+                "recall": 0.9312320916905444,
+                "f1": 0.9180790960451978,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.275,
+                "f1": 0.39285714285714285,
+                "support": 40
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9525,
+                "f1": 0.9361179361179361,
+                "support": 400
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                17,
+                11,
+                12
+              ],
+              [
+                17,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 789
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.908745247148289,
+            "macro_precision": 0.8376941113936996,
+            "macro_recall": 0.7195773638968482,
+            "macro_f1": 0.7490180583400923,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9052924791086351,
+                "recall": 0.9312320916905444,
+                "f1": 0.9180790960451978,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.275,
+                "f1": 0.39285714285714285,
+                "support": 40
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9525,
+                "f1": 0.9361179361179361,
+                "support": 400
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                17,
+                11,
+                12
+              ],
+              [
+                17,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 789
+          }
+        },
+        "topic": {
+          "accepted_count": 789,
+          "coverage": 0.9974715549936789,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.8897338403041825,
+            "macro_precision": 0.8485973765190633,
+            "macro_recall": 0.7682122065963118,
+            "macro_f1": 0.7862993935837246,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9328743545611016,
+                "recall": 0.9492119089316988,
+                "f1": 0.9409722222222222,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.3673469387755102,
+                "f1": 0.5070422535211268,
+                "support": 49
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                16,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 789
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.8897338403041825,
+            "macro_precision": 0.8485973765190633,
+            "macro_recall": 0.7682122065963118,
+            "macro_f1": 0.7862993935837246,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9328743545611016,
+                "recall": 0.9492119089316988,
+                "f1": 0.9409722222222222,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.3673469387755102,
+                "f1": 0.5070422535211268,
+                "support": 49
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                16,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 789
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "zero_features_sentiment": 2,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q05": {
+      "input_count": 791,
+      "accepted_pair_count": 704,
+      "rejected_pair_count": 87,
+      "pair_coverage": 0.8900126422250316,
+      "abstention_rate": 0.10998735777496839,
+      "joint": {
+        "correct_answered": 613,
+        "wrong_answered": 91,
+        "rejected_correct": 40,
+        "rejected_wrong": 47,
+        "n_labeled": 791,
+        "accepted_labeled": 704,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8707386363636364,
+        "selective_risk": 0.12926136363636365,
+        "correct_and_answered_rate": 0.7749683944374209,
+        "answered_wrong_rate": 0.11504424778761062,
+        "rejected_correct_rate": 0.05056890012642225,
+        "rejected_wrong_rate": 0.05941845764854614
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 727,
+          "coverage": 0.9190897597977244,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9353507565337001,
+            "macro_precision": 0.8477468212415856,
+            "macro_recall": 0.7176219805609069,
+            "macro_f1": 0.7473065393076563,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9315476190476191,
+                "recall": 0.9542682926829268,
+                "f1": 0.9427710843373494,
+                "support": 328
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6666666666666666,
+                "recall": 0.23076923076923078,
+                "f1": 0.34285714285714286,
+                "support": 26
+              },
+              {
+                "label": "positive",
+                "precision": 0.9450261780104712,
+                "recall": 0.967828418230563,
+                "f1": 0.9562913907284768,
+                "support": 373
+              }
+            ],
+            "confusion_matrix": [
+              [
+                313,
+                1,
+                14
+              ],
+              [
+                13,
+                6,
+                7
+              ],
+              [
+                10,
+                2,
+                361
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 727
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9360795454545454,
+            "macro_precision": 0.8166360113038694,
+            "macro_recall": 0.6989108445603799,
+            "macro_f1": 0.7223520776874436,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9320987654320988,
+                "recall": 0.9556962025316456,
+                "f1": 0.94375,
+                "support": 316
+              },
+              {
+                "label": "neutral",
+                "precision": 0.5714285714285714,
+                "recall": 0.17391304347826086,
+                "f1": 0.26666666666666666,
+                "support": 23
+              },
+              {
+                "label": "positive",
+                "precision": 0.9463806970509383,
+                "recall": 0.9671232876712329,
+                "f1": 0.9566395663956639,
+                "support": 365
+              }
+            ],
+            "confusion_matrix": [
+              [
+                302,
+                1,
+                13
+              ],
+              [
+                12,
+                4,
+                7
+              ],
+              [
+                10,
+                2,
+                353
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 704
+          }
+        },
+        "topic": {
+          "accepted_count": 760,
+          "coverage": 0.9608091024020228,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9078947368421053,
+            "macro_precision": 0.8749043397263212,
+            "macro_recall": 0.7782201648480719,
+            "macro_f1": 0.8000172103720277,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9421052631578948,
+                "recall": 0.960644007155635,
+                "f1": 0.9512843224092117,
+                "support": 559
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7642857142857142,
+                "recall": 0.8492063492063492,
+                "f1": 0.8045112781954887,
+                "support": 126
+              },
+              {
+                "label": "facility",
+                "precision": 0.9696969696969697,
+                "recall": 0.9696969696969697,
+                "f1": 0.9696969696969697,
+                "support": 33
+              },
+              {
+                "label": "other",
+                "precision": 0.8235294117647058,
+                "recall": 0.3333333333333333,
+                "f1": 0.4745762711864407,
+                "support": 42
+              }
+            ],
+            "confusion_matrix": [
+              [
+                537,
+                20,
+                1,
+                1
+              ],
+              [
+                17,
+                107,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                32,
+                0
+              ],
+              [
+                15,
+                13,
+                0,
+                14
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 760
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9147727272727273,
+            "macro_precision": 0.8694522644671805,
+            "macro_recall": 0.7795411006617904,
+            "macro_f1": 0.8011345427444649,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9489603024574669,
+                "recall": 0.9616858237547893,
+                "f1": 0.9552806850618458,
+                "support": 522
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7734375,
+                "recall": 0.853448275862069,
+                "f1": 0.8114754098360656,
+                "support": 116
+              },
+              {
+                "label": "facility",
+                "precision": 0.9696969696969697,
+                "recall": 0.9696969696969697,
+                "f1": 0.9696969696969697,
+                "support": 33
+              },
+              {
+                "label": "other",
+                "precision": 0.7857142857142857,
+                "recall": 0.3333333333333333,
+                "f1": 0.46808510638297873,
+                "support": 33
+              }
+            ],
+            "confusion_matrix": [
+              [
+                502,
+                18,
+                1,
+                1
+              ],
+              [
+                15,
+                99,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                32,
+                0
+              ],
+              [
+                11,
+                11,
+                0,
+                11
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 704
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 64,
+        "low_margin_topic": 31,
+        "zero_features_sentiment": 2,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q10": {
+      "input_count": 791,
+      "accepted_pair_count": 635,
+      "rejected_pair_count": 156,
+      "pair_coverage": 0.8027812895069533,
+      "abstention_rate": 0.1972187104930468,
+      "joint": {
+        "correct_answered": 571,
+        "wrong_answered": 64,
+        "rejected_correct": 82,
+        "rejected_wrong": 74,
+        "n_labeled": 791,
+        "accepted_labeled": 635,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8992125984251969,
+        "selective_risk": 0.10078740157480315,
+        "correct_and_answered_rate": 0.7218710493046776,
+        "answered_wrong_rate": 0.08091024020227561,
+        "rejected_correct_rate": 0.10366624525916561,
+        "rejected_wrong_rate": 0.09355246523388117
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 687,
+          "coverage": 0.8685208596713021,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9519650655021834,
+            "macro_precision": 0.8737306996800668,
+            "macro_recall": 0.7320487274703377,
+            "macro_f1": 0.765529693065925,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.939873417721519,
+                "recall": 0.9737704918032787,
+                "f1": 0.9565217391304348,
+                "support": 305
+              },
+              {
+                "label": "neutral",
+                "precision": 0.7142857142857143,
+                "recall": 0.25,
+                "f1": 0.37037037037037035,
+                "support": 20
+              },
+              {
+                "label": "positive",
+                "precision": 0.967032967032967,
+                "recall": 0.9723756906077348,
+                "f1": 0.9696969696969697,
+                "support": 362
+              }
+            ],
+            "confusion_matrix": [
+              [
+                297,
+                1,
+                7
+              ],
+              [
+                10,
+                5,
+                5
+              ],
+              [
+                9,
+                1,
+                352
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 687
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.952755905511811,
+            "macro_precision": 0.8357632551230937,
+            "macro_recall": 0.713942136556036,
+            "macro_f1": 0.7414150851985659,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9359430604982206,
+                "recall": 0.9704797047970479,
+                "f1": 0.9528985507246377,
+                "support": 271
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6,
+                "recall": 0.2,
+                "f1": 0.3,
+                "support": 15
+              },
+              {
+                "label": "positive",
+                "precision": 0.9713467048710601,
+                "recall": 0.9713467048710601,
+                "f1": 0.9713467048710601,
+                "support": 349
+              }
+            ],
+            "confusion_matrix": [
+              [
+                263,
+                1,
+                7
+              ],
+              [
+                9,
+                3,
+                3
+              ],
+              [
+                9,
+                1,
+                339
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 635
+          }
+        },
+        "topic": {
+          "accepted_count": 722,
+          "coverage": 0.9127686472819216,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9155124653739612,
+            "macro_precision": 0.9066353013078818,
+            "macro_recall": 0.7796046767989493,
+            "macro_f1": 0.8047745976613851,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9475587703435805,
+                "recall": 0.9632352941176471,
+                "f1": 0.9553327256153145,
+                "support": 544
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7559055118110236,
+                "recall": 0.8727272727272727,
+                "f1": 0.810126582278481,
+                "support": 110
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 0.9666666666666667,
+                "f1": 0.9830508474576272,
+                "support": 30
+              },
+              {
+                "label": "other",
+                "precision": 0.9230769230769231,
+                "recall": 0.3157894736842105,
+                "f1": 0.47058823529411764,
+                "support": 38
+              }
+            ],
+            "confusion_matrix": [
+              [
+                524,
+                19,
+                0,
+                1
+              ],
+              [
+                14,
+                96,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                29,
+                0
+              ],
+              [
+                14,
+                12,
+                0,
+                12
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 722
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9291338582677166,
+            "macro_precision": 0.9359772146187397,
+            "macro_recall": 0.7888532267398247,
+            "macro_f1": 0.8199546523094657,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9549180327868853,
+                "recall": 0.9688149688149689,
+                "f1": 0.9618163054695562,
+                "support": 481
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7889908256880734,
+                "recall": 0.8865979381443299,
+                "f1": 0.8349514563106796,
+                "support": 97
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 0.9666666666666667,
+                "f1": 0.9830508474576272,
+                "support": 30
+              },
+              {
+                "label": "other",
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1": 0.5,
+                "support": 27
+              }
+            ],
+            "confusion_matrix": [
+              [
+                466,
+                15,
+                0,
+                0
+              ],
+              [
+                11,
+                86,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                29,
+                0
+              ],
+              [
+                10,
+                8,
+                0,
+                9
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 635
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 104,
+        "low_margin_topic": 69,
+        "zero_features_sentiment": 2,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q20": {
+      "input_count": 791,
+      "accepted_pair_count": 520,
+      "rejected_pair_count": 271,
+      "pair_coverage": 0.6573957016434893,
+      "abstention_rate": 0.34260429835651074,
+      "joint": {
+        "correct_answered": 490,
+        "wrong_answered": 30,
+        "rejected_correct": 163,
+        "rejected_wrong": 108,
+        "n_labeled": 791,
+        "accepted_labeled": 520,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.9423076923076923,
+        "selective_risk": 0.057692307692307696,
+        "correct_and_answered_rate": 0.6194690265486725,
+        "answered_wrong_rate": 0.03792667509481669,
+        "rejected_correct_rate": 0.20606826801517067,
+        "rejected_wrong_rate": 0.13653603034134007
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 611,
+          "coverage": 0.7724399494310998,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9064475347661188,
+            "macro_precision": 0.8360222877942377,
+            "macro_recall": 0.7165498209655584,
+            "macro_f1": 0.7454757317268516,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9002770083102493,
+                "recall": 0.9312320916905444,
+                "f1": 0.9154929577464789,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6875,
+                "recall": 0.2682926829268293,
+                "f1": 0.38596491228070173,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9202898550724637,
+                "recall": 0.9501246882793017,
+                "f1": 0.9349693251533743,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                325,
+                3,
+                21
+              ],
+              [
+                18,
+                11,
+                12
+              ],
+              [
+                18,
+                2,
+                381
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9754500818330606,
+            "macro_precision": 0.9830408397572578,
+            "macro_recall": 0.7434897303318356,
+            "macro_f1": 0.7882072589514849,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.967032967032967,
+                "recall": 0.9924812030075187,
+                "f1": 0.9795918367346939,
+                "support": 266
+              },
+              {
+                "label": "neutral",
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "support": 12
+              },
+              {
+                "label": "positive",
+                "precision": 0.982089552238806,
+                "recall": 0.987987987987988,
+                "f1": 0.9850299401197605,
+                "support": 333
+              }
+            ],
+            "confusion_matrix": [
+              [
+                264,
+                0,
+                2
+              ],
+              [
+                5,
+                3,
+                4
+              ],
+              [
+                4,
+                0,
+                329
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 611
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9807692307692307,
+            "macro_precision": 0.9854127579737336,
+            "macro_recall": 0.785128205128205,
+            "macro_f1": 0.8378723128723129,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9658536585365853,
+                "recall": 0.99,
+                "f1": 0.9777777777777777,
+                "support": 200
+              },
+              {
+                "label": "neutral",
+                "precision": 1.0,
+                "recall": 0.375,
+                "f1": 0.5454545454545454,
+                "support": 8
+              },
+              {
+                "label": "positive",
+                "precision": 0.9903846153846154,
+                "recall": 0.9903846153846154,
+                "f1": 0.9903846153846154,
+                "support": 312
+              }
+            ],
+            "confusion_matrix": [
+              [
+                198,
+                0,
+                2
+              ],
+              [
+                4,
+                3,
+                1
+              ],
+              [
+                3,
+                0,
+                309
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 520
+          }
+        },
+        "topic": {
+          "accepted_count": 661,
+          "coverage": 0.8356510745891277,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8874841972187105,
+            "macro_precision": 0.8477973127501429,
+            "macro_recall": 0.7646107660200814,
+            "macro_f1": 0.7824188011667259,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9296740994854202,
+                "recall": 0.9492119089316988,
+                "f1": 0.9393414211438474,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7266666666666667,
+                "recall": 0.8134328358208955,
+                "f1": 0.7676056338028169,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.8181818181818182,
+                "recall": 0.35294117647058826,
+                "f1": 0.4931506849315068,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                542,
+                25,
+                3,
+                1
+              ],
+              [
+                22,
+                109,
+                0,
+                3
+              ],
+              [
+                1,
+                1,
+                33,
+                0
+              ],
+              [
+                18,
+                15,
+                0,
+                18
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9349470499243571,
+            "macro_precision": 0.8987889639724429,
+            "macro_recall": 0.7773147296565396,
+            "macro_f1": 0.7941857103793116,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.967680608365019,
+                "recall": 0.9713740458015268,
+                "f1": 0.9695238095238096,
+                "support": 524
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7524752475247525,
+                "recall": 0.9156626506024096,
+                "f1": 0.8260869565217391,
+                "support": 83
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 0.9629629629629629,
+                "f1": 0.9811320754716981,
+                "support": 27
+              },
+              {
+                "label": "other",
+                "precision": 0.875,
+                "recall": 0.25925925925925924,
+                "f1": 0.4,
+                "support": 27
+              }
+            ],
+            "confusion_matrix": [
+              [
+                509,
+                14,
+                0,
+                1
+              ],
+              [
+                7,
+                76,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                26,
+                0
+              ],
+              [
+                9,
+                11,
+                0,
+                7
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 661
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9557692307692308,
+            "macro_precision": 0.9487380315404111,
+            "macro_recall": 0.7975528618301131,
+            "macro_f1": 0.8307233068019189,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9740566037735849,
+                "recall": 0.9786729857819905,
+                "f1": 0.9763593380614657,
+                "support": 422
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.8208955223880597,
+                "recall": 0.9166666666666666,
+                "f1": 0.8661417322834646,
+                "support": 60
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 0.9615384615384616,
+                "f1": 0.9803921568627451,
+                "support": 26
+              },
+              {
+                "label": "other",
+                "precision": 1.0,
+                "recall": 0.3333333333333333,
+                "f1": 0.5,
+                "support": 12
+              }
+            ],
+            "confusion_matrix": [
+              [
+                413,
+                9,
+                0,
+                0
+              ],
+              [
+                5,
+                55,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                25,
+                0
+              ],
+              [
+                5,
+                3,
+                0,
+                4
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 520
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 180,
+        "low_margin_topic": 130,
+        "zero_features_sentiment": 2,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    }
+  },
+  "ct4": {
+    "always_answer": {
+      "input_count": 791,
+      "accepted_pair_count": 791,
+      "rejected_pair_count": 0,
+      "pair_coverage": 1.0,
+      "abstention_rate": 0.0,
+      "joint": {
+        "correct_answered": 649,
+        "wrong_answered": 142,
+        "rejected_correct": 0,
+        "rejected_wrong": 0,
+        "n_labeled": 791,
+        "accepted_labeled": 791,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.820480404551201,
+        "selective_risk": 0.179519595448799,
+        "correct_and_answered_rate": 0.820480404551201,
+        "answered_wrong_rate": 0.179519595448799,
+        "rejected_correct_rate": 0.0,
+        "rejected_wrong_rate": 0.0
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 791,
+          "coverage": 1.0,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          }
+        },
+        "topic": {
+          "accepted_count": 791,
+          "coverage": 1.0,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {},
+      "groups": {}
+    },
+    "zero_features": {
+      "input_count": 791,
+      "accepted_pair_count": 789,
+      "rejected_pair_count": 2,
+      "pair_coverage": 0.9974715549936789,
+      "abstention_rate": 0.0025284450063211127,
+      "joint": {
+        "correct_answered": 648,
+        "wrong_answered": 141,
+        "rejected_correct": 1,
+        "rejected_wrong": 1,
+        "n_labeled": 791,
+        "accepted_labeled": 789,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8212927756653993,
+        "selective_risk": 0.17870722433460076,
+        "correct_and_answered_rate": 0.8192161820480405,
+        "answered_wrong_rate": 0.17825537294563842,
+        "rejected_correct_rate": 0.0012642225031605564,
+        "rejected_wrong_rate": 0.0012642225031605564
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 791,
+          "coverage": 1.0,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9036755386565273,
+            "macro_precision": 0.8233038917163714,
+            "macro_recall": 0.7678915950334289,
+            "macro_f1": 0.7898315981480281,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6428571428571429,
+                "recall": 0.45,
+                "f1": 0.5294117647058824,
+                "support": 40
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.9425,
+                "f1": 0.9262899262899262,
+                "support": 400
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                18,
+                10
+              ],
+              [
+                17,
+                6,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 789
+          }
+        },
+        "topic": {
+          "accepted_count": 789,
+          "coverage": 0.9974715549936789,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.8897338403041825,
+            "macro_precision": 0.8067981375447818,
+            "macro_recall": 0.7803963180274331,
+            "macro_f1": 0.7873098123278616,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.625,
+                "recall": 0.40816326530612246,
+                "f1": 0.49382716049382713,
+                "support": 49
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                20
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 789
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.8897338403041825,
+            "macro_precision": 0.8067981375447818,
+            "macro_recall": 0.7803963180274331,
+            "macro_f1": 0.7873098123278616,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.625,
+                "recall": 0.40816326530612246,
+                "f1": 0.49382716049382713,
+                "support": 49
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                20
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 789
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q05": {
+      "input_count": 791,
+      "accepted_pair_count": 702,
+      "rejected_pair_count": 89,
+      "pair_coverage": 0.8874841972187105,
+      "abstention_rate": 0.1125158027812895,
+      "joint": {
+        "correct_answered": 605,
+        "wrong_answered": 97,
+        "rejected_correct": 44,
+        "rejected_wrong": 45,
+        "n_labeled": 791,
+        "accepted_labeled": 702,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8618233618233618,
+        "selective_risk": 0.13817663817663817,
+        "correct_and_answered_rate": 0.7648546144121365,
+        "answered_wrong_rate": 0.12262958280657396,
+        "rejected_correct_rate": 0.05562579013906448,
+        "rejected_wrong_rate": 0.056890012642225034
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 735,
+          "coverage": 0.9292035398230089,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.927891156462585,
+            "macro_precision": 0.8572024475260122,
+            "macro_recall": 0.7787567552273434,
+            "macro_f1": 0.8080460433037752,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9296636085626911,
+                "recall": 0.9411764705882353,
+                "f1": 0.9353846153846154,
+                "support": 323
+              },
+              {
+                "label": "neutral",
+                "precision": 0.7058823529411765,
+                "recall": 0.4444444444444444,
+                "f1": 0.5454545454545454,
+                "support": 27
+              },
+              {
+                "label": "positive",
+                "precision": 0.9360613810741688,
+                "recall": 0.9506493506493506,
+                "f1": 0.9432989690721649,
+                "support": 385
+              }
+            ],
+            "confusion_matrix": [
+              [
+                304,
+                1,
+                18
+              ],
+              [
+                8,
+                12,
+                7
+              ],
+              [
+                15,
+                4,
+                366
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 735
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9301994301994302,
+            "macro_precision": 0.860726955121781,
+            "macro_recall": 0.781364608609402,
+            "macro_f1": 0.811404543038726,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9281045751633987,
+                "recall": 0.9372937293729373,
+                "f1": 0.9326765188834154,
+                "support": 303
+              },
+              {
+                "label": "neutral",
+                "precision": 0.7142857142857143,
+                "recall": 0.45454545454545453,
+                "f1": 0.5555555555555556,
+                "support": 22
+              },
+              {
+                "label": "positive",
+                "precision": 0.9397905759162304,
+                "recall": 0.9522546419098143,
+                "f1": 0.9459815546772069,
+                "support": 377
+              }
+            ],
+            "confusion_matrix": [
+              [
+                284,
+                1,
+                18
+              ],
+              [
+                7,
+                10,
+                5
+              ],
+              [
+                15,
+                3,
+                359
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 702
+          }
+        },
+        "topic": {
+          "accepted_count": 754,
+          "coverage": 0.9532237673830595,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9045092838196287,
+            "macro_precision": 0.8470704653803245,
+            "macro_recall": 0.7925348096846667,
+            "macro_f1": 0.802574436922438,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9477477477477477,
+                "recall": 0.9511754068716094,
+                "f1": 0.9494584837545126,
+                "support": 553
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7535211267605634,
+                "recall": 0.8629032258064516,
+                "f1": 0.8045112781954887,
+                "support": 124
+              },
+              {
+                "label": "facility",
+                "precision": 0.9142857142857143,
+                "recall": 0.9696969696969697,
+                "f1": 0.9411764705882353,
+                "support": 33
+              },
+              {
+                "label": "other",
+                "precision": 0.7727272727272727,
+                "recall": 0.38636363636363635,
+                "f1": 0.5151515151515151,
+                "support": 44
+              }
+            ],
+            "confusion_matrix": [
+              [
+                526,
+                22,
+                3,
+                2
+              ],
+              [
+                14,
+                107,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                32,
+                0
+              ],
+              [
+                14,
+                13,
+                0,
+                17
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 754
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9088319088319088,
+            "macro_precision": 0.8379389712219095,
+            "macro_recall": 0.7764141124033601,
+            "macro_f1": 0.7862297507084608,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9521988527724665,
+                "recall": 0.9540229885057471,
+                "f1": 0.9531100478468899,
+                "support": 522
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.751937984496124,
+                "recall": 0.8584070796460177,
+                "f1": 0.8016528925619835,
+                "support": 113
+              },
+              {
+                "label": "facility",
+                "precision": 0.9142857142857143,
+                "recall": 0.9696969696969697,
+                "f1": 0.9411764705882353,
+                "support": 33
+              },
+              {
+                "label": "other",
+                "precision": 0.7333333333333333,
+                "recall": 0.3235294117647059,
+                "f1": 0.4489795918367347,
+                "support": 34
+              }
+            ],
+            "confusion_matrix": [
+              [
+                498,
+                20,
+                3,
+                1
+              ],
+              [
+                13,
+                97,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                32,
+                0
+              ],
+              [
+                11,
+                12,
+                0,
+                11
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 702
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 56,
+        "low_margin_topic": 35,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q10": {
+      "input_count": 791,
+      "accepted_pair_count": 646,
+      "rejected_pair_count": 145,
+      "pair_coverage": 0.8166877370417194,
+      "abstention_rate": 0.18331226295828065,
+      "joint": {
+        "correct_answered": 574,
+        "wrong_answered": 72,
+        "rejected_correct": 75,
+        "rejected_wrong": 70,
+        "n_labeled": 791,
+        "accepted_labeled": 646,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.8885448916408669,
+        "selective_risk": 0.11145510835913312,
+        "correct_and_answered_rate": 0.7256637168141593,
+        "answered_wrong_rate": 0.09102402022756005,
+        "rejected_correct_rate": 0.09481668773704172,
+        "rejected_wrong_rate": 0.08849557522123894
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 692,
+          "coverage": 0.8748419721871049,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9479768786127167,
+            "macro_precision": 0.8762589814324446,
+            "macro_recall": 0.7823037211260244,
+            "macro_f1": 0.8156295704333826,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9419354838709677,
+                "recall": 0.9636963696369637,
+                "f1": 0.9526916802610114,
+                "support": 303
+              },
+              {
+                "label": "neutral",
+                "precision": 0.7272727272727273,
+                "recall": 0.42105263157894735,
+                "f1": 0.5333333333333333,
+                "support": 19
+              },
+              {
+                "label": "positive",
+                "precision": 0.9595687331536388,
+                "recall": 0.9621621621621622,
+                "f1": 0.9608636977058029,
+                "support": 370
+              }
+            ],
+            "confusion_matrix": [
+              [
+                292,
+                1,
+                10
+              ],
+              [
+                6,
+                8,
+                5
+              ],
+              [
+                12,
+                2,
+                356
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 692
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9504643962848297,
+            "macro_precision": 0.8436294446604266,
+            "macro_recall": 0.7614445525386274,
+            "macro_f1": 0.7903105903105904,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9395017793594306,
+                "recall": 0.9635036496350365,
+                "f1": 0.9513513513513514,
+                "support": 274
+              },
+              {
+                "label": "neutral",
+                "precision": 0.625,
+                "recall": 0.35714285714285715,
+                "f1": 0.45454545454545453,
+                "support": 14
+              },
+              {
+                "label": "positive",
+                "precision": 0.9663865546218487,
+                "recall": 0.9636871508379888,
+                "f1": 0.965034965034965,
+                "support": 358
+              }
+            ],
+            "confusion_matrix": [
+              [
+                264,
+                1,
+                9
+              ],
+              [
+                6,
+                5,
+                3
+              ],
+              [
+                11,
+                2,
+                345
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 646
+          }
+        },
+        "topic": {
+          "accepted_count": 737,
+          "coverage": 0.93173198482933,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9118046132971506,
+            "macro_precision": 0.8562753119215121,
+            "macro_recall": 0.7986405722137171,
+            "macro_f1": 0.808470708012656,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9542124542124543,
+                "recall": 0.9542124542124543,
+                "f1": 0.9542124542124543,
+                "support": 546
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7591240875912408,
+                "recall": 0.8813559322033898,
+                "f1": 0.8156862745098039,
+                "support": 118
+              },
+              {
+                "label": "facility",
+                "precision": 0.9117647058823529,
+                "recall": 0.96875,
+                "f1": 0.9393939393939394,
+                "support": 32
+              },
+              {
+                "label": "other",
+                "precision": 0.8,
+                "recall": 0.3902439024390244,
+                "f1": 0.5245901639344263,
+                "support": 41
+              }
+            ],
+            "confusion_matrix": [
+              [
+                521,
+                21,
+                3,
+                1
+              ],
+              [
+                11,
+                104,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                31,
+                0
+              ],
+              [
+                13,
+                12,
+                0,
+                16
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 737
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9210526315789473,
+            "macro_precision": 0.8444761425522072,
+            "macro_recall": 0.7829572224247372,
+            "macro_f1": 0.7945699121215177,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9589322381930184,
+                "recall": 0.9569672131147541,
+                "f1": 0.9579487179487179,
+                "support": 488
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.782608695652174,
+                "recall": 0.8737864077669902,
+                "f1": 0.8256880733944955,
+                "support": 103
+              },
+              {
+                "label": "facility",
+                "precision": 0.9090909090909091,
+                "recall": 0.967741935483871,
+                "f1": 0.9375,
+                "support": 31
+              },
+              {
+                "label": "other",
+                "precision": 0.7272727272727273,
+                "recall": 0.3333333333333333,
+                "f1": 0.45714285714285713,
+                "support": 24
+              }
+            ],
+            "confusion_matrix": [
+              [
+                467,
+                18,
+                3,
+                0
+              ],
+              [
+                10,
+                90,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                30,
+                0
+              ],
+              [
+                9,
+                7,
+                0,
+                8
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 646
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 99,
+        "low_margin_topic": 54,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    },
+    "zero_plus_margin_q20": {
+      "input_count": 791,
+      "accepted_pair_count": 531,
+      "rejected_pair_count": 260,
+      "pair_coverage": 0.6713021491782554,
+      "abstention_rate": 0.32869785082174463,
+      "joint": {
+        "correct_answered": 494,
+        "wrong_answered": 37,
+        "rejected_correct": 155,
+        "rejected_wrong": 105,
+        "n_labeled": 791,
+        "accepted_labeled": 531,
+        "correctness_denominator": "inputs_with_both_truth_labels",
+        "accepted_accuracy": 0.9303201506591338,
+        "selective_risk": 0.0696798493408663,
+        "correct_and_answered_rate": 0.6245259165613148,
+        "answered_wrong_rate": 0.04677623261694058,
+        "rejected_correct_rate": 0.1959544879898862,
+        "rejected_wrong_rate": 0.13274336283185842
+      },
+      "tasks": {
+        "sentiment": {
+          "accepted_count": 620,
+          "coverage": 0.7838179519595448,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.9026548672566371,
+            "macro_precision": 0.8201292885417683,
+            "macro_recall": 0.7715796817272634,
+            "macro_f1": 0.7913859150956796,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9164265129682997,
+                "recall": 0.9111747851002865,
+                "f1": 0.9137931034482759,
+                "support": 349
+              },
+              {
+                "label": "neutral",
+                "precision": 0.6333333333333333,
+                "recall": 0.4634146341463415,
+                "f1": 0.5352112676056338,
+                "support": 41
+              },
+              {
+                "label": "positive",
+                "precision": 0.9106280193236715,
+                "recall": 0.940149625935162,
+                "f1": 0.9251533742331288,
+                "support": 401
+              }
+            ],
+            "confusion_matrix": [
+              [
+                318,
+                4,
+                27
+              ],
+              [
+                12,
+                19,
+                10
+              ],
+              [
+                17,
+                7,
+                377
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9629032258064516,
+            "macro_precision": 0.9275597823527123,
+            "macro_recall": 0.7848820631015965,
+            "macro_f1": 0.828426189457497,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9492753623188406,
+                "recall": 0.9812734082397003,
+                "f1": 0.9650092081031307,
+                "support": 267
+              },
+              {
+                "label": "neutral",
+                "precision": 0.8571428571428571,
+                "recall": 0.4,
+                "f1": 0.5454545454545454,
+                "support": 15
+              },
+              {
+                "label": "positive",
+                "precision": 0.9762611275964391,
+                "recall": 0.9733727810650887,
+                "f1": 0.9748148148148148,
+                "support": 338
+              }
+            ],
+            "confusion_matrix": [
+              [
+                262,
+                1,
+                4
+              ],
+              [
+                5,
+                6,
+                4
+              ],
+              [
+                9,
+                0,
+                329
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 620
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9698681732580038,
+            "macro_precision": 0.9118590849320274,
+            "macro_recall": 0.7871783017414086,
+            "macro_f1": 0.8272034145937738,
+            "per_class": [
+              {
+                "label": "negative",
+                "precision": 0.9483568075117371,
+                "recall": 0.9805825242718447,
+                "f1": 0.964200477326969,
+                "support": 206
+              },
+              {
+                "label": "neutral",
+                "precision": 0.8,
+                "recall": 0.4,
+                "f1": 0.5333333333333333,
+                "support": 10
+              },
+              {
+                "label": "positive",
+                "precision": 0.987220447284345,
+                "recall": 0.9809523809523809,
+                "f1": 0.9840764331210191,
+                "support": 315
+              }
+            ],
+            "confusion_matrix": [
+              [
+                202,
+                1,
+                3
+              ],
+              [
+                5,
+                4,
+                1
+              ],
+              [
+                6,
+                0,
+                309
+              ]
+            ],
+            "label_order": [
+              "negative",
+              "neutral",
+              "positive"
+            ],
+            "n_rows": 531
+          }
+        },
+        "topic": {
+          "accepted_count": 662,
+          "coverage": 0.8369152970922883,
+          "n_labeled": 791,
+          "ungated_metrics": {
+            "accuracy": 0.8900126422250316,
+            "macro_precision": 0.8123128434271347,
+            "macro_recall": 0.7861986389558044,
+            "macro_f1": 0.7932647869102871,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9405594405594405,
+                "recall": 0.9422066549912435,
+                "f1": 0.9413823272090989,
+                "support": 571
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7449664429530202,
+                "recall": 0.8283582089552238,
+                "f1": 0.784452296819788,
+                "support": 134
+              },
+              {
+                "label": "facility",
+                "precision": 0.9166666666666666,
+                "recall": 0.9428571428571428,
+                "f1": 0.9295774647887324,
+                "support": 35
+              },
+              {
+                "label": "other",
+                "precision": 0.6470588235294118,
+                "recall": 0.43137254901960786,
+                "f1": 0.5176470588235295,
+                "support": 51
+              }
+            ],
+            "confusion_matrix": [
+              [
+                538,
+                24,
+                3,
+                6
+              ],
+              [
+                18,
+                111,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                33,
+                1
+              ],
+              [
+                15,
+                14,
+                0,
+                22
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 791
+          },
+          "accepted_metrics": {
+            "accuracy": 0.9365558912386707,
+            "macro_precision": 0.9127800377313996,
+            "macro_recall": 0.8167635658914729,
+            "macro_f1": 0.8331853906611189,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9708171206225681,
+                "recall": 0.9670542635658915,
+                "f1": 0.9689320388349515,
+                "support": 516
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.7636363636363637,
+                "recall": 0.9333333333333333,
+                "f1": 0.84,
+                "support": 90
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 26
+              },
+              {
+                "label": "other",
+                "precision": 0.9166666666666666,
+                "recall": 0.36666666666666664,
+                "f1": 0.5238095238095238,
+                "support": 30
+              }
+            ],
+            "confusion_matrix": [
+              [
+                499,
+                16,
+                0,
+                1
+              ],
+              [
+                6,
+                84,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                26,
+                0
+              ],
+              [
+                9,
+                10,
+                0,
+                11
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 662
+          },
+          "pair_accepted_metrics": {
+            "accuracy": 0.9510357815442562,
+            "macro_precision": 0.9448433022376684,
+            "macro_recall": 0.8136032367436821,
+            "macro_f1": 0.8401158107265037,
+            "per_class": [
+              {
+                "label": "lecturer",
+                "precision": 0.9741784037558685,
+                "recall": 0.9718969555035128,
+                "f1": 0.9730363423212193,
+                "support": 427
+              },
+              {
+                "label": "curriculum",
+                "precision": 0.8051948051948052,
+                "recall": 0.9253731343283582,
+                "f1": 0.8611111111111112,
+                "support": 67
+              },
+              {
+                "label": "facility",
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 23
+              },
+              {
+                "label": "other",
+                "precision": 1.0,
+                "recall": 0.35714285714285715,
+                "f1": 0.5263157894736842,
+                "support": 14
+              }
+            ],
+            "confusion_matrix": [
+              [
+                415,
+                12,
+                0,
+                0
+              ],
+              [
+                5,
+                62,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                23,
+                0
+              ],
+              [
+                6,
+                3,
+                0,
+                5
+              ]
+            ],
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "other"
+            ],
+            "n_rows": 531
+          }
+        }
+      },
+      "answerability": {
+        "sentiment": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "topic": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": null
+        },
+        "pair": {
+          "answerable": 0,
+          "unanswerable": 0,
+          "ambiguous": 0,
+          "missing": 791,
+          "rejected_answerable": 0,
+          "accepted_unanswerable": 0,
+          "false_reject_rate": null,
+          "unsafe_accept_rate": null,
+          "precision_of_abstention": null,
+          "accepted_answerable_metrics": {
+            "n_rows": 0,
+            "accuracy": null
+          }
+        },
+        "status": "no_reviewed_answerability"
+      },
+      "reason_counts": {
+        "low_margin_sentiment": 171,
+        "low_margin_topic": 129,
+        "zero_features_topic": 2
+      },
+      "groups": {}
+    }
+  }
+}

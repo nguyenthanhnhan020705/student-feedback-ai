@@ -1,0 +1,9 @@
+.............................................                            [100%]
+============================== warnings summary ===============================
+tests/test_sentiment_training.py: 4 warnings
+tests/test_sentiment_artifacts.py: 6 warnings
+  D:\N.ThanhNhan\Project_AI\student-feedback-ai\.venv\sentiment\Lib\site-packages\sklearn\linear_model\_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+    opt_res = optimize.minimize(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+45 passed, 10 warnings in 40.06s

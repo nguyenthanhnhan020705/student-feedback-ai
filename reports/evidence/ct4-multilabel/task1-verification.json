@@ -1,0 +1,37 @@
+{
+  "schema_version": "ct4-v3-task1-verification.1",
+  "created_at": "2026-11-01T09:06:42.697193+00:00",
+  "source_sha256": {
+    "demo_v3/__init__.py": "08bb7a731341d5ce5aca140fcd23613a5b83412fa2a19218cdb610c955837a1b",
+    "demo_v3/detector.py": "f9abea9282759cae2f2b08588cc8892db5c10ad0e1ae4b9ab3c7a461eba2b8a6",
+    "demo_v3/frontend/api.js": "74122af94e8ba3e460b2fbb6eb0574e9aa1f9ca19dea649bccc9f2ba5ac33714",
+    "demo_v3/frontend/app.js": "a40bea3bb0425af8b384dc8d06fdd7df9c0f04720d1a3343620cb1d7444f344a",
+    "demo_v3/frontend/index.html": "97352eb0902fcc7353f5d2c15b2a6023a3b5636d6c4e1228caad37bf076c6766",
+    "demo_v3/frontend/styles.css": "5ae6a44f6dbe8e9dc555a492d9e52d5ebc38538e83a5e88d41aa1275c7f30d7a",
+    "demo_v3/main.py": "365bce72212ca1b9b7f08b930be2484476264ed377672c33e9db33e484475a0d",
+    "demo_v3/ontology.py": "d8054be0d6ac43756274056e83a4540ff68769867f5db12944ac6c42ced2f50f",
+    "demo_v3/rules.json": "87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d",
+    "demo_v3/service.py": "fa2ee4d8b12ab94f3606221b109233769cbefdb8a416df7d825b05a7b2898fd4",
+    "tests/frontend/test_demo_v3_ui.py": "063b298604bcd5a6ebf4093677d3af73034090b4f8223176815e948b2f381300",
+    "tests/test_demo_v3.py": "42a60ebf4def0e2542e298df2acd3df4dd33883f4ac8174bd19f02b18ae6c1e1",
+    "tests/test_demo_v3_api.py": "f6e881c2797663ab250531dad6b9af7be8f1267d2200cf6c8a26eaea86e74e6c"
+  },
+  "core_unchanged_since_freeze": true,
+  "scoped_command": "./.venv/Scripts/python.exe -B -m pytest tests/test_demo_v3.py tests/test_demo_v3_api.py tests/frontend/test_demo_v3_ui.py -q --tb=short -o cache_dir=reports/evidence/ct4-multilabel/cache-task1",
+  "passed": 173,
+  "warnings": 1,
+  "exit_code": 0,
+  "seconds": 56.84,
+  "engine_api_tests": 131,
+  "browser_tests": 42,
+  "browsers": [
+    "chrome",
+    "msedge"
+  ],
+  "actual_cases_each_browser": 6,
+  "warning": "Existing StarletteDeprecationWarning about httpx/TestClient; no dependencies changed.",
+  "evidence": "task1-green.txt",
+  "core_freeze": "core-freeze.json",
+  "final_integration_review_and_full_suite": "owned by parent; not claimed by this task report",
+  "status": "engineering_complete_independent_evaluation_pending"
+}

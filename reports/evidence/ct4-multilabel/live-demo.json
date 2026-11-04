@@ -1,0 +1,113 @@
+{
+  "url": "http://127.0.0.1:8002",
+  "health": {
+    "status": "ok",
+    "ready": true,
+    "models": {
+      "rules": "ready",
+      "sentiment": "ready",
+      "topic": "ready"
+    },
+    "model": "ct4",
+    "contract_version": "3.0"
+  },
+  "assets": {
+    "index.html": "97352eb0902fcc7353f5d2c15b2a6023a3b5636d6c4e1228caad37bf076c6766",
+    "api.js": "74122af94e8ba3e460b2fbb6eb0574e9aa1f9ca19dea649bccc9f2ba5ac33714",
+    "app.js": "a40bea3bb0425af8b384dc8d06fdd7df9c0f04720d1a3343620cb1d7444f344a",
+    "styles.css": "5ae6a44f6dbe8e9dc555a492d9e52d5ebc38538e83a5e88d41aa1275c7f30d7a"
+  },
+  "samples": [
+    {
+      "text": "Thầy giảng bài rõ ràng và phòng học thì nóng.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "mixed",
+        "topic": "education_quality"
+      },
+      "fixture": false
+    },
+    {
+      "text": "Môn học có ba tín chỉ.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "undetermined",
+        "topic": "curriculum"
+      },
+      "fixture": false
+    },
+    {
+      "text": "Tốt.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "positive",
+        "topic": "other_domain"
+      },
+      "fixture": false
+    },
+    {
+      "text": "🙂🙂🙂",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "undetermined",
+        "topic": "other_domain"
+      },
+      "fixture": false
+    }
+  ],
+  "review_samples": [
+    {
+      "text": "\"Giảng viên tốt\nphòng học nóng\" là câu ví dụ.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "undetermined",
+        "topic": "other_domain"
+      },
+      "fixture": false,
+      "scope": "review_regression_smoke"
+    },
+    {
+      "text": "Giảng viên viết cụm từ tốt và phòng học nóng trên bảng.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "undetermined",
+        "topic": "lecturer"
+      },
+      "fixture": false,
+      "scope": "review_regression_smoke"
+    },
+    {
+      "text": "Giảng viên từ trường khác đến và dạy tốt.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "positive",
+        "topic": "lecturer"
+      },
+      "fixture": false,
+      "scope": "review_regression_smoke"
+    },
+    {
+      "text": "Từ tốt và tệ xuất hiện trên trang.",
+      "response": {
+        "contract_version": "3.0",
+        "sentiment": "undetermined",
+        "topic": "other_domain"
+      },
+      "fixture": false,
+      "scope": "review_regression_smoke"
+    }
+  ],
+  "browsers": [
+    {
+      "channel": "chrome",
+      "version": "147.0.7727.101",
+      "fixture": false
+    },
+    {
+      "channel": "msedge",
+      "version": "156.0.4314.50",
+      "fixture": false
+    }
+  ],
+  "scope": "local_smoke_not_independent_quality_evaluation"
+}

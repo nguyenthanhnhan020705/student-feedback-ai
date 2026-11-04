@@ -1,0 +1,250 @@
+{
+  "python": "3.13.3",
+  "protected_files_unchanged": 59,
+  "runs": [
+    {
+      "cwd_outside_repo": true,
+      "health": {
+        "status": "ok",
+        "ready": true,
+        "models": {
+          "sentiment": "ready",
+          "topic": "ready"
+        },
+        "contract_version": "1.0"
+      },
+      "predictions": [
+        {
+          "input": "Giảng viên giải thích rõ ràng.",
+          "status": 200,
+          "response": {
+            "sentiment": "positive",
+            "topic": "lecturer",
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "Phòng học nóng và máy chiếu hỏng.",
+          "status": 200,
+          "response": {
+            "sentiment": "negative",
+            "topic": "facility",
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "  KHÔNG hài lòng với chương trình học!  ",
+          "status": 200,
+          "response": {
+            "sentiment": "negative",
+            "topic": "curriculum",
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "Hoạt động ngoại khóa thú vị.",
+          "status": 200,
+          "response": {
+            "sentiment": "positive",
+            "topic": "other",
+            "contract_version": "1.0"
+          }
+        }
+      ],
+      "errors": [
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "$body",
+                  "reason": "invalid_json"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "$body",
+                  "reason": "invalid_json"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "text",
+                  "reason": "blank"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "text",
+                  "reason": "too_long"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        }
+      ]
+    },
+    {
+      "cwd_outside_repo": true,
+      "health": {
+        "status": "ok",
+        "ready": false,
+        "models": {
+          "sentiment": "missing",
+          "topic": "missing"
+        },
+        "contract_version": "1.0"
+      },
+      "predictions": [
+        {
+          "input": "Giảng viên giải thích rõ ràng.",
+          "status": 503,
+          "response": {
+            "error": {
+              "code": "MODEL_NOT_READY",
+              "message": "Mô hình dự đoán chưa sẵn sàng.",
+              "details": []
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "Phòng học nóng và máy chiếu hỏng.",
+          "status": 503,
+          "response": {
+            "error": {
+              "code": "MODEL_NOT_READY",
+              "message": "Mô hình dự đoán chưa sẵn sàng.",
+              "details": []
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "  KHÔNG hài lòng với chương trình học!  ",
+          "status": 503,
+          "response": {
+            "error": {
+              "code": "MODEL_NOT_READY",
+              "message": "Mô hình dự đoán chưa sẵn sàng.",
+              "details": []
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "input": "Hoạt động ngoại khóa thú vị.",
+          "status": 503,
+          "response": {
+            "error": {
+              "code": "MODEL_NOT_READY",
+              "message": "Mô hình dự đoán chưa sẵn sàng.",
+              "details": []
+            },
+            "contract_version": "1.0"
+          }
+        }
+      ],
+      "errors": [
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "$body",
+                  "reason": "invalid_json"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "$body",
+                  "reason": "invalid_json"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "text",
+                  "reason": "blank"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        },
+        {
+          "status": 422,
+          "response": {
+            "error": {
+              "code": "INVALID_INPUT",
+              "message": "Dữ liệu đầu vào không hợp lệ.",
+              "details": [
+                {
+                  "field": "text",
+                  "reason": "too_long"
+                }
+              ]
+            },
+            "contract_version": "1.0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+split,rows,min_chars,median_chars,mean_chars,max_chars
+train,11426,4,47.0,59.084894101172765,660
+validation,1583,4,45.0,56.36197094125079,718
+test,3166,4,46.0,58.836386607706885,411

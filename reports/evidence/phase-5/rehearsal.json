@@ -1,0 +1,223 @@
+{
+  "timestamp_utc": "2026-10-31T03:01:00.375798+00:00",
+  "project": "D:\\N.ThanhNhan\\Project_AI\\student-feedback-ai\\.local-tools\\integration-p0",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "protected_files_unchanged": 59,
+  "browsers": [
+    {
+      "browser": "chrome",
+      "version": "147.0.7727.101",
+      "runs": [
+        {
+          "name": "chrome-cold",
+          "startup_seconds": 4.33285160000014,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "chrome-restart",
+          "startup_seconds": 4.7877699000000575,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "chrome-missing",
+          "startup_seconds": 1.5753254000001107,
+          "health": {
+            "status": "ok",
+            "ready": false,
+            "models": {
+              "sentiment": "missing",
+              "topic": "missing"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "chrome-restored",
+          "startup_seconds": 4.269731599999886,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        }
+      ],
+      "predictions": [
+        {
+          "input": "Giảng viên giải thích bài tập rõ ràng và tận tình.",
+          "response": {
+            "sentiment": "positive",
+            "topic": "lecturer",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.26685479999969175
+        },
+        {
+          "input": "Phòng học nóng và máy chiếu không hoạt động.",
+          "response": {
+            "sentiment": "negative",
+            "topic": "facility",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.062388600000303995
+        },
+        {
+          "input": "Chương trình học có nhiều bài tập thực hành hữu ích.",
+          "response": {
+            "sentiment": "positive",
+            "topic": "curriculum",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.06790000000000873
+        }
+      ],
+      "browser_guard_control_blocked": true,
+      "application_external_attempts": [],
+      "blank_and_overlimit_rejected": true,
+      "restart_and_recovery": true
+    },
+    {
+      "browser": "msedge",
+      "version": "156.0.4314.50",
+      "runs": [
+        {
+          "name": "msedge-cold",
+          "startup_seconds": 4.282281199999943,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "msedge-restart",
+          "startup_seconds": 4.282781200000045,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "msedge-missing",
+          "startup_seconds": 2.159925100000237,
+          "health": {
+            "status": "ok",
+            "ready": false,
+            "models": {
+              "sentiment": "missing",
+              "topic": "missing"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        },
+        {
+          "name": "msedge-restored",
+          "startup_seconds": 4.76626239999996,
+          "health": {
+            "status": "ok",
+            "ready": true,
+            "models": {
+              "sentiment": "ready",
+              "topic": "ready"
+            },
+            "contract_version": "1.0"
+          },
+          "cwd_outside_project": true,
+          "network_guard_control_blocked": true,
+          "application_external_attempts": 0,
+          "process_stopped": true
+        }
+      ],
+      "predictions": [
+        {
+          "input": "Giảng viên giải thích bài tập rõ ràng và tận tình.",
+          "response": {
+            "sentiment": "positive",
+            "topic": "lecturer",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.10124540000015259
+        },
+        {
+          "input": "Phòng học nóng và máy chiếu không hoạt động.",
+          "response": {
+            "sentiment": "negative",
+            "topic": "facility",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.09057819999998173
+        },
+        {
+          "input": "Chương trình học có nhiều bài tập thực hành hữu ích.",
+          "response": {
+            "sentiment": "positive",
+            "topic": "curriculum",
+            "contract_version": "1.0"
+          },
+          "click_to_result_seconds": 0.045948199999656936
+        }
+      ],
+      "browser_guard_control_blocked": true,
+      "application_external_attempts": [],
+      "blank_and_overlimit_rejected": true,
+      "restart_and_recovery": true
+    }
+  ],
+  "network_scope": "Python server socket audit + browser context HTTP routing; not OS-wide offline"
+}

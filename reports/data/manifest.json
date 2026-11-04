@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "url": "https://huggingface.co/datasets/uitnlp/vietnamese_students_feedback",
+    "revision": "7b56c6cb1c9c8523249f407044c838660df3811a",
+    "retrieved_at": "2026-10-28T02:16:00.188072+00:00",
+    "permission_evidence": "reports/evidence/data/uitnlp-dataset-card.md",
+    "license_status": "unknown",
+    "approval_status": "pending_leader_review",
+    "source_loader_sha256": "d00fb791e188b426d42df7abc16cffd18ebd36ad235b2bb3affbda16be0ae76b",
+    "acquisition": "Exact bytes from Google Drive URLs in pinned UIT-NLP loader; no remote code execution",
+    "files": [
+      {
+        "path": "train/sents.txt",
+        "source_url": "https://drive.google.com/uc?id=1nzak5OkrheRV1ltOGCXkT671bmjODLhP&export=download",
+        "download_url": "https://drive.google.com/uc?id=1nzak5OkrheRV1ltOGCXkT671bmjODLhP&export=download",
+        "sha256": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+        "file_bytes": 898090
+      },
+      {
+        "path": "train/sentiments.txt",
+        "source_url": "https://drive.google.com/uc?id=1ye-gOZIBqXdKOoi_YxvpT6FeRNmViPPv&export=down load",
+        "download_url": "https://drive.google.com/uc?id=1ye-gOZIBqXdKOoi_YxvpT6FeRNmViPPv&export=download",
+        "sha256": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+        "file_bytes": 22852
+      },
+      {
+        "path": "train/topics.txt",
+        "source_url": "https://drive.google.com/uc?id=14MuDtwMnNOcr4z_8KdpxprjbwaQ7lJ_C&export=download",
+        "download_url": "https://drive.google.com/uc?id=14MuDtwMnNOcr4z_8KdpxprjbwaQ7lJ_C&export=download",
+        "sha256": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+        "file_bytes": 22852
+      },
+      {
+        "path": "dev/sents.txt",
+        "source_url": "https://drive.google.com/uc?id=1sMJSR3oRfPc3fe1gK-V3W5F24tov_517&export=download",
+        "download_url": "https://drive.google.com/uc?id=1sMJSR3oRfPc3fe1gK-V3W5F24tov_517&export=download",
+        "sha256": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+        "file_bytes": 118628
+      },
+      {
+        "path": "dev/sentiments.txt",
+        "source_url": "https://drive.google.com/uc?id=1GiY1AOp41dLXIIkgES4422AuDwmbUseL&export=download",
+        "download_url": "https://drive.google.com/uc?id=1GiY1AOp41dLXIIkgES4422AuDwmbUseL&export=download",
+        "sha256": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+        "file_bytes": 3166
+      },
+      {
+        "path": "dev/topics.txt",
+        "source_url": "https://drive.google.com/uc?id=1DwLgDEaFWQe8mOd7EpF-xqMEbDLfdT-W&export=download",
+        "download_url": "https://drive.google.com/uc?id=1DwLgDEaFWQe8mOd7EpF-xqMEbDLfdT-W&export=download",
+        "sha256": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96",
+        "file_bytes": 3166
+      },
+      {
+        "path": "test/sents.txt",
+        "source_url": "https://drive.google.com/uc?id=1aNMOeZZbNwSRkjyCWAGtNCMa3YrshR-n&export=download",
+        "download_url": "https://drive.google.com/uc?id=1aNMOeZZbNwSRkjyCWAGtNCMa3YrshR-n&export=download",
+        "sha256": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+        "file_bytes": 247849
+      },
+      {
+        "path": "test/sentiments.txt",
+        "source_url": "https://drive.google.com/uc?id=1vkQS5gI0is4ACU58-AbWusnemw7KZNfO&export=download",
+        "download_url": "https://drive.google.com/uc?id=1vkQS5gI0is4ACU58-AbWusnemw7KZNfO&export=download",
+        "sha256": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+        "file_bytes": 6332
+      },
+      {
+        "path": "test/topics.txt",
+        "source_url": "https://drive.google.com/uc?id=1_ArMpDguVsbUGl-xSMkTF_p5KpZrmpSB&export=download",
+        "download_url": "https://drive.google.com/uc?id=1_ArMpDguVsbUGl-xSMkTF_p5KpZrmpSB&export=download",
+        "sha256": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+        "file_bytes": 6332
+      }
+    ]
+  },
+  "splits": {
+    "train": {
+      "rows": 11426,
+      "label_counts": {
+        "sentiment": {
+          "positive": 5643,
+          "negative": 5325,
+          "neutral": 458
+        },
+        "topic": {
+          "lecturer": 8166,
+          "curriculum": 2201,
+          "other": 562,
+          "facility": 497
+        }
+      },
+      "empty_text_rows": 0,
+      "unknown_label_rows": 0,
+      "unique_texts": 11425,
+      "duplicate_rows": 2,
+      "files": [
+        {
+          "path": "train/sents.txt",
+          "sha256": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+          "file_bytes": 898090
+        },
+        {
+          "path": "train/sentiments.txt",
+          "sha256": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+          "file_bytes": 22852
+        },
+        {
+          "path": "train/topics.txt",
+          "sha256": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+          "file_bytes": 22852
+        }
+      ]
+    },
+    "validation": {
+      "rows": 1583,
+      "label_counts": {
+        "sentiment": {
+          "positive": 805,
+          "negative": 705,
+          "neutral": 73
+        },
+        "topic": {
+          "lecturer": 1151,
+          "curriculum": 267,
+          "other": 95,
+          "facility": 70
+        }
+      },
+      "empty_text_rows": 0,
+      "unknown_label_rows": 0,
+      "unique_texts": 1583,
+      "duplicate_rows": 0,
+      "files": [
+        {
+          "path": "dev/sents.txt",
+          "sha256": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+          "file_bytes": 118628
+        },
+        {
+          "path": "dev/sentiments.txt",
+          "sha256": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+          "file_bytes": 3166
+        },
+        {
+          "path": "dev/topics.txt",
+          "sha256": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96",
+          "file_bytes": 3166
+        }
+      ]
+    },
+    "test": {
+      "rows": 3166,
+      "label_counts": {
+        "sentiment": {
+          "positive": 1590,
+          "negative": 1409,
+          "neutral": 167
+        },
+        "topic": {
+          "lecturer": 2290,
+          "curriculum": 572,
+          "other": 159,
+          "facility": 145
+        }
+      },
+      "empty_text_rows": 0,
+      "unknown_label_rows": 0,
+      "unique_texts": 3166,
+      "duplicate_rows": 0,
+      "files": [
+        {
+          "path": "test/sents.txt",
+          "sha256": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+          "file_bytes": 247849
+        },
+        {
+          "path": "test/sentiments.txt",
+          "sha256": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+          "file_bytes": 6332
+        },
+        {
+          "path": "test/topics.txt",
+          "sha256": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+          "file_bytes": 6332
+        }
+      ]
+    }
+  },
+  "duplicates": {
+    "within_split": {
+      "train": 2,
+      "validation": 0,
+      "test": 0
+    },
+    "across_splits": [
+      {
+        "split_a": "train",
+        "split_b": "validation",
+        "overlap_unique_texts": 0
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "overlap_unique_texts": 0
+      },
+      {
+        "split_a": "validation",
+        "split_b": "test",
+        "overlap_unique_texts": 0
+      }
+    ]
+  },
+  "policy": {
+    "split_membership": "preserve",
+    "duplicates": "report_only",
+    "invalid_records": "fail_fast",
+    "duplicate_comparison": "ml.preprocessing.normalize_text v1.0"
+  }
+}

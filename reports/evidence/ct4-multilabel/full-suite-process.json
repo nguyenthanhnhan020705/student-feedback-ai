@@ -1,0 +1,1 @@
+{"pid": 5060, "command": "TV2_RUN_REAL_DATA=1 python -B -m pytest -q -p no:cacheprovider"}

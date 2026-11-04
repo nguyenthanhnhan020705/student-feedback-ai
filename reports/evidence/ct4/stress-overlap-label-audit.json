@@ -1,0 +1,108 @@
+{
+  "validation_overlap_groups": 6,
+  "conflicting_validation_groups": 0,
+  "rows": [
+    {
+      "validation_id": "validation:000039",
+      "validation_labels": {
+        "sentiment": "positive",
+        "topic": "other"
+      },
+      "train": [
+        {
+          "id": "train:008653",
+          "labels": {
+            "sentiment": "positive",
+            "topic": "other"
+          },
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "validation_id": "validation:000243",
+      "validation_labels": {
+        "sentiment": "positive",
+        "topic": "lecturer"
+      },
+      "train": [
+        {
+          "id": "train:002451",
+          "labels": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "validation_id": "validation:000302",
+      "validation_labels": {
+        "sentiment": "negative",
+        "topic": "lecturer"
+      },
+      "train": [
+        {
+          "id": "train:004681",
+          "labels": {
+            "sentiment": "negative",
+            "topic": "lecturer"
+          },
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "validation_id": "validation:000324",
+      "validation_labels": {
+        "sentiment": "positive",
+        "topic": "lecturer"
+      },
+      "train": [
+        {
+          "id": "train:000831",
+          "labels": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "validation_id": "validation:000466",
+      "validation_labels": {
+        "sentiment": "positive",
+        "topic": "lecturer"
+      },
+      "train": [
+        {
+          "id": "train:003557",
+          "labels": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "validation_id": "validation:001105",
+      "validation_labels": {
+        "sentiment": "positive",
+        "topic": "lecturer"
+      },
+      "train": [
+        {
+          "id": "train:010848",
+          "labels": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "conflicts": []
+        }
+      ]
+    }
+  ]
+}

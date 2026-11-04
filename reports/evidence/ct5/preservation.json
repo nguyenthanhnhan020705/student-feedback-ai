@@ -1,0 +1,14 @@
+{
+  "total": 603,
+  "matched": 603,
+  "changed": [],
+  "restored": [],
+  "browser_snapshots": {
+    "browser/chrome-real-prediction.json": "035839472e5196fa588380b36743730f355d619165cc0849777453e2a8bd6f91",
+    "browser/chrome-real-prediction.png": "f232582915abb589c709a6150b53dc9118f993daf9409133499aea62c9792816",
+    "browser/msedge-real-prediction.json": "9634b4351392f9c34037f65ead73aa623a4f3f3a33b38eae7a4e123b1f63e33e",
+    "browser/msedge-real-prediction.png": "564290304e62d09876cad9aed597d1b0445ee64b12d0357cd6f8139557f0eb71",
+    "browser/chrome-mobile-mock.png": "c2464de74446c58673c77cf1fa90d756057ef2f1ace082e6ec4c4d12d2a6ba69",
+    "browser/msedge-mobile-mock.png": "ae2b3bb5eb858eb2b87ee94b9f0b1583318fbe2ce4a5ba31c5dd85912e9940b2"
+  }
+}

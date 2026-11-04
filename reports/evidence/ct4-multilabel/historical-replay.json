@@ -1,0 +1,27 @@
+[
+  {
+    "module": "ct_evaluation",
+    "exit_code": 0,
+    "fit": false
+  },
+  {
+    "module": "ct2_class_weights",
+    "exit_code": 0,
+    "fit": false
+  },
+  {
+    "module": "ct3_word_char",
+    "exit_code": 0,
+    "fit": false
+  },
+  {
+    "module": "ct4_augmentation",
+    "exit_code": 0,
+    "fit": false
+  },
+  {
+    "module": "ct5_selective_prediction",
+    "exit_code": 0,
+    "fit": false
+  }
+]

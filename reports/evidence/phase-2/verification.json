@@ -1,0 +1,427 @@
+{
+  "python": "3.13.3",
+  "executable": "D:\\N.ThanhNhan\\Project_AI\\student-feedback-ai\\.local-tools\\integration-p0\\.local-tools\\phase1-verify\\Scripts\\python.exe",
+  "rows": {
+    "train": 11426,
+    "validation": 1583,
+    "test": 3166
+  },
+  "duplicates": {
+    "within_split": {
+      "train": 2,
+      "validation": 0,
+      "test": 0
+    },
+    "across_splits": [
+      {
+        "split_a": "train",
+        "split_b": "validation",
+        "overlap_unique_texts": 0
+      },
+      {
+        "split_a": "train",
+        "split_b": "test",
+        "overlap_unique_texts": 0
+      },
+      {
+        "split_a": "validation",
+        "split_b": "test",
+        "overlap_unique_texts": 0
+      }
+    ]
+  },
+  "notebooks": [
+    {
+      "path": "notebooks\\01_eda.ipynb",
+      "code_cells": 4,
+      "executions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "errors": 0,
+      "method": "schema and stored-output inspection; no training cells rerun"
+    },
+    {
+      "path": "notebooks\\02_sentiment.ipynb",
+      "code_cells": 3,
+      "executions": [
+        1,
+        2,
+        3
+      ],
+      "errors": 0,
+      "method": "schema and stored-output inspection; no training cells rerun"
+    },
+    {
+      "path": "notebooks\\03_topic.ipynb",
+      "code_cells": 4,
+      "executions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "errors": 0,
+      "method": "schema and stored-output inspection; no training cells rerun"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "sentiment",
+      "algorithm": "linear_svm",
+      "artifact_sha256": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+      "runtime": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pandas": "2.3.3",
+        "scikit-learn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+      "metrics": {
+        "validation": {
+          "accuracy": 0.9147188881869868,
+          "macro_precision": 0.8499784538140703,
+          "macro_recall": 0.7216282991174326,
+          "macro_f1": 0.752966152304506,
+          "per_class": [
+            {
+              "label": "negative",
+              "precision": 0.9095890410958904,
+              "recall": 0.9418439716312057,
+              "f1": 0.9254355400696864,
+              "support": 705
+            },
+            {
+              "label": "neutral",
+              "precision": 0.7142857142857143,
+              "recall": 0.273972602739726,
+              "f1": 0.39603960396039606,
+              "support": 73
+            },
+            {
+              "label": "positive",
+              "precision": 0.926060606060606,
+              "recall": 0.9490683229813665,
+              "f1": 0.9374233128834356,
+              "support": 805
+            }
+          ],
+          "confusion_matrix": [
+            [
+              664,
+              4,
+              37
+            ],
+            [
+              29,
+              20,
+              24
+            ],
+            [
+              37,
+              4,
+              764
+            ]
+          ],
+          "label_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "n_rows": 1583
+        },
+        "test": {
+          "accuracy": 0.8970309538850284,
+          "macro_precision": 0.8049051354220893,
+          "macro_recall": 0.6853353476681937,
+          "macro_f1": 0.7051042339369374,
+          "per_class": [
+            {
+              "label": "negative",
+              "precision": 0.8754863813229572,
+              "recall": 0.9581263307310149,
+              "f1": 0.9149440867502542,
+              "support": 1409
+            },
+            {
+              "label": "neutral",
+              "precision": 0.6122448979591837,
+              "recall": 0.17964071856287425,
+              "f1": 0.2777777777777778,
+              "support": 167
+            },
+            {
+              "label": "positive",
+              "precision": 0.926984126984127,
+              "recall": 0.9182389937106918,
+              "f1": 0.9225908372827805,
+              "support": 1590
+            }
+          ],
+          "confusion_matrix": [
+            [
+              1350,
+              7,
+              52
+            ],
+            [
+              74,
+              30,
+              63
+            ],
+            [
+              118,
+              12,
+              1460
+            ]
+          ],
+          "label_order": [
+            "negative",
+            "neutral",
+            "positive"
+          ],
+          "n_rows": 3166
+        }
+      },
+      "reload_predictions": [
+        "positive",
+        "negative",
+        "negative"
+      ],
+      "vocabulary_size": 13308,
+      "train_only_vocabulary_and_idf": true,
+      "errors": 326,
+      "pid": 17432
+    },
+    {
+      "task": "topic",
+      "algorithm": "linear_svm",
+      "artifact_sha256": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+      "runtime": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pandas": "2.3.3",
+        "scikit-learn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+      "metrics": {
+        "validation": {
+          "accuracy": 0.8799747315224258,
+          "macro_precision": 0.810246847136926,
+          "macro_recall": 0.7372909609315511,
+          "macro_f1": 0.7541730105033849,
+          "per_class": [
+            {
+              "label": "lecturer",
+              "precision": 0.9205409974640744,
+              "recall": 0.946133796698523,
+              "f1": 0.9331619537275064,
+              "support": 1151
+            },
+            {
+              "label": "curriculum",
+              "precision": 0.7361111111111112,
+              "recall": 0.7940074906367042,
+              "f1": 0.7639639639639639,
+              "support": 267
+            },
+            {
+              "label": "facility",
+              "precision": 0.9014084507042254,
+              "recall": 0.9142857142857143,
+              "f1": 0.9078014184397163,
+              "support": 70
+            },
+            {
+              "label": "other",
+              "precision": 0.6829268292682927,
+              "recall": 0.29473684210526313,
+              "f1": 0.4117647058823529,
+              "support": 95
+            }
+          ],
+          "confusion_matrix": [
+            [
+              1089,
+              52,
+              3,
+              7
+            ],
+            [
+              47,
+              212,
+              2,
+              6
+            ],
+            [
+              3,
+              3,
+              64,
+              0
+            ],
+            [
+              44,
+              21,
+              2,
+              28
+            ]
+          ],
+          "label_order": [
+            "lecturer",
+            "curriculum",
+            "facility",
+            "other"
+          ],
+          "n_rows": 1583
+        },
+        "test": {
+          "accuracy": 0.8616550852811118,
+          "macro_precision": 0.7802037491130546,
+          "macro_recall": 0.7138685486987416,
+          "macro_f1": 0.7353817115066393,
+          "per_class": [
+            {
+              "label": "lecturer",
+              "precision": 0.9095925297113752,
+              "recall": 0.9358078602620087,
+              "f1": 0.9225139905294877,
+              "support": 2290
+            },
+            {
+              "label": "curriculum",
+              "precision": 0.6911262798634812,
+              "recall": 0.708041958041958,
+              "f1": 0.6994818652849741,
+              "support": 572
+            },
+            {
+              "label": "facility",
+              "precision": 0.9225352112676056,
+              "recall": 0.903448275862069,
+              "f1": 0.9128919860627178,
+              "support": 145
+            },
+            {
+              "label": "other",
+              "precision": 0.5975609756097561,
+              "recall": 0.3081761006289308,
+              "f1": 0.4066390041493776,
+              "support": 159
+            }
+          ],
+          "confusion_matrix": [
+            [
+              2143,
+              123,
+              5,
+              19
+            ],
+            [
+              151,
+              405,
+              3,
+              13
+            ],
+            [
+              3,
+              10,
+              131,
+              1
+            ],
+            [
+              59,
+              48,
+              3,
+              49
+            ]
+          ],
+          "label_order": [
+            "lecturer",
+            "curriculum",
+            "facility",
+            "other"
+          ],
+          "n_rows": 3166
+        }
+      },
+      "reload_predictions": [
+        "lecturer",
+        "curriculum",
+        "facility",
+        "lecturer",
+        "facility"
+      ],
+      "vocabulary_size": 13308,
+      "train_only_vocabulary_and_idf": true,
+      "errors": 438,
+      "pid": 5680
+    }
+  ],
+  "protected_hashes": {
+    "ml\\data.py": "b72195c5a46b14028bc74890f40dc6467a087d67ed1a56b7de43bb0a4d7fcc57",
+    "ml\\evaluate_sentiment.py": "7799fdeaa7c627fe7122557d26c416162bd95e518717d1b337d1a2605557b80b",
+    "ml\\evaluate_topic.py": "b17f6b500fd074263541f0b999753ac2b04b4888dc0178a57806a665c5766781",
+    "ml\\labels.py": "d6a0cc342b8b0f34c6bb673a485f0aeb05123a0dee02dd8bf35ca8ecf62c82f6",
+    "ml\\predict_sentiment.py": "01ac977fb3332e4bec03af830df07a8be52428bf74aa6c70dd393684373cc3b5",
+    "ml\\predict_topic.py": "912cc1f14a9bd9b66146d5d499f48d10e17012a55373e14cbe1ba21ad93189f6",
+    "ml\\preprocessing.py": "f046d324f66ca5abe102879adcf2ece25c520c4563d3a84e46719481f87cb148",
+    "ml\\train_sentiment.py": "54bcdf8a9f20c8736abef6586f1c104d06d1452526998d739b146ac7678a3b41",
+    "ml\\train_topic.py": "c312fe45f8872c9f0f6043bf2bf6aba1994c0ad777e218108560b57075f31999",
+    "ml\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models\\README.md": "04baa8af07fc6d8272604109366b108c3d76cb320cc0200e2dd9a29696e8c87b",
+    "models\\sentiment_metadata.json": "96c8c773f15be1c252e0faef9e98a7fbfe515d802ffd68028b25f1c37769eeb8",
+    "models\\sentiment_pipeline.joblib": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+    "models\\topic_metadata.json": "def760c945900a26925e01c3eb84c071a6a9abc41697a188b044fb2ffc22468a",
+    "models\\topic_pipeline.joblib": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+    "data\\processed\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data\\processed\\test.csv": "5e5b79071cea0d3fa0931a9ba451443c56284c414c8eda9ac9de2ef2db666ece",
+    "data\\processed\\train.csv": "4ce2ea78d80381796dc89b965b5b7bd375391b535005caea958728dafe2a9c2b",
+    "data\\processed\\validation.csv": "576cf2b5485bd72fb5d1de06adfa252c80d4b5bca915378e4cce4a140804485d",
+    "data\\raw\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data\\raw\\dev\\sentiments.txt": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+    "data\\raw\\dev\\sents.txt": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+    "data\\raw\\dev\\topics.txt": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96",
+    "data\\raw\\test\\sentiments.txt": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+    "data\\raw\\test\\sents.txt": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+    "data\\raw\\test\\topics.txt": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+    "data\\raw\\train\\sentiments.txt": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+    "data\\raw\\train\\sents.txt": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+    "data\\raw\\train\\topics.txt": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+    "notebooks\\01_eda.ipynb": "e322da38a93add3015d7d590dae5f499fdf7d54677a0a242990eed6cd3d98e7e",
+    "notebooks\\02_sentiment.ipynb": "cda02a12993d8ea4f5b7b2b386711a01c9178f4f695693f4750be1cf262f4c8d",
+    "notebooks\\03_topic.ipynb": "59f95d79e6d35ee7ae6e611cf1dee1bfed0d6f78c6a55665cddf4f2f2d01cbcb",
+    "notebooks\\README.md": "2592bb25fd178c82758ac9319188046bc334c30b6967d1a43bf9b1cef331ebe5",
+    "reports\\data\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports\\data\\legacy_sentiment_manifest.json": "bea0c30401d6ee304993828b7d348cd902dac0421836a7a523ac6cfa94f55b89",
+    "reports\\data\\manifest.json": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+    "reports\\data\\sentiment_counts.csv": "baf6bc1cd6997cf0a5aae56a385b91bcc6ca3accda7319a638166d283bf5b088",
+    "reports\\data\\sentiment_distribution.png": "d913275321e9f2b8955f568144efca8778dcdc0f37fb3248e615b9ef896d7590",
+    "reports\\data\\source.json": "12311396c5a68413801eeeea594c771ca5dc715542d102bacc3e326a7be9a9b6",
+    "reports\\data\\summary.csv": "ad8646a2069ef471eb4827fb5bd61c0f012bc2b68de57b892144d5f75b4977aa",
+    "reports\\data\\text_length_distribution.png": "a2974195b08741d6ef09df75fa7060ee9f68e801e902c0686fd607b4fc318b2b",
+    "reports\\data\\topic_counts.csv": "bf7f89a24bc9bc5919c1c66d4e08ba2bb60f394073e3f35b1f6f98a1919319f7",
+    "reports\\data\\topic_distribution.png": "7c370d1546ef3eb2e6c5dd5f25add45cf42f34bbce50f5437ef167a84c4d9802",
+    "reports\\metrics\\sentiment\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports\\metrics\\sentiment\\comparison.json": "299a894ead888fcf0cc22f631dec5eded5aff80eb136eb4b33b9616ef3ebed77",
+    "reports\\metrics\\sentiment\\data_summary.csv": "790a4919709453084592049a8ceb63afe699b51ae42a9bbf67ec85a0e3a4cf2d",
+    "reports\\metrics\\sentiment\\error_analysis.json": "ee7413264f9c50dcb6fa2571a9bd0c0cd6ec4cd8ac58585adfad7bdd56aea524",
+    "reports\\metrics\\sentiment\\selected_test.json": "56c10bf6da998ee7aad19c25308d1a255eedb89281200081c6141e4a8571a240",
+    "reports\\metrics\\topic\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports\\metrics\\topic\\comparison.json": "f0e81c621c46cdbb4eb8f20101b3b97cd44e0cc9614b53c06975e754fafbdb9f",
+    "reports\\metrics\\topic\\error_analysis.json": "e6b4272a36b6150dd6620a358bafa7a56fbd5a48743aa6f9338b9aae09a130d6",
+    "reports\\metrics\\topic\\selected_test.json": "12c8cff40f039185795e6eccf8c02fb6f51bb60a364fd79902707e6530cc7ef5",
+    "reports\\figures\\sentiment\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports\\figures\\sentiment\\confusion_matrix.png": "a9c19027edbe87cc23a29ca8f5162a155ae0ee06707aeaf1ceb22577360d4b2a",
+    "reports\\figures\\sentiment\\Label_distribution.png": "f7018749f5f86c0660e7b8ee6161382ab6ab4b9f26bf828b4b552d1a96b693a2",
+    "reports\\figures\\sentiment\\text_length_distribution.png": "76b300c45a2f031a84bcc981caee22599f6a4ec2ea97bbd83f878d126d1d9a49",
+    "reports\\figures\\topic\\.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reports\\figures\\topic\\confusion_matrix.png": "e1b7af6efd7afefdb7fcd4bc974cf320dde7474e92bc4eb87d38295ed09befa6"
+  },
+  "protected_files_unchanged": true,
+  "scope": "No fit; non-winning models checked against stored evidence, not retrained."
+}

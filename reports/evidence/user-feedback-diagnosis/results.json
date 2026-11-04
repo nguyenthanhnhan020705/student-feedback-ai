@@ -1,0 +1,2252 @@
+{
+  "note": "Diagnostic probes, not training or an independent quality benchmark.",
+  "examples": [
+    {
+      "text": "Giảng viên giảng bài dễ hiểu, nhiệt tình và luôn giải đáp thắc mắc của sinh viên.",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 31,
+          "known_terms": [
+            "bài",
+            "bài dễ",
+            "của",
+            "của sinh",
+            "dễ",
+            "dễ hiểu",
+            "giải",
+            "giải đáp",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hiểu nhiệt",
+            "luôn",
+            "luôn giải",
+            "mắc",
+            "mắc của",
+            "nhiệt",
+            "nhiệt tình",
+            "sinh",
+            "sinh viên",
+            "thắc",
+            "thắc mắc",
+            "tình",
+            "tình và",
+            "viên",
+            "viên giảng",
+            "và",
+            "và luôn",
+            "đáp",
+            "đáp thắc"
+          ],
+          "decision_scores": {
+            "negative": -2.074033510068517,
+            "neutral": -1.8460627735166522,
+            "positive": 2.213341409048996
+          }
+        },
+        "topic": {
+          "nonzero": 31,
+          "known_terms": [
+            "bài",
+            "bài dễ",
+            "của",
+            "của sinh",
+            "dễ",
+            "dễ hiểu",
+            "giải",
+            "giải đáp",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hiểu nhiệt",
+            "luôn",
+            "luôn giải",
+            "mắc",
+            "mắc của",
+            "nhiệt",
+            "nhiệt tình",
+            "sinh",
+            "sinh viên",
+            "thắc",
+            "thắc mắc",
+            "tình",
+            "tình và",
+            "viên",
+            "viên giảng",
+            "và",
+            "và luôn",
+            "đáp",
+            "đáp thắc"
+          ],
+          "decision_scores": {
+            "curriculum": -2.4385450270007434,
+            "facility": -1.6278380774778294,
+            "lecturer": 2.613767199438012,
+            "other": -1.9596530213184065
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên giảng bài khó hiểu, thường xuyên đi trễ và không giải đáp câu hỏi.",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 28,
+          "known_terms": [
+            "bài",
+            "bài khó",
+            "câu",
+            "câu hỏi",
+            "giải",
+            "giải đáp",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hỏi",
+            "khó",
+            "khó hiểu",
+            "không",
+            "không giải",
+            "thường",
+            "thường xuyên",
+            "trễ",
+            "trễ và",
+            "viên",
+            "viên giảng",
+            "và",
+            "và không",
+            "xuyên",
+            "xuyên đi",
+            "đi",
+            "đi trễ",
+            "đáp"
+          ],
+          "decision_scores": {
+            "negative": 1.393374052080846,
+            "neutral": -1.6081705213605735,
+            "positive": -1.4953970189002965
+          }
+        },
+        "topic": {
+          "nonzero": 28,
+          "known_terms": [
+            "bài",
+            "bài khó",
+            "câu",
+            "câu hỏi",
+            "giải",
+            "giải đáp",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hỏi",
+            "khó",
+            "khó hiểu",
+            "không",
+            "không giải",
+            "thường",
+            "thường xuyên",
+            "trễ",
+            "trễ và",
+            "viên",
+            "viên giảng",
+            "và",
+            "và không",
+            "xuyên",
+            "xuyên đi",
+            "đi",
+            "đi trễ",
+            "đáp"
+          ],
+          "decision_scores": {
+            "curriculum": -2.245322274095119,
+            "facility": -1.1711436518233844,
+            "lecturer": 2.3150307328925392,
+            "other": -1.738879730866072
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên sử dụng slide và viết bảng trong giờ học.",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 20,
+          "known_terms": [
+            "bảng",
+            "dụng",
+            "dụng slide",
+            "giảng",
+            "giảng viên",
+            "giờ",
+            "giờ học",
+            "học",
+            "slide",
+            "slide và",
+            "sử",
+            "sử dụng",
+            "trong",
+            "trong giờ",
+            "viên",
+            "viên sử",
+            "viết",
+            "viết bảng",
+            "và",
+            "và viết"
+          ],
+          "decision_scores": {
+            "negative": 0.3208990655442153,
+            "neutral": -1.1406469378659583,
+            "positive": -0.2839975687378626
+          }
+        },
+        "topic": {
+          "nonzero": 20,
+          "known_terms": [
+            "bảng",
+            "dụng",
+            "dụng slide",
+            "giảng",
+            "giảng viên",
+            "giờ",
+            "giờ học",
+            "học",
+            "slide",
+            "slide và",
+            "sử",
+            "sử dụng",
+            "trong",
+            "trong giờ",
+            "viên",
+            "viên sử",
+            "viết",
+            "viết bảng",
+            "và",
+            "và viết"
+          ],
+          "decision_scores": {
+            "curriculum": -1.3601562226909278,
+            "facility": -0.7703322353944138,
+            "lecturer": 0.5455740952270787,
+            "other": -1.02342443537488
+          }
+        }
+      }
+    },
+    {
+      "text": "Chương trình đào tạo hợp lý, nội dung môn học thiết thực và có nhiều bài thực hành hữu ích.",
+      "sentiment": "positive",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 33,
+          "known_terms": [
+            "bài",
+            "bài thực",
+            "chương",
+            "chương trình",
+            "có",
+            "có nhiều",
+            "dung",
+            "dung môn",
+            "hành",
+            "học",
+            "hợp",
+            "hợp lý",
+            "hữu",
+            "hữu ích",
+            "lý",
+            "môn",
+            "môn học",
+            "nhiều",
+            "nhiều bài",
+            "nội",
+            "nội dung",
+            "thiết",
+            "thiết thực",
+            "thực",
+            "thực hành",
+            "trình",
+            "trình đào",
+            "tạo",
+            "và",
+            "và có",
+            "ích",
+            "đào",
+            "đào tạo"
+          ],
+          "decision_scores": {
+            "negative": -0.8388539478747676,
+            "neutral": -1.2003373275969487,
+            "positive": 0.8417165065037185
+          }
+        },
+        "topic": {
+          "nonzero": 33,
+          "known_terms": [
+            "bài",
+            "bài thực",
+            "chương",
+            "chương trình",
+            "có",
+            "có nhiều",
+            "dung",
+            "dung môn",
+            "hành",
+            "học",
+            "hợp",
+            "hợp lý",
+            "hữu",
+            "hữu ích",
+            "lý",
+            "môn",
+            "môn học",
+            "nhiều",
+            "nhiều bài",
+            "nội",
+            "nội dung",
+            "thiết",
+            "thiết thực",
+            "thực",
+            "thực hành",
+            "trình",
+            "trình đào",
+            "tạo",
+            "và",
+            "và có",
+            "ích",
+            "đào",
+            "đào tạo"
+          ],
+          "decision_scores": {
+            "curriculum": 1.4350133526145796,
+            "facility": -1.408529936842042,
+            "lecturer": -0.7938846686879244,
+            "other": -2.1410113314559673
+          }
+        }
+      }
+    },
+    {
+      "text": "Chương trình đào tạo quá nặng lý thuyết, nội dung trùng lặp và thiếu thực hành.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 25,
+          "known_terms": [
+            "chương",
+            "chương trình",
+            "dung",
+            "hành",
+            "lý",
+            "lý thuyết",
+            "lặp",
+            "nặng",
+            "nội",
+            "nội dung",
+            "quá",
+            "quá nặng",
+            "thiếu",
+            "thiếu thực",
+            "thuyết",
+            "thực",
+            "thực hành",
+            "trình",
+            "trình đào",
+            "trùng",
+            "tạo",
+            "và",
+            "và thiếu",
+            "đào",
+            "đào tạo"
+          ],
+          "decision_scores": {
+            "negative": 1.6000501926020227,
+            "neutral": -1.5697123084003908,
+            "positive": -1.219512101929266
+          }
+        },
+        "topic": {
+          "nonzero": 25,
+          "known_terms": [
+            "chương",
+            "chương trình",
+            "dung",
+            "hành",
+            "lý",
+            "lý thuyết",
+            "lặp",
+            "nặng",
+            "nội",
+            "nội dung",
+            "quá",
+            "quá nặng",
+            "thiếu",
+            "thiếu thực",
+            "thuyết",
+            "thực",
+            "thực hành",
+            "trình",
+            "trình đào",
+            "trùng",
+            "tạo",
+            "và",
+            "và thiếu",
+            "đào",
+            "đào tạo"
+          ],
+          "decision_scores": {
+            "curriculum": 1.979342826107162,
+            "facility": -1.609995024724203,
+            "lecturer": -1.0009925516376768,
+            "other": -2.1173044082903667
+          }
+        }
+      }
+    },
+    {
+      "text": "Chương trình học gồm các môn đại cương và các môn chuyên ngành.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 18,
+          "known_terms": [
+            "chuyên",
+            "chuyên ngành",
+            "chương",
+            "chương trình",
+            "các",
+            "các môn",
+            "cương",
+            "cương và",
+            "gồm",
+            "học",
+            "môn",
+            "môn chuyên",
+            "ngành",
+            "trình",
+            "trình học",
+            "và",
+            "và các",
+            "đại"
+          ],
+          "decision_scores": {
+            "negative": 0.12828592251280108,
+            "neutral": -0.6541840220391111,
+            "positive": -0.4869455065196554
+          }
+        },
+        "topic": {
+          "nonzero": 18,
+          "known_terms": [
+            "chuyên",
+            "chuyên ngành",
+            "chương",
+            "chương trình",
+            "các",
+            "các môn",
+            "cương",
+            "cương và",
+            "gồm",
+            "học",
+            "môn",
+            "môn chuyên",
+            "ngành",
+            "trình",
+            "trình học",
+            "và",
+            "và các",
+            "đại"
+          ],
+          "decision_scores": {
+            "curriculum": 1.0642279042934326,
+            "facility": -1.2882510366535807,
+            "lecturer": -1.0642760535312763,
+            "other": -1.2128025780605811
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học sạch sẽ, máy lạnh hoạt động tốt và máy chiếu rất rõ nét.",
+      "sentiment": "positive",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 22,
+          "known_terms": [
+            "chiếu",
+            "chiếu rất",
+            "hoạt",
+            "hoạt động",
+            "học",
+            "lạnh",
+            "máy",
+            "máy chiếu",
+            "máy lạnh",
+            "phòng",
+            "phòng học",
+            "rõ",
+            "rất",
+            "rất rõ",
+            "sạch",
+            "sạch sẽ",
+            "sẽ",
+            "tốt",
+            "tốt và",
+            "và",
+            "và máy",
+            "động"
+          ],
+          "decision_scores": {
+            "negative": -0.028666336175480395,
+            "neutral": -1.331412083035325,
+            "positive": -0.01317048120217812
+          }
+        },
+        "topic": {
+          "nonzero": 22,
+          "known_terms": [
+            "chiếu",
+            "chiếu rất",
+            "hoạt",
+            "hoạt động",
+            "học",
+            "lạnh",
+            "máy",
+            "máy chiếu",
+            "máy lạnh",
+            "phòng",
+            "phòng học",
+            "rõ",
+            "rất",
+            "rất rõ",
+            "sạch",
+            "sạch sẽ",
+            "sẽ",
+            "tốt",
+            "tốt và",
+            "và",
+            "và máy",
+            "động"
+          ],
+          "decision_scores": {
+            "curriculum": -2.0646898473345283,
+            "facility": 1.7108562291542992,
+            "lecturer": -0.774679585997134,
+            "other": -1.557662028911265
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học nóng, bàn ghế hư hỏng và máy chiếu thường xuyên không hoạt động.",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 25,
+          "known_terms": [
+            "bàn",
+            "bàn ghế",
+            "chiếu",
+            "ghế",
+            "hoạt",
+            "hoạt động",
+            "hư",
+            "hư hỏng",
+            "học",
+            "học nóng",
+            "hỏng",
+            "không",
+            "không hoạt",
+            "máy",
+            "máy chiếu",
+            "nóng",
+            "phòng",
+            "phòng học",
+            "thường",
+            "thường xuyên",
+            "và",
+            "và máy",
+            "xuyên",
+            "xuyên không",
+            "động"
+          ],
+          "decision_scores": {
+            "negative": 1.6432585446455596,
+            "neutral": -1.1665952984923473,
+            "positive": -1.747118576560386
+          }
+        },
+        "topic": {
+          "nonzero": 25,
+          "known_terms": [
+            "bàn",
+            "bàn ghế",
+            "chiếu",
+            "ghế",
+            "hoạt",
+            "hoạt động",
+            "hư",
+            "hư hỏng",
+            "học",
+            "học nóng",
+            "hỏng",
+            "không",
+            "không hoạt",
+            "máy",
+            "máy chiếu",
+            "nóng",
+            "phòng",
+            "phòng học",
+            "thường",
+            "thường xuyên",
+            "và",
+            "và máy",
+            "xuyên",
+            "xuyên không",
+            "động"
+          ],
+          "decision_scores": {
+            "curriculum": -2.422054883958163,
+            "facility": 2.0441127820090808,
+            "lecturer": -1.0414588355771204,
+            "other": -1.5507163463052525
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học có bàn ghế, bảng và một máy chiếu.",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 16,
+          "known_terms": [
+            "bàn",
+            "bàn ghế",
+            "bảng",
+            "bảng và",
+            "chiếu",
+            "có",
+            "ghế",
+            "học",
+            "học có",
+            "máy",
+            "máy chiếu",
+            "một",
+            "phòng",
+            "phòng học",
+            "và",
+            "và một"
+          ],
+          "decision_scores": {
+            "negative": 1.320301307628342,
+            "neutral": -1.1682165366620691,
+            "positive": -1.4660504301981323
+          }
+        },
+        "topic": {
+          "nonzero": 16,
+          "known_terms": [
+            "bàn",
+            "bàn ghế",
+            "bảng",
+            "bảng và",
+            "chiếu",
+            "có",
+            "ghế",
+            "học",
+            "học có",
+            "máy",
+            "máy chiếu",
+            "một",
+            "phòng",
+            "phòng học",
+            "và",
+            "và một"
+          ],
+          "decision_scores": {
+            "curriculum": -1.3821257027175573,
+            "facility": 1.6759368756998851,
+            "lecturer": -1.497572783290322,
+            "other": -1.6586386851761574
+          }
+        }
+      }
+    },
+    {
+      "text": "Tôi rất vui và hài lòng với những trải nghiệm của mình tại trường.",
+      "sentiment": "positive",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 25,
+          "known_terms": [
+            "của",
+            "của mình",
+            "hài",
+            "hài lòng",
+            "lòng",
+            "lòng với",
+            "mình",
+            "nghiệm",
+            "nghiệm của",
+            "những",
+            "rất",
+            "rất vui",
+            "trường",
+            "trải",
+            "trải nghiệm",
+            "tôi",
+            "tôi rất",
+            "tại",
+            "tại trường",
+            "vui",
+            "vui và",
+            "và",
+            "và hài",
+            "với",
+            "với những"
+          ],
+          "decision_scores": {
+            "negative": -0.4745894744049048,
+            "neutral": -1.355755775539896,
+            "positive": 0.5933986834852452
+          }
+        },
+        "topic": {
+          "nonzero": 25,
+          "known_terms": [
+            "của",
+            "của mình",
+            "hài",
+            "hài lòng",
+            "lòng",
+            "lòng với",
+            "mình",
+            "nghiệm",
+            "nghiệm của",
+            "những",
+            "rất",
+            "rất vui",
+            "trường",
+            "trải",
+            "trải nghiệm",
+            "tôi",
+            "tôi rất",
+            "tại",
+            "tại trường",
+            "vui",
+            "vui và",
+            "và",
+            "và hài",
+            "với",
+            "với những"
+          ],
+          "decision_scores": {
+            "curriculum": -0.23793625882605873,
+            "facility": -0.907544994768774,
+            "lecturer": -0.6291466735553022,
+            "other": -0.41982140710651816
+          }
+        }
+      }
+    },
+    {
+      "text": "Tôi cảm thấy thất vọng và không hài lòng với trải nghiệm của mình tại trường.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 27,
+          "known_terms": [
+            "cảm",
+            "cảm thấy",
+            "của",
+            "của mình",
+            "hài",
+            "hài lòng",
+            "không",
+            "không hài",
+            "lòng",
+            "lòng với",
+            "mình",
+            "nghiệm",
+            "nghiệm của",
+            "thất",
+            "thất vọng",
+            "thấy",
+            "trường",
+            "trải",
+            "trải nghiệm",
+            "tôi",
+            "tôi cảm",
+            "tại",
+            "tại trường",
+            "và",
+            "và không",
+            "vọng",
+            "với"
+          ],
+          "decision_scores": {
+            "negative": 0.8741868097646676,
+            "neutral": -0.7971223667281866,
+            "positive": -1.0214480747061474
+          }
+        },
+        "topic": {
+          "nonzero": 27,
+          "known_terms": [
+            "cảm",
+            "cảm thấy",
+            "của",
+            "của mình",
+            "hài",
+            "hài lòng",
+            "không",
+            "không hài",
+            "lòng",
+            "lòng với",
+            "mình",
+            "nghiệm",
+            "nghiệm của",
+            "thất",
+            "thất vọng",
+            "thấy",
+            "trường",
+            "trải",
+            "trải nghiệm",
+            "tôi",
+            "tôi cảm",
+            "tại",
+            "tại trường",
+            "và",
+            "và không",
+            "vọng",
+            "với"
+          ],
+          "decision_scores": {
+            "curriculum": 0.0824636611676356,
+            "facility": -0.8502971864265756,
+            "lecturer": -0.7999792601968794,
+            "other": -0.4891765599161957
+          }
+        }
+      }
+    },
+    {
+      "text": "Tôi hiện là sinh viên năm thứ hai của trường.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 15,
+          "known_terms": [
+            "của",
+            "của trường",
+            "hai",
+            "hiện",
+            "là",
+            "là sinh",
+            "năm",
+            "sinh",
+            "sinh viên",
+            "thứ",
+            "thứ hai",
+            "trường",
+            "tôi",
+            "viên",
+            "viên năm"
+          ],
+          "decision_scores": {
+            "negative": 0.3261879375906701,
+            "neutral": -0.4074203923143106,
+            "positive": -0.8907690405553715
+          }
+        },
+        "topic": {
+          "nonzero": 15,
+          "known_terms": [
+            "của",
+            "của trường",
+            "hai",
+            "hiện",
+            "là",
+            "là sinh",
+            "năm",
+            "sinh",
+            "sinh viên",
+            "thứ",
+            "thứ hai",
+            "trường",
+            "tôi",
+            "viên",
+            "viên năm"
+          ],
+          "decision_scores": {
+            "curriculum": -0.07347388426100449,
+            "facility": -0.9504011294630831,
+            "lecturer": -0.430662275311111,
+            "other": -0.589804597401798
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên giảng bài không dễ hiểu.",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 12,
+          "known_terms": [
+            "bài",
+            "bài không",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "không",
+            "không dễ",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "negative": -0.6512995772511514,
+            "neutral": -1.034447438841,
+            "positive": 0.19204093462227145
+          }
+        },
+        "topic": {
+          "nonzero": 12,
+          "known_terms": [
+            "bài",
+            "bài không",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "không",
+            "không dễ",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "curriculum": -1.5642077262129193,
+            "facility": -1.5677812138317413,
+            "lecturer": 1.2095733801701538,
+            "other": -1.385233664334904
+          }
+        }
+      }
+    },
+    {
+      "text": "Cơ sở vật chất không tệ như tôi nghĩ.",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 14,
+          "known_terms": [
+            "chất",
+            "chất không",
+            "cơ",
+            "cơ sở",
+            "không",
+            "nghĩ",
+            "như",
+            "sở",
+            "sở vật",
+            "tôi",
+            "tôi nghĩ",
+            "tệ",
+            "vật",
+            "vật chất"
+          ],
+          "decision_scores": {
+            "negative": 1.5012586683522167,
+            "neutral": -0.6458334385076178,
+            "positive": -1.9712671607013195
+          }
+        },
+        "topic": {
+          "nonzero": 14,
+          "known_terms": [
+            "chất",
+            "chất không",
+            "cơ",
+            "cơ sở",
+            "không",
+            "nghĩ",
+            "như",
+            "sở",
+            "sở vật",
+            "tôi",
+            "tôi nghĩ",
+            "tệ",
+            "vật",
+            "vật chất"
+          ],
+          "decision_scores": {
+            "curriculum": -1.243511056358174,
+            "facility": 0.40705334049347786,
+            "lecturer": -0.9821154729836825,
+            "other": -0.6122283771122681
+          }
+        }
+      }
+    },
+    {
+      "text": "Máy chiếu thật tuyệt vời, buổi nào cũng hỏng.",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 14,
+          "known_terms": [
+            "buổi",
+            "buổi nào",
+            "chiếu",
+            "cũng",
+            "hỏng",
+            "máy",
+            "máy chiếu",
+            "nào",
+            "nào cũng",
+            "thật",
+            "thật tuyệt",
+            "tuyệt",
+            "tuyệt vời",
+            "vời"
+          ],
+          "decision_scores": {
+            "negative": 0.43059292996050413,
+            "neutral": -1.5325514505624482,
+            "positive": -0.054787081503686
+          }
+        },
+        "topic": {
+          "nonzero": 14,
+          "known_terms": [
+            "buổi",
+            "buổi nào",
+            "chiếu",
+            "cũng",
+            "hỏng",
+            "máy",
+            "máy chiếu",
+            "nào",
+            "nào cũng",
+            "thật",
+            "thật tuyệt",
+            "tuyệt",
+            "tuyệt vời",
+            "vời"
+          ],
+          "decision_scores": {
+            "curriculum": -1.041856812845032,
+            "facility": 0.20933517149020286,
+            "lecturer": -0.5407112505854033,
+            "other": -0.8780874519960006
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên rất nhiệt tình nhưng giảng bài khó hiểu.",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 18,
+          "known_terms": [
+            "bài",
+            "bài khó",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "khó",
+            "khó hiểu",
+            "nhiệt",
+            "nhiệt tình",
+            "nhưng",
+            "nhưng giảng",
+            "rất",
+            "rất nhiệt",
+            "tình",
+            "tình nhưng",
+            "viên",
+            "viên rất"
+          ],
+          "decision_scores": {
+            "negative": 0.6001001715994293,
+            "neutral": -1.4707370787962195,
+            "positive": -0.7373708738589464
+          }
+        },
+        "topic": {
+          "nonzero": 18,
+          "known_terms": [
+            "bài",
+            "bài khó",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "khó",
+            "khó hiểu",
+            "nhiệt",
+            "nhiệt tình",
+            "nhưng",
+            "nhưng giảng",
+            "rất",
+            "rất nhiệt",
+            "tình",
+            "tình nhưng",
+            "viên",
+            "viên rất"
+          ],
+          "decision_scores": {
+            "curriculum": -2.4773417129913304,
+            "facility": -1.1897665706011362,
+            "lecturer": 2.2033163536876055,
+            "other": -1.6946985475095873
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên giảng rất hay nhưng phòng học quá nóng.",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 17,
+          "known_terms": [
+            "giảng",
+            "giảng rất",
+            "giảng viên",
+            "hay",
+            "hay nhưng",
+            "học",
+            "học quá",
+            "nhưng",
+            "nóng",
+            "phòng",
+            "phòng học",
+            "quá",
+            "quá nóng",
+            "rất",
+            "rất hay",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "negative": 0.5765135176000249,
+            "neutral": -1.6431835628328315,
+            "positive": -0.38617183797030413
+          }
+        },
+        "topic": {
+          "nonzero": 17,
+          "known_terms": [
+            "giảng",
+            "giảng rất",
+            "giảng viên",
+            "hay",
+            "hay nhưng",
+            "học",
+            "học quá",
+            "nhưng",
+            "nóng",
+            "phòng",
+            "phòng học",
+            "quá",
+            "quá nóng",
+            "rất",
+            "rất hay",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "curriculum": -2.694364147088587,
+            "facility": 0.41827566856432086,
+            "lecturer": 0.6233110406364843,
+            "other": -1.864087495914776
+          }
+        }
+      }
+    },
+    {
+      "text": "Nhà trường nên bổ sung thêm các buổi thực hành.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 19,
+          "known_terms": [
+            "buổi",
+            "buổi thực",
+            "bổ",
+            "bổ sung",
+            "các",
+            "các buổi",
+            "hành",
+            "nhà",
+            "nhà trường",
+            "nên",
+            "nên bổ",
+            "sung",
+            "sung thêm",
+            "thêm",
+            "thêm các",
+            "thực",
+            "thực hành",
+            "trường",
+            "trường nên"
+          ],
+          "decision_scores": {
+            "negative": 1.4308523930632298,
+            "neutral": -1.395658090523567,
+            "positive": -1.5251145047484007
+          }
+        },
+        "topic": {
+          "nonzero": 19,
+          "known_terms": [
+            "buổi",
+            "buổi thực",
+            "bổ",
+            "bổ sung",
+            "các",
+            "các buổi",
+            "hành",
+            "nhà",
+            "nhà trường",
+            "nên",
+            "nên bổ",
+            "sung",
+            "sung thêm",
+            "thêm",
+            "thêm các",
+            "thực",
+            "thực hành",
+            "trường",
+            "trường nên"
+          ],
+          "decision_scores": {
+            "curriculum": 1.6082387555366997,
+            "facility": -0.6826184478609086,
+            "lecturer": -2.0071611684691155,
+            "other": -1.2645630474408156
+          }
+        }
+      }
+    },
+    {
+      "text": "giang vien giang bai rat de hieu va nhiet tinh",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 3,
+          "known_terms": [
+            "bai",
+            "giang",
+            "tinh"
+          ],
+          "decision_scores": {
+            "negative": -0.0796867991696133,
+            "neutral": -0.4219177516507571,
+            "positive": -0.4524389919160723
+          }
+        },
+        "topic": {
+          "nonzero": 3,
+          "known_terms": [
+            "bai",
+            "giang",
+            "tinh"
+          ],
+          "decision_scores": {
+            "curriculum": -0.7032661359212845,
+            "facility": -0.9736619876356006,
+            "lecturer": -0.07176337904917474,
+            "other": -0.21239714322277642
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên giảng bài rất dễ hiểu và nhiệt tình.",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 18,
+          "known_terms": [
+            "bài",
+            "bài rất",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hiểu và",
+            "nhiệt",
+            "nhiệt tình",
+            "rất",
+            "rất dễ",
+            "tình",
+            "viên",
+            "viên giảng",
+            "và",
+            "và nhiệt"
+          ],
+          "decision_scores": {
+            "negative": -2.203989935897112,
+            "neutral": -2.0223606639589704,
+            "positive": 2.2625527305688773
+          }
+        },
+        "topic": {
+          "nonzero": 18,
+          "known_terms": [
+            "bài",
+            "bài rất",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "hiểu và",
+            "nhiệt",
+            "nhiệt tình",
+            "rất",
+            "rất dễ",
+            "tình",
+            "viên",
+            "viên giảng",
+            "và",
+            "và nhiệt"
+          ],
+          "decision_scores": {
+            "curriculum": -2.9205458920349257,
+            "facility": -1.6096677669069126,
+            "lecturer": 2.5376206861800332,
+            "other": -1.6884134107419548
+          }
+        }
+      }
+    },
+    {
+      "text": "thầy dạy ok lắm, dễ hỉu, nhiệt tình nữa :))",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 10,
+          "known_terms": [
+            "dạy",
+            "dễ",
+            "lắm",
+            "nhiệt",
+            "nhiệt tình",
+            "nữa",
+            "ok",
+            "thầy",
+            "thầy dạy",
+            "tình"
+          ],
+          "decision_scores": {
+            "negative": -1.496057887433769,
+            "neutral": -2.0631045766391973,
+            "positive": 2.0174744608670605
+          }
+        },
+        "topic": {
+          "nonzero": 10,
+          "known_terms": [
+            "dạy",
+            "dễ",
+            "lắm",
+            "nhiệt",
+            "nhiệt tình",
+            "nữa",
+            "ok",
+            "thầy",
+            "thầy dạy",
+            "tình"
+          ],
+          "decision_scores": {
+            "curriculum": -3.122249219763125,
+            "facility": -1.588729191308106,
+            "lecturer": 2.7755187710158564,
+            "other": -1.7557794520679204
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học sạch đẹp quá 😍",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "negative": 0.3788999584894128,
+            "neutral": -1.5064450643744203,
+            "positive": -0.16369987937925612
+          }
+        },
+        "topic": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "curriculum": -1.3370534400846479,
+            "facility": 1.389992969568174,
+            "lecturer": -1.1719480335128991,
+            "other": -1.6169645381506115
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học sạch đẹp quá",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "negative": 0.3788999584894128,
+            "neutral": -1.5064450643744203,
+            "positive": -0.16369987937925612
+          }
+        },
+        "topic": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "curriculum": -1.3370534400846479,
+            "facility": 1.389992969568174,
+            "lecturer": -1.1719480335128991,
+            "other": -1.6169645381506115
+          }
+        }
+      }
+    },
+    {
+      "text": "Phòng học sạch đẹp quá 😡",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "negative": 0.3788999584894128,
+            "neutral": -1.5064450643744203,
+            "positive": -0.16369987937925612
+          }
+        },
+        "topic": {
+          "nonzero": 6,
+          "known_terms": [
+            "học",
+            "phòng",
+            "phòng học",
+            "quá",
+            "sạch",
+            "đẹp"
+          ],
+          "decision_scores": {
+            "curriculum": -1.3370534400846479,
+            "facility": 1.389992969568174,
+            "lecturer": -1.1719480335128991,
+            "other": -1.6169645381506115
+          }
+        }
+      }
+    },
+    {
+      "text": "😍",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "negative": -0.2524826208849543,
+            "neutral": -0.42030875872847107,
+            "positive": -0.29000144280560514
+          }
+        },
+        "topic": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "curriculum": -0.5344406722511554,
+            "facility": -0.9677861955193688,
+            "lecturer": -0.21813620387431248,
+            "other": -0.2595550450568257
+          }
+        }
+      }
+    },
+    {
+      "text": "😡",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "negative": -0.2524826208849543,
+            "neutral": -0.42030875872847107,
+            "positive": -0.29000144280560514
+          }
+        },
+        "topic": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "curriculum": -0.5344406722511554,
+            "facility": -0.9677861955193688,
+            "lecturer": -0.21813620387431248,
+            "other": -0.2595550450568257
+          }
+        }
+      }
+    },
+    {
+      "text": "Món phở hôm nay rất ngon.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 4,
+          "known_terms": [
+            "hôm",
+            "nay",
+            "ngon",
+            "rất"
+          ],
+          "decision_scores": {
+            "negative": -0.044361381012281986,
+            "neutral": -0.879915382231365,
+            "positive": -0.18506333844253903
+          }
+        },
+        "topic": {
+          "nonzero": 4,
+          "known_terms": [
+            "hôm",
+            "nay",
+            "ngon",
+            "rất"
+          ],
+          "decision_scores": {
+            "curriculum": 0.06631926325481508,
+            "facility": -1.0459226103500485,
+            "lecturer": -0.5679799089358937,
+            "other": -0.516469717347776
+          }
+        }
+      }
+    },
+    {
+      "text": "abcxyz qwerty 123456",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "negative": -0.2524826208849543,
+            "neutral": -0.42030875872847107,
+            "positive": -0.29000144280560514
+          }
+        },
+        "topic": {
+          "nonzero": 0,
+          "known_terms": [],
+          "decision_scores": {
+            "curriculum": -0.5344406722511554,
+            "facility": -0.9677861955193688,
+            "lecturer": -0.21813620387431248,
+            "other": -0.2595550450568257
+          }
+        }
+      }
+    },
+    {
+      "text": "Tốt.",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 1,
+          "known_terms": [
+            "tốt"
+          ],
+          "decision_scores": {
+            "negative": -2.555918309823595,
+            "neutral": -2.3310528983970245,
+            "positive": 3.228973880833884
+          }
+        },
+        "topic": {
+          "nonzero": 1,
+          "known_terms": [
+            "tốt"
+          ],
+          "decision_scores": {
+            "curriculum": -0.6045735220133481,
+            "facility": -0.9475196916883455,
+            "lecturer": -0.0003319922412308163,
+            "other": -0.28645879038067895
+          }
+        }
+      }
+    },
+    {
+      "text": "Giảng viên giảng bài dễ hiểu.",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 10,
+          "known_terms": [
+            "bài",
+            "bài dễ",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "negative": -1.5616848108333943,
+            "neutral": -1.1982836592058144,
+            "positive": 1.4040148028598352
+          }
+        },
+        "topic": {
+          "nonzero": 10,
+          "known_terms": [
+            "bài",
+            "bài dễ",
+            "dễ",
+            "dễ hiểu",
+            "giảng",
+            "giảng bài",
+            "giảng viên",
+            "hiểu",
+            "viên",
+            "viên giảng"
+          ],
+          "decision_scores": {
+            "curriculum": -2.6295631723141852,
+            "facility": -1.755136367959385,
+            "lecturer": 2.4990241729612945,
+            "other": -1.8417251209460068
+          }
+        }
+      }
+    },
+    {
+      "text": "Cơ sở vật chất tệ như tôi nghĩ.",
+      "sentiment": "negative",
+      "topic": "facility",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 12,
+          "known_terms": [
+            "chất",
+            "cơ",
+            "cơ sở",
+            "nghĩ",
+            "như",
+            "sở",
+            "sở vật",
+            "tôi",
+            "tôi nghĩ",
+            "tệ",
+            "vật",
+            "vật chất"
+          ],
+          "decision_scores": {
+            "negative": 1.2382628752800233,
+            "neutral": -0.6784084320792219,
+            "positive": -1.463559551443776
+          }
+        },
+        "topic": {
+          "nonzero": 12,
+          "known_terms": [
+            "chất",
+            "cơ",
+            "cơ sở",
+            "nghĩ",
+            "như",
+            "sở",
+            "sở vật",
+            "tôi",
+            "tôi nghĩ",
+            "tệ",
+            "vật",
+            "vật chất"
+          ],
+          "decision_scores": {
+            "curriculum": -1.2840292595929008,
+            "facility": 0.5248525992731815,
+            "lecturer": -0.9576075260837966,
+            "other": -0.6867260737736741
+          }
+        }
+      }
+    },
+    {
+      "text": "Không có ý kiến.",
+      "sentiment": "neutral",
+      "topic": "other",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 7,
+          "known_terms": [
+            "có",
+            "có ý",
+            "không",
+            "không có",
+            "kiến",
+            "ý",
+            "ý kiến"
+          ],
+          "decision_scores": {
+            "negative": -0.9830291023861192,
+            "neutral": 0.9676706713175078,
+            "positive": -1.1608732898043432
+          }
+        },
+        "topic": {
+          "nonzero": 7,
+          "known_terms": [
+            "có",
+            "có ý",
+            "không",
+            "không có",
+            "kiến",
+            "ý",
+            "ý kiến"
+          ],
+          "decision_scores": {
+            "curriculum": -0.9446989502428442,
+            "facility": -1.0232700622246953,
+            "lecturer": -0.9373814525589892,
+            "other": 0.8322591191789005
+          }
+        }
+      }
+    },
+    {
+      "text": "Em không có ý kiến gì.",
+      "sentiment": "neutral",
+      "topic": "other",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 11,
+          "known_terms": [
+            "có",
+            "có ý",
+            "em",
+            "em không",
+            "gì",
+            "không",
+            "không có",
+            "kiến",
+            "kiến gì",
+            "ý",
+            "ý kiến"
+          ],
+          "decision_scores": {
+            "negative": -1.0439718775375995,
+            "neutral": 1.0444757546852421,
+            "positive": -1.0943183505989402
+          }
+        },
+        "topic": {
+          "nonzero": 11,
+          "known_terms": [
+            "có",
+            "có ý",
+            "em",
+            "em không",
+            "gì",
+            "không",
+            "không có",
+            "kiến",
+            "kiến gì",
+            "ý",
+            "ý kiến"
+          ],
+          "decision_scores": {
+            "curriculum": -0.9793865547616533,
+            "facility": -1.1253320371139046,
+            "lecturer": -1.035856544500287,
+            "other": 0.9936850266997869
+          }
+        }
+      }
+    },
+    {
+      "text": "Không có góp ý.",
+      "sentiment": "neutral",
+      "topic": "other",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 7,
+          "known_terms": [
+            "có",
+            "có góp",
+            "góp",
+            "góp ý",
+            "không",
+            "không có",
+            "ý"
+          ],
+          "decision_scores": {
+            "negative": -0.550035215091652,
+            "neutral": 0.37555683065577505,
+            "positive": -0.9726985910202586
+          }
+        },
+        "topic": {
+          "nonzero": 7,
+          "known_terms": [
+            "có",
+            "có góp",
+            "góp",
+            "góp ý",
+            "không",
+            "không có",
+            "ý"
+          ],
+          "decision_scores": {
+            "curriculum": -1.1893807831072394,
+            "facility": -1.0040377613580924,
+            "lecturer": -0.18268060519037171,
+            "other": 0.22090555502496345
+          }
+        }
+      }
+    },
+    {
+      "text": "Bình thường.",
+      "sentiment": "neutral",
+      "topic": "other",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 3,
+          "known_terms": [
+            "bình",
+            "bình thường",
+            "thường"
+          ],
+          "decision_scores": {
+            "negative": -0.7357291221640527,
+            "neutral": 0.6273848513137352,
+            "positive": -1.1108060281731338
+          }
+        },
+        "topic": {
+          "nonzero": 3,
+          "known_terms": [
+            "bình",
+            "bình thường",
+            "thường"
+          ],
+          "decision_scores": {
+            "curriculum": -0.7390954332036228,
+            "facility": -0.9859081568957322,
+            "lecturer": -0.9176535320825197,
+            "other": 0.70815596691572
+          }
+        }
+      }
+    },
+    {
+      "text": "Học phí quá cao.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 6,
+          "known_terms": [
+            "cao",
+            "học",
+            "học phí",
+            "phí",
+            "quá",
+            "quá cao"
+          ],
+          "decision_scores": {
+            "negative": 0.852966598880471,
+            "neutral": -0.8790934671360282,
+            "positive": -1.1343272586228652
+          }
+        },
+        "topic": {
+          "nonzero": 6,
+          "known_terms": [
+            "cao",
+            "học",
+            "học phí",
+            "phí",
+            "quá",
+            "quá cao"
+          ],
+          "decision_scores": {
+            "curriculum": 0.27012376997094334,
+            "facility": -0.6595043185816623,
+            "lecturer": -1.0346715735553724,
+            "other": -0.4632041598438108
+          }
+        }
+      }
+    },
+    {
+      "text": "Thủ tục đăng ký học phần phức tạp.",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 12,
+          "known_terms": [
+            "học",
+            "học phần",
+            "ký",
+            "ký học",
+            "phần",
+            "phức",
+            "phức tạp",
+            "thủ",
+            "tạp",
+            "tục",
+            "đăng",
+            "đăng ký"
+          ],
+          "decision_scores": {
+            "negative": 0.25007098701337793,
+            "neutral": -0.6758219380103542,
+            "positive": -0.5395009732261316
+          }
+        },
+        "topic": {
+          "nonzero": 12,
+          "known_terms": [
+            "học",
+            "học phần",
+            "ký",
+            "ký học",
+            "phần",
+            "phức",
+            "phức tạp",
+            "thủ",
+            "tạp",
+            "tục",
+            "đăng",
+            "đăng ký"
+          ],
+          "decision_scores": {
+            "curriculum": 0.18839563983017693,
+            "facility": -1.2501035500077844,
+            "lecturer": -0.4860221203635201,
+            "other": -0.4684405216028611
+          }
+        }
+      }
+    },
+    {
+      "text": "Em muốn được tư vấn về học bổng.",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 12,
+          "known_terms": [
+            "bổng",
+            "em",
+            "em muốn",
+            "học",
+            "muốn",
+            "muốn được",
+            "tư",
+            "tư vấn",
+            "vấn",
+            "về",
+            "về học",
+            "được"
+          ],
+          "decision_scores": {
+            "negative": -0.02355616001298272,
+            "neutral": -0.43609417595674704,
+            "positive": -0.4012694231666972
+          }
+        },
+        "topic": {
+          "nonzero": 12,
+          "known_terms": [
+            "bổng",
+            "em",
+            "em muốn",
+            "học",
+            "muốn",
+            "muốn được",
+            "tư",
+            "tư vấn",
+            "vấn",
+            "về",
+            "về học",
+            "được"
+          ],
+          "decision_scores": {
+            "curriculum": -0.4870849388894438,
+            "facility": -1.0623832294619855,
+            "lecturer": 0.21156079362386504,
+            "other": -0.4859476272147981
+          }
+        }
+      }
+    },
+    {
+      "text": "Các hoạt động ngoại khóa rất bổ ích.",
+      "sentiment": "positive",
+      "topic": "other",
+      "api_matches": true,
+      "features": {
+        "sentiment": {
+          "nonzero": 14,
+          "known_terms": [
+            "bổ",
+            "bổ ích",
+            "các",
+            "các hoạt",
+            "hoạt",
+            "hoạt động",
+            "khóa",
+            "ngoại",
+            "ngoại khóa",
+            "rất",
+            "rất bổ",
+            "ích",
+            "động",
+            "động ngoại"
+          ],
+          "decision_scores": {
+            "negative": -0.8792473951844623,
+            "neutral": -0.8744886362966389,
+            "positive": 0.502718309652799
+          }
+        },
+        "topic": {
+          "nonzero": 14,
+          "known_terms": [
+            "bổ",
+            "bổ ích",
+            "các",
+            "các hoạt",
+            "hoạt",
+            "hoạt động",
+            "khóa",
+            "ngoại",
+            "ngoại khóa",
+            "rất",
+            "rất bổ",
+            "ích",
+            "động",
+            "động ngoại"
+          ],
+          "decision_scores": {
+            "curriculum": -0.7050823017413552,
+            "facility": -1.595116223921317,
+            "lecturer": -0.17563455186544646,
+            "other": 0.09311036216688406
+          }
+        }
+      }
+    }
+  ],
+  "heldout": {
+    "sentiment": {
+      "classes": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "predicted_counts": {
+        "positive": 1575,
+        "negative": 1542,
+        "neutral": 49
+      },
+      "rare_label": "neutral",
+      "rare_true_count": 167,
+      "rare_correct": 30,
+      "correct_example_ids": [
+        "test:000042",
+        "test:000123",
+        "test:000456",
+        "test:000497",
+        "test:000539"
+      ]
+    },
+    "topic": {
+      "classes": [
+        "curriculum",
+        "facility",
+        "lecturer",
+        "other"
+      ],
+      "predicted_counts": {
+        "lecturer": 2356,
+        "curriculum": 586,
+        "facility": 142,
+        "other": 82
+      },
+      "rare_label": "other",
+      "rare_true_count": 159,
+      "rare_correct": 49,
+      "correct_example_ids": [
+        "test:000042",
+        "test:000064",
+        "test:000154",
+        "test:000483",
+        "test:000487"
+      ]
+    }
+  },
+  "mechanism_checks": {
+    "sentiment": {
+      "emoji_variants_identical_vectors": true,
+      "unknown_input_zero_vector": true,
+      "unknown_scores_equal_classifier_intercept": true
+    },
+    "topic": {
+      "emoji_variants_identical_vectors": true,
+      "unknown_input_zero_vector": true,
+      "unknown_scores_equal_classifier_intercept": true
+    }
+  },
+  "artifact_hashes_unchanged": {
+    ".gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "04baa8af07fc6d8272604109366b108c3d76cb320cc0200e2dd9a29696e8c87b",
+    "sentiment_metadata.json": "96c8c773f15be1c252e0faef9e98a7fbfe515d802ffd68028b25f1c37769eeb8",
+    "sentiment_pipeline.joblib": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+    "topic_metadata.json": "def760c945900a26925e01c3eb84c071a6a9abc41697a188b044fb2ffc22468a",
+    "topic_pipeline.joblib": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db"
+  }
+}

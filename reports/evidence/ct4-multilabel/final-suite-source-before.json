@@ -1,0 +1,15 @@
+{
+  "demo_v3/detector.py": "dbf9a9f7e3ca278cbd63b15f8d0416cdff9cfe90890fa4dd42d82970cc2071d4",
+  "demo_v3/main.py": "365bce72212ca1b9b7f08b930be2484476264ed377672c33e9db33e484475a0d",
+  "demo_v3/ontology.py": "d8054be0d6ac43756274056e83a4540ff68769867f5db12944ac6c42ced2f50f",
+  "demo_v3/rules.json": "87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d",
+  "demo_v3/service.py": "fa2ee4d8b12ab94f3606221b109233769cbefdb8a416df7d825b05a7b2898fd4",
+  "demo_v3/__init__.py": "08bb7a731341d5ce5aca140fcd23613a5b83412fa2a19218cdb610c955837a1b",
+  "demo_v3/frontend/api.js": "74122af94e8ba3e460b2fbb6eb0574e9aa1f9ca19dea649bccc9f2ba5ac33714",
+  "demo_v3/frontend/app.js": "a40bea3bb0425af8b384dc8d06fdd7df9c0f04720d1a3343620cb1d7444f344a",
+  "demo_v3/frontend/index.html": "97352eb0902fcc7353f5d2c15b2a6023a3b5636d6c4e1228caad37bf076c6766",
+  "demo_v3/frontend/styles.css": "5ae6a44f6dbe8e9dc555a492d9e52d5ebc38538e83a5e88d41aa1275c7f30d7a",
+  "tests/test_demo_v3.py": "e8404ccbeee944c4c88f2d9f653d765110f7f4f4d1be3653ea0628238183aa44",
+  "tests/test_demo_v3_api.py": "f6e881c2797663ab250531dad6b9af7be8f1267d2200cf6c8a26eaea86e74e6c",
+  "tests/frontend/test_demo_v3_ui.py": "063b298604bcd5a6ebf4093677d3af73034090b4f8223176815e948b2f381300"
+}

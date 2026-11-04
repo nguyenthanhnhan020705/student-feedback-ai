@@ -1,0 +1,19 @@
+INFO:     Started server process [16988]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:63630 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54710 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54714 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54715 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54716 - "GET /api.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54717 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54718 - "GET /models/sentiment_pipeline.joblib HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54719 - "GET /api/predict HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:54720 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54721 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54722 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54723 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54724 - "POST /api/predict HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:54725 - "POST /api/predict HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:54726 - "POST /api/predict HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:54727 - "POST /api/predict HTTP/1.1" 422 Unprocessable Content

@@ -1,0 +1,22 @@
+{
+  "browser": "msedge",
+  "version": "156.0.4314.50",
+  "input": "🙂🙂🙂",
+  "response": {
+    "contract_version": "2.0",
+    "status": "insufficient",
+    "sentiment": {
+      "status": "insufficient_information",
+      "label": null,
+      "reason": "zero_features",
+      "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+    },
+    "topic": {
+      "status": "insufficient_information",
+      "label": null,
+      "reason": "zero_features",
+      "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+    }
+  },
+  "fixture": false
+}

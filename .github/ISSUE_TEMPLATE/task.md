@@ -12,7 +12,9 @@ assignees: ""
 - Phase / mã task:
 - Yêu cầu BRD liên quan:
 - Hạn hoàn thành đã thống nhất:
-- Phụ thuộc cần có trước khi làm:
+- Nhánh chức năng và file được sửa:
+- Việc có thể làm độc lập ngay:
+- Mốc cần nhận đầu ra thật (M1/M2-S/M2-T/M3):
 
 ## Kết quả cần bàn giao
 
@@ -31,4 +33,4 @@ Ghi trong bình luận: đã làm / sẽ làm / đang vướng.
 
 ## Pull Request
 
-Tạo nhánh mới từ `develop`, mở PR vào `develop` và yêu cầu leader review.
+Checkout đúng một trong 5 nhánh chức năng đã có, mở PR nhỏ vào `develop` và yêu cầu leader review. Không đợi hoàn thành cả chức năng mới bàn giao; phân biệt fixture/mock với kết quả thật.

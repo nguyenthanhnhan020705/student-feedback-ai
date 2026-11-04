@@ -1,0 +1,121 @@
+{
+  "artifact_sha256": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+  "n_rows": 3166,
+  "errors": 438,
+  "confusions": {
+    "curriculum -> lecturer": 151,
+    "lecturer -> curriculum": 123,
+    "other -> lecturer": 59,
+    "other -> curriculum": 48,
+    "lecturer -> other": 19,
+    "curriculum -> other": 13,
+    "facility -> curriculum": 10,
+    "lecturer -> facility": 5,
+    "other -> facility": 3,
+    "facility -> lecturer": 3,
+    "curriculum -> facility": 3,
+    "facility -> other": 1
+  },
+  "examples_by_id": [
+    {
+      "id": "test:000013",
+      "actual": "other",
+      "predicted": "facility"
+    },
+    {
+      "id": "test:000014",
+      "actual": "curriculum",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000019",
+      "actual": "curriculum",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000024",
+      "actual": "lecturer",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000041",
+      "actual": "lecturer",
+      "predicted": "facility"
+    },
+    {
+      "id": "test:000044",
+      "actual": "curriculum",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000049",
+      "actual": "curriculum",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000050",
+      "actual": "lecturer",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000051",
+      "actual": "curriculum",
+      "predicted": "other"
+    },
+    {
+      "id": "test:000085",
+      "actual": "lecturer",
+      "predicted": "other"
+    },
+    {
+      "id": "test:000090",
+      "actual": "lecturer",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000096",
+      "actual": "other",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000116",
+      "actual": "other",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000126",
+      "actual": "facility",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000127",
+      "actual": "other",
+      "predicted": "lecturer"
+    },
+    {
+      "id": "test:000170",
+      "actual": "other",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000639",
+      "actual": "facility",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000867",
+      "actual": "facility",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:000959",
+      "actual": "facility",
+      "predicted": "curriculum"
+    },
+    {
+      "id": "test:001056",
+      "actual": "facility",
+      "predicted": "lecturer"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "ct4-v3-review-fix.1",
+  "created_at": "2026-11-01T09:16:03.268687+00:00",
+  "revision": "bounded-context-review-fix.1",
+  "old_freeze": "core-freeze.json",
+  "old_freeze_sha256": "d0ccf5bf3cd52e3af3f5e7d87a2094f176a68b49ebb5b1589aee71598c07507d",
+  "old_task1_receipt": "task1-verification.json",
+  "old_task1_receipt_sha256": "fc05d14097e791c41d468e426c1418981ef21405451a1ccfe12fb43996d7252f",
+  "source_sha256": {
+    "demo_v3/__init__.py": "08bb7a731341d5ce5aca140fcd23613a5b83412fa2a19218cdb610c955837a1b",
+    "demo_v3/detector.py": "bb4b5b52d8e102dfd26c59d4396beffeebe944ae54e919817b589194aa89e979",
+    "demo_v3/frontend/api.js": "74122af94e8ba3e460b2fbb6eb0574e9aa1f9ca19dea649bccc9f2ba5ac33714",
+    "demo_v3/frontend/app.js": "a40bea3bb0425af8b384dc8d06fdd7df9c0f04720d1a3343620cb1d7444f344a",
+    "demo_v3/frontend/index.html": "97352eb0902fcc7353f5d2c15b2a6023a3b5636d6c4e1228caad37bf076c6766",
+    "demo_v3/frontend/styles.css": "5ae6a44f6dbe8e9dc555a492d9e52d5ebc38538e83a5e88d41aa1275c7f30d7a",
+    "demo_v3/main.py": "365bce72212ca1b9b7f08b930be2484476264ed377672c33e9db33e484475a0d",
+    "demo_v3/ontology.py": "d8054be0d6ac43756274056e83a4540ff68769867f5db12944ac6c42ced2f50f",
+    "demo_v3/rules.json": "87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d",
+    "demo_v3/service.py": "fa2ee4d8b12ab94f3606221b109233769cbefdb8a416df7d825b05a7b2898fd4",
+    "tests/frontend/test_demo_v3_ui.py": "063b298604bcd5a6ebf4093677d3af73034090b4f8223176815e948b2f381300",
+    "tests/test_demo_v3.py": "42c0cf2b5bed6cdd0f6b135aded72d4c625017b93ad9d14de135254ffde15c1f",
+    "tests/test_demo_v3_api.py": "f6e881c2797663ab250531dad6b9af7be8f1267d2200cf6c8a26eaea86e74e6c"
+  },
+  "changed_sources": [
+    "demo_v3/detector.py",
+    "tests/test_demo_v3.py"
+  ],
+  "rules_unchanged": true,
+  "reused_frozen_sources_unchanged": true,
+  "rationale": [
+    "R1: mask supported paired quotations across line breaks while preserving raw offsets",
+    "R2: identify bounded metalinguistic complements before contrast/coordinating segmentation and release subsequent independent assertions",
+    "R3: distinguish explicit lexical-governor/definition uses of tu from ordinary source prepositions"
+  ],
+  "focused_red": {
+    "log": "review-red.txt",
+    "failed": 22,
+    "passed": 4,
+    "deselected": 92,
+    "exit_code": 1
+  },
+  "green": {
+    "log": "review-green.txt",
+    "passed": 199,
+    "warnings": 1,
+    "seconds": 71.49,
+    "exit_code": 0,
+    "engine_api_tests": 157,
+    "browser_tests": 42,
+    "browsers": [
+      "chrome",
+      "msedge"
+    ]
+  },
+  "scope": "Detector context and regression tests only; no sentiment/topic lexicon expansion, fitting or tuning of exploratory errors.",
+  "evaluation": "Original saved exploratory results apply to original freeze only; this revision has regression verification and no fresh holdout claim.",
+  "status": "engineering_complete_independent_evaluation_pending"
+}

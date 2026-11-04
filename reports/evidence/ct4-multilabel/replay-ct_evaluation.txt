@@ -1,0 +1,6 @@
+{
+  "verified": true,
+  "protected_files": 49,
+  "validation_rows": 1583,
+  "known_cases": 39
+}

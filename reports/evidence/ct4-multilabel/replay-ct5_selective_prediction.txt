@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "policies_per_pair": 5,
+  "pairs": 2,
+  "fit": false,
+  "status": "engineering_complete_independent_evaluation_pending",
+  "promotion": "not_deployed"
+}

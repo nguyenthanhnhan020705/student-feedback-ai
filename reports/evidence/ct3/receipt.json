@@ -1,0 +1,48 @@
+{
+  "schema_version": "ct3.1",
+  "completed_at": "2026-10-31T14:54:14.643282+00:00",
+  "code_sha256": "3647dd155691d90cc3faa3fffea5ca94aaf746a5d719cebdc18e541f4a1c7801",
+  "ct2_receipt_sha256": "6015c3ed8c98394ed178e186ebd9c41647dfe247de50ede886fd12ddde31ffdc",
+  "payload": {
+    "candidates/char_0.5_ct2/sentiment_metadata.json": "7e90f7e168d8c137860967daeba03067d4920ea39fd6d9926ea57d57273f2fab",
+    "candidates/char_0.5_ct2/sentiment_pipeline.joblib": "1dace66a4a00b070b6c8340c02ba1dbad7bacb32c598d3f3989c8e0dee729fc9",
+    "candidates/char_0.5_ct2/topic_metadata.json": "7c57b78a3fee6054c66b676dd6c0c37f2ce6376ba61963ff3994a04a19a3e090",
+    "candidates/char_0.5_ct2/topic_pipeline.joblib": "8e7230bd025bfa496f25c1975328a194404d1110adc3969489b9385f48a9b9da",
+    "candidates/char_0.5_none/sentiment_metadata.json": "cba81f7c7847877738ae2ca2fb320ddb3a99b26a98122fe97afe4064f024bb2a",
+    "candidates/char_0.5_none/sentiment_pipeline.joblib": "1de79c51149683360354d98e1f2fd6080314b9079b907c63dc7e6ea0446d0bfc",
+    "candidates/char_0.5_none/topic_metadata.json": "3dbb9b8aeb62a7ecaffdcddf17c61b60d96b7d8f06f0bcf95f5b30f369c45574",
+    "candidates/char_0.5_none/topic_pipeline.joblib": "d0d71c2cb4ba7020e5ba7f15678644d77c5e6651233e80a0af9d3bdbadf49a9e",
+    "candidates/char_1_ct2/sentiment_metadata.json": "8ddbb87346ed0573878898e6ece3ca85eca095d49895c95b2cfd362975161489",
+    "candidates/char_1_ct2/sentiment_pipeline.joblib": "54c391f2ffa5515b2dc4d6f4017e10e971e3ad628a4639771c6faaeaa2d9fe19",
+    "candidates/char_1_ct2/topic_metadata.json": "02fc45c01883ee4e01ccda72595651a33d4cab3babfa62d3206f6f3c599b31c9",
+    "candidates/char_1_ct2/topic_pipeline.joblib": "06a0cfa1818e29ac2d9a3d98f7b33b2ea1c7078ee7a01afb215fd807fcf48a76",
+    "candidates/char_1_none/sentiment_metadata.json": "a96fa78de5590ae9bb134590ae47cd080fce1393008e198dbcd53f114bc28df0",
+    "candidates/char_1_none/sentiment_pipeline.joblib": "1ed22851fa498aa1ebdfe17565b32e96807e95fe45b0dc2703c5058afb0ead87",
+    "candidates/char_1_none/topic_metadata.json": "760066bf095b2fdd323275cdf9dc75232a9199e88c412a568266402f75927057",
+    "candidates/char_1_none/topic_pipeline.joblib": "24830fcb7c648785086624aa48c0432b72d3e432b24c9ca2c0277e407d52b1bf",
+    "candidates/char_2_ct2/sentiment_metadata.json": "33cb25c2db993f73c61903d1cc66014f7d93510d97e01d1bed4425fbbbfada58",
+    "candidates/char_2_ct2/sentiment_pipeline.joblib": "19f1f974f0a966cc1de44b66af709a0c2ce1d3dc3712a9cae771f60660328aef",
+    "candidates/char_2_ct2/topic_metadata.json": "d5f174d6121eaeb2f78897b7333260e275def5af5248cf328b69094d77505181",
+    "candidates/char_2_ct2/topic_pipeline.joblib": "4a33750c610b6edb772d9bcb7a17487919c7b4a138a1a22bd27eb8e1ee814cc6",
+    "candidates/char_2_none/sentiment_metadata.json": "360e01454e89da750507346e983aab295852a84936d344cc3d56e446ba6e4b02",
+    "candidates/char_2_none/sentiment_pipeline.joblib": "6b70a0b07996a3249f367bac91eb41e1f382715526e10af13c0dc97ed9c86aa9",
+    "candidates/char_2_none/topic_metadata.json": "304ec2e9bcd370c0737641904fd21a71fa8413fa54a94239bb314258f3e0d8a4",
+    "candidates/char_2_none/topic_pipeline.joblib": "ac690d5a64a3dc5ba59c1151eb990bcad987121b139cb5562b9e6d5af268dee0",
+    "config.json": "245cde34e2a8ccd58c717ca2269cee06f965c6f5419be3611b162d986a6009b8",
+    "research-selected/sentiment_metadata.json": "360e01454e89da750507346e983aab295852a84936d344cc3d56e446ba6e4b02",
+    "research-selected/sentiment_pipeline.joblib": "6b70a0b07996a3249f367bac91eb41e1f382715526e10af13c0dc97ed9c86aa9",
+    "research-selected/topic_metadata.json": "9952c555af7247afb765865090da166bc1f85d2d67fbee4548882926221ee062",
+    "research-selected/topic_pipeline.joblib": "d89449c61ecf02a5a60b84ec1bf3e33d2fee4b5b4187ed19d551fece720b2949",
+    "results.json": "4e990932d35404c6a7fe6413ad8a5f7d08fc9aa10f6b6df4736e40753fa56723",
+    "summary.md": "35e39618d7230048dbd5245c0b6e253f6fef91ee69ca53ec5add6911679dc942"
+  },
+  "selection": {
+    "sentiment": "char_2_none",
+    "topic": "ct2"
+  },
+  "ct3_selection": {
+    "sentiment": "char_2_none",
+    "topic": "char_0.5_ct2"
+  },
+  "promotion": "not_deployed"
+}

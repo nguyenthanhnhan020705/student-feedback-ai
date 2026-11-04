@@ -1,0 +1,19 @@
+{
+  "commands_exit_codes": {
+    "pytest-local.txt": 0,
+    "pip-check.txt": 0,
+    "requirements-local.txt": 0
+  },
+  "manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+  "source_revision": "7b56c6cb1c9c8523249f407044c838660df3811a",
+  "source_permission_status": "pending_leader_review",
+  "dataset_rows": {
+    "train": 11426,
+    "validation": 1583,
+    "test": 3166
+  },
+  "public_push": false,
+  "notebook_inline_images": 3,
+  "notebook_sha256": "e322da38a93add3015d7d590dae5f499fdf7d54677a0a242990eed6cd3d98e7e",
+  "review": "Independent read-only review: checksums, manifest and exports verified; legacy full text redacted"
+}

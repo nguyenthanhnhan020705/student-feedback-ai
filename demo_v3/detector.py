@@ -1,0 +1,205 @@
+"""Bounded asserted-clause rules; experimental, specification-exposed, not learned.
+
+Raw offsets address original text. Folded text is used only for matching. Paired
+quotation content and explicit metalinguistic clauses cannot create evidence.
+CT4 predictions never enter this detector or its aggregation.
+"""
+from dataclasses import dataclass
+import hashlib
+import json
+from pathlib import Path
+import re
+import unicodedata
+
+from demo_v3.ontology import CORE_TOPICS
+
+RULES_PATH = Path(__file__).with_name('rules.json')
+RULES_SHA256 = '87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d'
+
+
+def fold(text):
+    text = unicodedata.normalize('NFD', text.casefold().replace('đ', 'd'))
+    return re.sub(r'\s+', ' ', ''.join(c for c in text if not unicodedata.combining(c))).strip()
+
+
+@dataclass(frozen=True)
+class Clause:
+    start: int
+    end: int
+    text: str
+    topics: frozenset
+    positive: bool
+    negative: bool
+
+
+@dataclass(frozen=True)
+class Evidence:
+    positive: bool
+    negative: bool
+    topics: frozenset
+    clauses: tuple
+
+
+class Detector:
+    def __init__(self, rules_path=RULES_PATH):
+        raw = Path(rules_path).read_bytes()
+        if hashlib.sha256(raw).hexdigest() != RULES_SHA256:
+            raise ValueError('Experimental rules checksum mismatch')
+        rules = json.loads(raw)
+        fields = {'schema_version','version','provenance','normalization','limitations','topics',
+                  'positive','negative','negation','nonassertion_prefix','contrast',
+                  'accented_subjects','surface_constraints'}
+        if (not isinstance(rules, dict) or set(rules) != fields
+                or rules['schema_version'] != 'ct4-evidence-rules.1'
+                or rules['version'] != 'experimental-1.0.0'
+                or not isinstance(rules['topics'], dict) or set(rules['topics']) != CORE_TOPICS
+                or any(not isinstance(rules[key],str) or not rules[key].strip()
+                       for key in ('provenance','normalization','negation','nonassertion_prefix','contrast'))
+                or not isinstance(rules['limitations'],list) or not rules['limitations']
+                or any(not isinstance(v,str) or not v.strip() for v in rules['limitations'])):
+            raise ValueError('Invalid experimental rule schema/provenance')
+        if (not isinstance(rules['accented_subjects'],dict)
+                or any(not isinstance(k,str) or not k or not isinstance(v,str) or not v
+                       for k,v in rules['accented_subjects'].items())
+                or not isinstance(rules['surface_constraints'],dict)
+                or set(rules['surface_constraints'])!={'topics','polarities'}):
+            raise ValueError('Invalid accent context rules')
+        for group in rules['surface_constraints'].values():
+            if (not isinstance(group,dict) or any(not isinstance(k,str) or not k
+                    or not isinstance(v,list) or not v or any(not isinstance(s,str) or not s for s in v)
+                    for k,v in group.items())):
+                raise ValueError('Invalid accent surface constraints')
+        for entries in [rules['positive'],rules['negative'],*rules['topics'].values()]:
+            if (not isinstance(entries,list) or not entries
+                    or any(not isinstance(v,str) or not v.strip() for v in entries)
+                    or len(set(entries)) != len(entries)):
+                raise ValueError('Invalid rule lexicon')
+        def patterns(entries):
+            compiled = [re.compile(r'\b(?:' + value + r')\b') for value in entries]
+            if any(pattern.search('') for pattern in compiled):
+                raise ValueError('Empty evidence expression')
+            return compiled
+        self.topics = {task:patterns(entries) for task,entries in rules['topics'].items()}
+        self.polarities = {key:patterns(rules[key]) for key in ('positive','negative')}
+        self.negation = re.compile(r'\b(?:'+rules['negation']+r')\s*$')
+        self.nonassertion = re.compile(rules['nonassertion_prefix'])
+        self.contrast = re.compile(rules['contrast'])
+        self.rules = rules
+
+    def _context(self,raw,kind):
+        raw=unicodedata.normalize('NFC',raw).casefold()
+        constraints=self.rules['surface_constraints'][kind]
+        def protect(match):
+            token=match.group()
+            base=fold(token)
+            if base in constraints and token!=base and token not in constraints[base]:
+                return ' ' * len(token)
+            return self.rules['accented_subjects'].get(token,token)
+        return fold(re.sub(r'\b\w+\b',protect,raw))
+
+    @staticmethod
+    def _mask_quotes(text):
+        return re.sub(r'"[^"]*"|“[^”]*”|‘[^’]*’|\'[^\']*\'',
+                      lambda match: ' ' * len(match.group()), text)
+
+    @staticmethod
+    def _mask_mentions(text):
+        """Mask explicit vocabulary/name complements before clause splitting.
+
+        Hard punctuation ends a bounded mention. An explicit reporting location
+        (on the board/page) or definition also closes it, so later assertions
+        remain visible. Unmarked indirect speech and ambiguous complements are
+        still outside these rules. A raw-to-folded map keeps NFC/NFD offsets.
+        """
+        characters,offsets=[],[]
+        for index,char in enumerate(text):
+            for folded in unicodedata.normalize('NFD',char.casefold().replace('đ','d')):
+                if not unicodedata.combining(folded):
+                    characters.append(folded);offsets.append(index)
+        folded=''.join(characters)
+        explicit=r'\b(?:cum\s+tu|thuat\s+ngu|mang\s+ten|dat\s+ten|ten\s+la|nhan\s+la|tieu\s+de)\b'
+        markers=list(re.finditer(explicit,folded))
+        definition=r'\b(?:la\s+(?:(?:mot|hai|nhung|cac)\s+)?(?:vi\s+du|tinh\s+tu|danh\s+tu|dong\s+tu)|co\s+nghia)\b'
+        occurrence=r'\bxuat\s+hien\s+tren\s+(?:bang|trang)\b'
+        for word in re.finditer(r'\btu\b',folded):
+            if any(marker.start()<=word.start()<marker.end() for marker in markers):
+                continue
+            prior=folded[:word.start()]
+            stop=re.search(r'[.!?;,\n]',folded[word.end():])
+            tail=folded[word.end():word.end()+stop.start()] if stop else folded[word.end():]
+            lexical_verb=re.search(r'\b(?:tim|chon|viet|doc|noi|goi|dung|giai\s+thich|dinh\s+nghia|nghia\s+cua|cac)\s*$',prior)
+            # Bare "tu" without a lexical governing verb needs an explicit
+            # definition or word-occurrence/reporting context. Ordinary source
+            # prepositions do not acquire either context solely from "tu".
+            if lexical_verb or (not prior.strip() and re.search(definition+'|'+occurrence,tail)):
+                markers.append(word)
+        masked=list(text)
+        for marker in sorted(markers,key=lambda match:match.start()):
+            stop=re.search(r'[.!?;,\n]',folded[marker.end():])
+            end=marker.end()+stop.start() if stop else len(folded)
+            completion=re.search(r'\b(?:tren|len)\s+(?:bang|trang)\b|'+definition,
+                                 folded[marker.end():end])
+            if completion:
+                end=marker.end()+completion.end()
+            raw_start=offsets[marker.start()]
+            raw_end=offsets[end-1]+1
+            while raw_end<len(text) and unicodedata.combining(text[raw_end]):
+                raw_end+=1
+            masked[raw_start:raw_end]=' '*(raw_end-raw_start)
+        return ''.join(masked)
+
+    def _evidence(self, raw):
+        # Preserve information about unquoted subjects while removing quoted predicates.
+        raw=self._mask_quotes(raw)
+        text = self._context(raw,'topics')
+        polarity_text=self._context(raw,'polarities')
+        # Explicit word mentions have already been masked. The legacy prefix's
+        # bare "tu" branch cannot treat a source preposition as a mention.
+        if self.nonassertion.search(text) and not re.match(r'^tu\b',text):
+            return frozenset(), False, False
+        topics = frozenset(task for task,patterns in self.topics.items()
+                           if any(pattern.search(text) for pattern in patterns))
+        found = {'positive':False,'negative':False}
+        for polarity,patterns in self.polarities.items():
+            for pattern in patterns:
+                for match in pattern.finditer(polarity_text):
+                    before = polarity_text[:match.start()]
+                    # "ban" in the explicit phrase "ban ve" is discussion, not dirty.
+                    if match.group() == 'ban' and polarity_text[match.end():].lstrip().startswith('ve '):
+                        continue
+                    negated = bool(self.negation.search(before))
+                    actual = ('negative' if polarity=='positive' else 'positive') if negated else polarity
+                    found[actual] = True
+        return topics,found['positive'],found['negative']
+
+    def detect(self, text):
+        # Segment raw text without losing offsets; conjunctions between referents
+        # ("thay va co") stay intact. Topic sets deduplicate across all clauses.
+        masked = self._mask_mentions(self._mask_quotes(text))
+        breaks = list(re.finditer(r'[.!?;,\n]+|\b(?:nhưng|nhung|tuy nhiên|tuy nhien|song)\b', masked, re.I))
+        # Split "va" only when the left side has an evaluative predicate and
+        # the right starts with an explicit core subject. Coordinated subjects
+        # without a left predicate stay together, including "thay va co".
+        for match in re.finditer(r'\b(?:và|va)\b', masked, re.I):
+            prior = max((b.end() for b in breaks if b.end() <= match.start()),default=0)
+            before = fold(masked[prior:match.start()])
+            after = self._context(masked[match.end():],'topics')
+            predicate = any(p.search(before) for ps in self.polarities.values() for p in ps)
+            subject = any(p.match(after) for ps in self.topics.values() for p in ps)
+            if predicate and subject:
+                breaks.append(match)
+        breaks.sort(key=lambda match:match.start())
+        spans, start = [], 0
+        for boundary in breaks:
+            if text[start:boundary.start()].strip():
+                spans.append((start,boundary.start()))
+            start = boundary.end()
+        if text[start:].strip():
+            spans.append((start,len(text)))
+        clauses = []
+        for start,end in spans or [(0,len(text))]:
+            raw = text[start:end]
+            topics,positive,negative = self._evidence(masked[start:end])
+            clauses.append(Clause(start,end,raw,topics,positive,negative))
+        return Evidence(any(c.positive for c in clauses),any(c.negative for c in clauses),
+                        frozenset().union(*(c.topics for c in clauses)),tuple(clauses))

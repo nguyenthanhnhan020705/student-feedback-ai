@@ -1,0 +1,78 @@
+{
+  "url": "http://127.0.0.1:8001",
+  "health": {
+    "status": "ok",
+    "ready": true,
+    "models": {
+      "sentiment": "ready",
+      "topic": "ready"
+    },
+    "model": "ct4",
+    "contract_version": "2.0"
+  },
+  "assets": {
+    "index.html": "b7360be7eb492f5623d403c489a51fee6310f67d39d6808a585f5bc9323ef8d5",
+    "api.js": "f21beac039ba77ac55213c9f723b60ba1d4a92e3bb8fe1cb91494a79d2a572e2",
+    "app.js": "ac2c982e800827fd85a0b182b4c8ee2bf1c65ba3c9aa95d0bfeead400d3a775e",
+    "styles.css": "e6d644b575469650478150afc1e91cb9b59e747fefad6b1b6cbe926234a25e11"
+  },
+  "samples": [
+    {
+      "text": "Tốt",
+      "response": {
+        "contract_version": "2.0",
+        "status": "partial",
+        "sentiment": {
+          "status": "answered",
+          "label": "positive",
+          "reason": null,
+          "message": null
+        },
+        "topic": {
+          "status": "insufficient_information",
+          "label": null,
+          "reason": "low_margin",
+          "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+        }
+      }
+    },
+    {
+      "text": "🙂🙂🙂",
+      "response": {
+        "contract_version": "2.0",
+        "status": "insufficient",
+        "sentiment": {
+          "status": "insufficient_information",
+          "label": null,
+          "reason": "zero_features",
+          "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+        },
+        "topic": {
+          "status": "insufficient_information",
+          "label": null,
+          "reason": "zero_features",
+          "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+        }
+      }
+    },
+    {
+      "text": "Thay giang bai de hieu va rat nhiet tinh.",
+      "response": {
+        "contract_version": "2.0",
+        "status": "complete",
+        "sentiment": {
+          "status": "answered",
+          "label": "positive",
+          "reason": null,
+          "message": null
+        },
+        "topic": {
+          "status": "answered",
+          "label": "lecturer",
+          "reason": null,
+          "message": null
+        }
+      }
+    }
+  ]
+}

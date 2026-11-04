@@ -1,0 +1,22 @@
+{
+  "browser": "chrome",
+  "version": "147.0.7727.101",
+  "input": "Thay giang bai de hieu va rat nhiet tinh.",
+  "response": {
+    "contract_version": "2.0",
+    "status": "complete",
+    "sentiment": {
+      "status": "answered",
+      "label": "positive",
+      "reason": null,
+      "message": null
+    },
+    "topic": {
+      "status": "answered",
+      "label": "lecturer",
+      "reason": null,
+      "message": null
+    }
+  },
+  "fixture": false
+}

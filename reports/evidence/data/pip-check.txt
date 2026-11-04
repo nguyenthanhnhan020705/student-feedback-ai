@@ -1,0 +1,6 @@
+Command: .venv/Scripts/python.exe -m pip check
+TV2_RUN_REAL_DATA=1
+
+No broken requirements found.
+
+Exit code: 0

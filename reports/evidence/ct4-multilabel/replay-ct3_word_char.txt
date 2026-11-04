@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "candidates": 12,
+  "selection": {
+    "sentiment": "char_2_none",
+    "topic": "ct2"
+  },
+  "ct3_selection": {
+    "sentiment": "char_2_none",
+    "topic": "char_0.5_ct2"
+  },
+  "promotion": "not_deployed"
+}

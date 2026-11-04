@@ -1,0 +1,44 @@
+--- review-fix/demo_v3/detector.py
++++ review-r4/demo_v3/detector.py
+@@ -120,6 +120,7 @@
+         explicit=r'\b(?:cum\s+tu|thuat\s+ngu|mang\s+ten|dat\s+ten|ten\s+la|nhan\s+la|tieu\s+de)\b'
+         markers=list(re.finditer(explicit,folded))
+         definition=r'\b(?:la\s+(?:(?:mot|hai|nhung|cac)\s+)?(?:vi\s+du|tinh\s+tu|danh\s+tu|dong\s+tu)|co\s+nghia)\b'
++        occurrence=r'\bxuat\s+hien\s+tren\s+(?:bang|trang)\b'
+         for word in re.finditer(r'\btu\b',folded):
+             if any(marker.start()<=word.start()<marker.end() for marker in markers):
+                 continue
+@@ -128,8 +129,9 @@
+             tail=folded[word.end():word.end()+stop.start()] if stop else folded[word.end():]
+             lexical_verb=re.search(r'\b(?:tim|chon|viet|doc|noi|goi|dung|giai\s+thich|dinh\s+nghia|nghia\s+cua|cac)\s*$',prior)
+             # Bare "tu" without a lexical governing verb needs an explicit
+-            # definition context; ordinary "tu truong/tu phong hoc" survives.
+-            if lexical_verb or (not prior.strip() and re.search(definition,tail)):
++            # definition or word-occurrence/reporting context. Ordinary source
++            # prepositions do not acquire either context solely from "tu".
++            if lexical_verb or (not prior.strip() and re.search(definition+'|'+occurrence,tail)):
+                 markers.append(word)
+         masked=list(text)
+         for marker in sorted(markers,key=lambda match:match.start()):
+--- review-fix/tests/test_demo_v3.py
++++ review-r4/tests/test_demo_v3.py
+@@ -181,3 +181,19 @@
+     aggregate,Detector=modules()
+     evidence=Detector().detect(unicodedata.normalize(form,text))
+     assert aggregate(evidence.positive,evidence.negative,evidence.topics)==dict(sentiment=sentiment,topic=topic)
++
++
++@pytest.mark.parametrize('text,sentiment,topic',[
++    ('Từ tốt và tệ xuất hiện trên trang.','undetermined','other_domain'),
++    ('Từ tốt xuất hiện trên bảng.','undetermined','other_domain'),
++    ('Từ tốt xuất hiện trên bảng nhưng phòng học nóng.','negative','facility'),
++    ('Giảng viên từ trường khác đến và dạy tốt.','positive','lecturer'),
++    ('Giảng viên nhiệt tình và từ phòng học phát ra tiếng ồn.','positive','education_quality'),
++])
++@pytest.mark.parametrize('form',['NFC','NFD'])
++def test_review_r4_word_occurrence_and_source_prepositions(text,sentiment,topic,form):
++    aggregate,Detector=modules()
++    raw=unicodedata.normalize(form,text)
++    evidence=Detector().detect(raw)
++    assert aggregate(evidence.positive,evidence.negative,evidence.topics)==dict(sentiment=sentiment,topic=topic)
++    assert all(raw[c.start:c.end]==c.text for c in evidence.clauses)

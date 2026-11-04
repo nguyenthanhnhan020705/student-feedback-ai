@@ -1,0 +1,137 @@
+--- original-freeze/demo_v3/detector.py
++++ review-fix/demo_v3/detector.py
+@@ -99,24 +99,62 @@
+ 
+     @staticmethod
+     def _mask_quotes(text):
+-        return re.sub(r'"[^"\n]*"|“[^”\n]*”|‘[^’\n]*’|\'[^\'\n]*\'',
++        return re.sub(r'"[^"]*"|“[^”]*”|‘[^’]*’|\'[^\']*\'',
+                       lambda match: ' ' * len(match.group()), text)
++
++    @staticmethod
++    def _mask_mentions(text):
++        """Mask explicit vocabulary/name complements before clause splitting.
++
++        Hard punctuation ends a bounded mention. An explicit reporting location
++        (on the board/page) or definition also closes it, so later assertions
++        remain visible. Unmarked indirect speech and ambiguous complements are
++        still outside these rules. A raw-to-folded map keeps NFC/NFD offsets.
++        """
++        characters,offsets=[],[]
++        for index,char in enumerate(text):
++            for folded in unicodedata.normalize('NFD',char.casefold().replace('đ','d')):
++                if not unicodedata.combining(folded):
++                    characters.append(folded);offsets.append(index)
++        folded=''.join(characters)
++        explicit=r'\b(?:cum\s+tu|thuat\s+ngu|mang\s+ten|dat\s+ten|ten\s+la|nhan\s+la|tieu\s+de)\b'
++        markers=list(re.finditer(explicit,folded))
++        definition=r'\b(?:la\s+(?:(?:mot|hai|nhung|cac)\s+)?(?:vi\s+du|tinh\s+tu|danh\s+tu|dong\s+tu)|co\s+nghia)\b'
++        for word in re.finditer(r'\btu\b',folded):
++            if any(marker.start()<=word.start()<marker.end() for marker in markers):
++                continue
++            prior=folded[:word.start()]
++            stop=re.search(r'[.!?;,\n]',folded[word.end():])
++            tail=folded[word.end():word.end()+stop.start()] if stop else folded[word.end():]
++            lexical_verb=re.search(r'\b(?:tim|chon|viet|doc|noi|goi|dung|giai\s+thich|dinh\s+nghia|nghia\s+cua|cac)\s*$',prior)
++            # Bare "tu" without a lexical governing verb needs an explicit
++            # definition context; ordinary "tu truong/tu phong hoc" survives.
++            if lexical_verb or (not prior.strip() and re.search(definition,tail)):
++                markers.append(word)
++        masked=list(text)
++        for marker in sorted(markers,key=lambda match:match.start()):
++            stop=re.search(r'[.!?;,\n]',folded[marker.end():])
++            end=marker.end()+stop.start() if stop else len(folded)
++            completion=re.search(r'\b(?:tren|len)\s+(?:bang|trang)\b|'+definition,
++                                 folded[marker.end():end])
++            if completion:
++                end=marker.end()+completion.end()
++            raw_start=offsets[marker.start()]
++            raw_end=offsets[end-1]+1
++            while raw_end<len(text) and unicodedata.combining(text[raw_end]):
++                raw_end+=1
++            masked[raw_start:raw_end]=' '*(raw_end-raw_start)
++        return ''.join(masked)
+ 
+     def _evidence(self, raw):
+         # Preserve information about unquoted subjects while removing quoted predicates.
+         raw=self._mask_quotes(raw)
+         text = self._context(raw,'topics')
+         polarity_text=self._context(raw,'polarities')
+-        if self.nonassertion.search(text):
++        # Explicit word mentions have already been masked. The legacy prefix's
++        # bare "tu" branch cannot treat a source preposition as a mention.
++        if self.nonassertion.search(text) and not re.match(r'^tu\b',text):
+             return frozenset(), False, False
+-        # The complement of explicit vocabulary/name markers is a mention, not
+-        # an asserted evaluation or referent. Keep the actual subject before it.
+-        mention = re.search(r'\b(?:(?:cum )?tu|thuat ngu|mang ten|dat ten|ten la|nhan la|tieu de)\b', text)
+-        if mention:
+-            text = text[:mention.start()].rstrip()
+-        polarity_mention=re.search(r'\b(?:(?:cum )?tu|thuat ngu|mang ten|dat ten|ten la|nhan la|tieu de)\b',polarity_text)
+-        if polarity_mention:
+-            polarity_text=polarity_text[:polarity_mention.start()].rstrip()
+         topics = frozenset(task for task,patterns in self.topics.items()
+                            if any(pattern.search(text) for pattern in patterns))
+         found = {'positive':False,'negative':False}
+@@ -135,7 +173,7 @@
+     def detect(self, text):
+         # Segment raw text without losing offsets; conjunctions between referents
+         # ("thay va co") stay intact. Topic sets deduplicate across all clauses.
+-        masked = self._mask_quotes(text)
++        masked = self._mask_mentions(self._mask_quotes(text))
+         breaks = list(re.finditer(r'[.!?;,\n]+|\b(?:nhưng|nhung|tuy nhiên|tuy nhien|song)\b', masked, re.I))
+         # Split "va" only when the left side has an evaluative predicate and
+         # the right starts with an explicit core subject. Coordinated subjects
+--- original-freeze/tests/test_demo_v3.py
++++ review-fix/tests/test_demo_v3.py
+@@ -134,3 +134,50 @@
+     aggregate,Detector=modules()
+     evidence=Detector().detect(text)
+     assert aggregate(evidence.positive,evidence.negative,evidence.topics)['sentiment']=='undetermined'
++
++
++@pytest.mark.parametrize('quotes', [('"','"'),("'","'"),('“','”'),('‘','’')],
++                         ids=['straight-double','straight-single','curly-double','curly-single'])
++@pytest.mark.parametrize('form',['NFC','NFD'])
++def test_review_r1_multiline_paired_quotes_never_create_evidence(quotes,form):
++    aggregate,Detector=modules()
++    left,right=quotes
++    raw=unicodedata.normalize(form,left+'Giảng viên tốt\nphòng học nóng'+right+' là câu ví dụ.')
++    detector=Detector()
++    masked=detector._mask_quotes(raw)
++    assert len(masked)==len(raw)
++    close=raw.rfind(right)
++    assert not masked[:close+len(right)].strip()
++    assert masked[close+len(right):]==raw[close+len(right):]
++    evidence=detector.detect(raw)
++    assert aggregate(evidence.positive,evidence.negative,evidence.topics)==dict(sentiment='undetermined',topic='other_domain')
++    assert all(raw[c.start:c.end]==c.text for c in evidence.clauses)
++
++
++@pytest.mark.parametrize('text,sentiment,topic',[
++    ('Giảng viên viết cụm từ tốt và phòng học nóng trên bảng.','undetermined','lecturer'),
++    ('Cụm từ tốt nhưng tệ xuất hiện trên trang.','undetermined','other_domain'),
++    ('Giảng viên viết cụm từ tốt và phòng học nóng trên bảng; chương trình thiết thực.','positive','education_quality'),
++    ('Cụm từ tốt nhưng tệ xuất hiện trên trang. Giảng viên nhiệt tình.','positive','lecturer'),
++    ('Giảng viên viết cụm từ tốt và tệ trên bảng nhưng phòng học nóng.','negative','education_quality'),
++    ('Cụm từ tốt nhưng tệ xuất hiện trên trang và giảng viên nhiệt tình.','positive','lecturer'),
++])
++@pytest.mark.parametrize('form',['NFC','NFD'])
++def test_review_r2_mentions_keep_scope_and_release_later_assertions(text,sentiment,topic,form):
++    aggregate,Detector=modules()
++    raw=unicodedata.normalize(form,text)
++    evidence=Detector().detect(raw)
++    assert aggregate(evidence.positive,evidence.negative,evidence.topics)==dict(sentiment=sentiment,topic=topic)
++    assert all(raw[c.start:c.end]==c.text for c in evidence.clauses)
++
++
++@pytest.mark.parametrize('text,sentiment,topic',[
++    ('Giảng viên từ trường khác đến và dạy tốt.','positive','lecturer'),
++    ('Giảng viên nhiệt tình và từ phòng học phát ra tiếng ồn.','positive','education_quality'),
++    ('Từ phòng học, giảng viên thông báo lịch học.','undetermined','education_quality'),
++])
++@pytest.mark.parametrize('form',['NFC','NFD'])
++def test_review_r3_source_preposition_preserves_following_evidence(text,sentiment,topic,form):
++    aggregate,Detector=modules()
++    evidence=Detector().detect(unicodedata.normalize(form,text))
++    assert aggregate(evidence.positive,evidence.negative,evidence.topics)==dict(sentiment=sentiment,topic=topic)

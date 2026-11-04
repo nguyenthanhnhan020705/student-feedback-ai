@@ -1,0 +1,30 @@
+{
+  "schema_version": "ct4-evidence-rules.1",
+  "version": "experimental-1.0.0",
+  "provenance": "assistant_authored_from_binding_handoff_examples_and_explicit_linguistic_patterns; specification_exposed; not_independent_training_or_validation",
+  "normalization": "NFC_casefold_NFD_strip_combining_marks_d_to_d_whitespace",
+  "accented_subjects": {"cô": "giang vien"},
+  "surface_constraints": {
+    "topics": {"co": ["cô"], "thay": ["thầy"]},
+    "polarities": {"ban": ["bẩn"], "te": ["tệ"], "hong": ["hỏng"], "nong": ["nóng"]}
+  },
+  "limitations": [
+    "Bounded explicit Vietnamese and accentless predicates only; unseen vocabulary and implicit aspects can be missed.",
+    "Negation handles a local window of at most three intervening modifiers; long scope, double negation, questions, modality and sarcasm are not resolved.",
+    "Paired quotations and explicit metalinguistic prefixes are suppressed; indirect reported speech is not generally resolved.",
+    "Accentless thay/co, pronoun reference, ambiguous subjects and education versus outside-domain meanings remain ambiguous.",
+    "Clause boundaries use punctuation and explicit contrast, plus coordinating va only before an explicit subject after a predicate; no syntactic parser.",
+    "CT4 clause outputs are audit-only multiclass observations, never evidence of mixed or a second core topic.",
+    "No independent human-reviewed multilabel evaluation exists; no accuracy improvement or full negation solution is claimed."
+  ],
+  "topics": {
+    "lecturer": ["giang vien", "thay", "co (?=(?:day|giang|giao|deu|giai)\\b)", "bai giang"],
+    "curriculum": ["chuong trinh(?: dao tao)?", "mon hoc", "tin chi", "giao trinh", "noi dung hoc", "gio thuc hanh"],
+    "facility": ["phong (?:hoc|thuc hanh|thi nghiem)", "may tinh", "may chieu", "co so vat chat", "ban ghe", "thu vien", "wifi", "dieu hoa"]
+  },
+  "positive": ["ro rang", "nhiet tinh", "sach (?:dep|se)", "thiet thuc", "de hieu", "(?:day|giang)(?: rat)? hay", "tot", "ngon", "tan tinh", "hieu qua", "hien dai", "thoang mat"],
+  "negative": ["kho hieu", "nong", "hong", "qua nhieu ly thuyet", "thieu (?:gio )?thuc hanh", "kem", "te", "ban(?! ghe)", "on ao", "lac hau"],
+  "negation": "(?:khong|chua|chang|cha)(?: (?:he|con|duoc|thuc su|qua|rat|lam)){0,3}|thieu",
+  "nonassertion_prefix": "^(?:(?:cum )?tu|thuat ngu|nhan|vi du ve|khong (?:ban|noi|de cap|nhac)(?: den)? ve)\\b",
+  "contrast": "\\b(?:nhung|tuy nhien|song)\\b"
+}

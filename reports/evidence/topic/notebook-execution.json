@@ -1,0 +1,6 @@
+{
+  "notebook": "notebooks/03_topic.ipynb",
+  "runner": "plain-Python exec with captured streams; not Jupyter",
+  "executed_code_cells": 4,
+  "error_outputs": 0
+}

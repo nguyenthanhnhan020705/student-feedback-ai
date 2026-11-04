@@ -1,0 +1,86 @@
+{
+  "schema_version": "ct4.1",
+  "variants": {
+    "original_aug25": {
+      "parent": "original",
+      "ratio": 0.25
+    },
+    "original_aug50": {
+      "parent": "original",
+      "ratio": 0.5
+    },
+    "original_aug100": {
+      "parent": "original",
+      "ratio": 1.0
+    },
+    "ct3parent_aug25": {
+      "parent": "ct3parent",
+      "ratio": 0.25
+    },
+    "ct3parent_aug50": {
+      "parent": "ct3parent",
+      "ratio": 0.5
+    },
+    "ct3parent_aug100": {
+      "parent": "ct3parent",
+      "ratio": 1.0
+    }
+  },
+  "seed": 42,
+  "selection": "global_macro_f1_band_then_global_accuracy_band_1e-6_oldest_control_first",
+  "fit_split": "train",
+  "selection_split": "validation",
+  "stress": "unaccented_validation_not_for_selection",
+  "test": "no_inference_or_selection",
+  "promotion": "not_deployed",
+  "deployment": "research_only",
+  "source_groups": 11426,
+  "source_counts": {
+    "sentiment": {
+      "negative": 5325,
+      "neutral": 458,
+      "positive": 5643
+    },
+    "topic": {
+      "lecturer": 8166,
+      "curriculum": 2201,
+      "facility": 497,
+      "other": 562
+    }
+  },
+  "class_weights": "exact_parent_values_not_recomputed",
+  "python": "3.13.3",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "original_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+  "source_train": {
+    "sentiments.txt": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+    "sents.txt": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+    "topics.txt": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9"
+  },
+  "parents": {
+    "original": {
+      "sentiment_pipeline.joblib": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+      "sentiment_metadata.json": "96c8c773f15be1c252e0faef9e98a7fbfe515d802ffd68028b25f1c37769eeb8",
+      "topic_pipeline.joblib": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+      "topic_metadata.json": "def760c945900a26925e01c3eb84c071a6a9abc41697a188b044fb2ffc22468a"
+    },
+    "ct2": {
+      "sentiment_pipeline.joblib": "3af38967c6af89d8443d1510431ddcac21903e84adf4a4526fdbcfb94d39de13",
+      "sentiment_metadata.json": "ef72bae1a5a640622bf9d34fc573de9b7de43857bc83d4fe9bb971820e32de86",
+      "topic_pipeline.joblib": "d89449c61ecf02a5a60b84ec1bf3e33d2fee4b5b4187ed19d551fece720b2949",
+      "topic_metadata.json": "9952c555af7247afb765865090da166bc1f85d2d67fbee4548882926221ee062"
+    },
+    "ct3": {
+      "sentiment_pipeline.joblib": "6b70a0b07996a3249f367bac91eb41e1f382715526e10af13c0dc97ed9c86aa9",
+      "sentiment_metadata.json": "360e01454e89da750507346e983aab295852a84936d344cc3d56e446ba6e4b02",
+      "topic_pipeline.joblib": "d89449c61ecf02a5a60b84ec1bf3e33d2fee4b5b4187ed19d551fece720b2949",
+      "topic_metadata.json": "9952c555af7247afb765865090da166bc1f85d2d67fbee4548882926221ee062"
+    }
+  }
+}

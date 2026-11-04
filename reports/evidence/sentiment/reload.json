@@ -1,0 +1,18 @@
+{
+  "artifact_sha256": "9bcff758869cdcbc9110f8166efca3f660f9ea7e29300cece323ac4714bf0bbe",
+  "samples": [
+    "Giảng viên giảng dễ hiểu",
+    "Phòng học rất nóng",
+    "Môn học có ba tín chỉ"
+  ],
+  "before": [
+    "positive",
+    "negative",
+    "negative"
+  ],
+  "after_new_process": [
+    "positive",
+    "negative",
+    "negative"
+  ]
+}

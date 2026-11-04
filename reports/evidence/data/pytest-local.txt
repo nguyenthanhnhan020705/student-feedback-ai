@@ -1,0 +1,7 @@
+Command: .venv/Scripts/python.exe -m pytest -q
+TV2_RUN_REAL_DATA=1
+
+.........................                                                [100%]
+25 passed in 1.35s
+
+Exit code: 0

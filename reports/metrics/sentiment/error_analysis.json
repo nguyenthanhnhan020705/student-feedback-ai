@@ -1,0 +1,89 @@
+{
+  "n_rows": 3166,
+  "errors": 326,
+  "confusions": {
+    "positive -> neutral": 12,
+    "positive -> negative": 118,
+    "neutral -> positive": 63,
+    "negative -> positive": 52,
+    "neutral -> negative": 74,
+    "negative -> neutral": 7
+  },
+  "examples_by_id": [
+    {
+      "id": "test:000007",
+      "actual": "positive",
+      "predicted": "neutral"
+    },
+    {
+      "id": "test:000013",
+      "actual": "positive",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000028",
+      "actual": "neutral",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000036",
+      "actual": "neutral",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000046",
+      "actual": "positive",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000051",
+      "actual": "negative",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000054",
+      "actual": "neutral",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000056",
+      "actual": "positive",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000058",
+      "actual": "positive",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000068",
+      "actual": "negative",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000122",
+      "actual": "neutral",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000158",
+      "actual": "negative",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000163",
+      "actual": "neutral",
+      "predicted": "negative"
+    },
+    {
+      "id": "test:000166",
+      "actual": "negative",
+      "predicted": "positive"
+    },
+    {
+      "id": "test:000228",
+      "actual": "negative",
+      "predicted": "positive"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "schema_version": "ct1.1",
+  "purpose": "known_exposed_diagnostic_cases_not_independent_holdout",
+  "source": "reports/evidence/user-feedback-diagnosis/results.json",
+  "notes": [
+    "Not for fitting; no model output was used as an expected label.",
+    "Semantic labels proposed by assistant; group must review before academic claims.",
+    "Unclear negation, mixed aspects, domain mismatch and insufficient topic context use null."
+  ],
+  "cases": [
+    {
+      "id": "known-001",
+      "text": "Giảng viên giảng bài dễ hiểu, nhiệt tình và luôn giải đáp thắc mắc của sinh viên.",
+      "group": "clear",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-002",
+      "text": "Giảng viên giảng bài khó hiểu, thường xuyên đi trễ và không giải đáp câu hỏi.",
+      "group": "clear",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-003",
+      "text": "Giảng viên sử dụng slide và viết bảng trong giờ học.",
+      "group": "neutral",
+      "sentiment": "neutral",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-004",
+      "text": "Chương trình đào tạo hợp lý, nội dung môn học thiết thực và có nhiều bài thực hành hữu ích.",
+      "group": "clear",
+      "sentiment": "positive",
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-005",
+      "text": "Chương trình đào tạo quá nặng lý thuyết, nội dung trùng lặp và thiếu thực hành.",
+      "group": "clear",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-006",
+      "text": "Chương trình học gồm các môn đại cương và các môn chuyên ngành.",
+      "group": "neutral",
+      "sentiment": "neutral",
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-007",
+      "text": "Phòng học sạch sẽ, máy lạnh hoạt động tốt và máy chiếu rất rõ nét.",
+      "group": "clear",
+      "sentiment": "positive",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-008",
+      "text": "Phòng học nóng, bàn ghế hư hỏng và máy chiếu thường xuyên không hoạt động.",
+      "group": "clear",
+      "sentiment": "negative",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-009",
+      "text": "Phòng học có bàn ghế, bảng và một máy chiếu.",
+      "group": "neutral",
+      "sentiment": "neutral",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-010",
+      "text": "Tôi rất vui và hài lòng với những trải nghiệm của mình tại trường.",
+      "group": "ambiguous_topic",
+      "sentiment": "positive",
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-011",
+      "text": "Tôi cảm thấy thất vọng và không hài lòng với trải nghiệm của mình tại trường.",
+      "group": "ambiguous_topic",
+      "sentiment": "negative",
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-012",
+      "text": "Tôi hiện là sinh viên năm thứ hai của trường.",
+      "group": "neutral",
+      "sentiment": "neutral",
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-013",
+      "text": "Giảng viên giảng bài không dễ hiểu.",
+      "group": "negation",
+      "sentiment": "negative",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-014",
+      "text": "Cơ sở vật chất không tệ như tôi nghĩ.",
+      "group": "negation",
+      "sentiment": null,
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-015",
+      "text": "Máy chiếu thật tuyệt vời, buổi nào cũng hỏng.",
+      "group": "sarcasm",
+      "sentiment": "negative",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-016",
+      "text": "Giảng viên rất nhiệt tình nhưng giảng bài khó hiểu.",
+      "group": "mixed_sentiment",
+      "sentiment": null,
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-017",
+      "text": "Giảng viên giảng rất hay nhưng phòng học quá nóng.",
+      "group": "mixed_topic",
+      "sentiment": null,
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-018",
+      "text": "Nhà trường nên bổ sung thêm các buổi thực hành.",
+      "group": "suggestion",
+      "sentiment": null,
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-019",
+      "text": "giang vien giang bai rat de hieu va nhiet tinh",
+      "group": "unaccented",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-020",
+      "text": "Giảng viên giảng bài rất dễ hiểu và nhiệt tình.",
+      "group": "accented_control",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-021",
+      "text": "thầy dạy ok lắm, dễ hỉu, nhiệt tình nữa :))",
+      "group": "informal",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-022",
+      "text": "Phòng học sạch đẹp quá 😍",
+      "group": "emoji",
+      "sentiment": "positive",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-023",
+      "text": "Phòng học sạch đẹp quá",
+      "group": "emoji_control",
+      "sentiment": "positive",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-024",
+      "text": "Phòng học sạch đẹp quá 😡",
+      "group": "conflicting_emoji",
+      "sentiment": null,
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-025",
+      "text": "😍",
+      "group": "emoji_only",
+      "sentiment": null,
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-026",
+      "text": "😡",
+      "group": "emoji_only",
+      "sentiment": null,
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-027",
+      "text": "Món phở hôm nay rất ngon.",
+      "group": "out_of_domain",
+      "sentiment": null,
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-028",
+      "text": "abcxyz qwerty 123456",
+      "group": "nonsense",
+      "sentiment": null,
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-029",
+      "text": "Tốt.",
+      "group": "short",
+      "sentiment": "positive",
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-030",
+      "text": "Giảng viên giảng bài dễ hiểu.",
+      "group": "negation_control",
+      "sentiment": "positive",
+      "topic": "lecturer",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-031",
+      "text": "Cơ sở vật chất tệ như tôi nghĩ.",
+      "group": "negation_control",
+      "sentiment": "negative",
+      "topic": "facility",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-032",
+      "text": "Không có ý kiến.",
+      "group": "neutral_other",
+      "sentiment": "neutral",
+      "topic": "other",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-033",
+      "text": "Em không có ý kiến gì.",
+      "group": "neutral_other",
+      "sentiment": "neutral",
+      "topic": "other",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-034",
+      "text": "Không có góp ý.",
+      "group": "neutral_other",
+      "sentiment": "neutral",
+      "topic": "other",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-035",
+      "text": "Bình thường.",
+      "group": "neutral_other",
+      "sentiment": "neutral",
+      "topic": "other",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-036",
+      "text": "Học phí quá cao.",
+      "group": "clear",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-037",
+      "text": "Thủ tục đăng ký học phần phức tạp.",
+      "group": "clear",
+      "sentiment": "negative",
+      "topic": "curriculum",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-038",
+      "text": "Em muốn được tư vấn về học bổng.",
+      "group": "ambiguous_topic",
+      "sentiment": "neutral",
+      "topic": null,
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    },
+    {
+      "id": "known-039",
+      "text": "Các hoạt động ngoại khóa rất bổ ích.",
+      "group": "clear",
+      "sentiment": "positive",
+      "topic": "other",
+      "label_provenance": "assistant_proposed",
+      "human_reviewed": false,
+      "note": "Null task labels are intentionally unscored; expectations are provisional."
+    }
+  ]
+}

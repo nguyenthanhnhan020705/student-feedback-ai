@@ -1,0 +1,30 @@
+{
+  "schema_version": "ct2.1",
+  "strategies": [
+    "sqrt_balanced",
+    "balanced",
+    "minority_x2"
+  ],
+  "fit_split": "train",
+  "evaluation_split": "validation",
+  "seed": 42,
+  "train_rows": 11426,
+  "validation_rows": 1583,
+  "known_cases": 39,
+  "train_counts": {
+    "sentiment": {
+      "positive": 5643,
+      "negative": 5325,
+      "neutral": 458
+    },
+    "topic": {
+      "curriculum": 2201,
+      "lecturer": 8166,
+      "other": 562,
+      "facility": 497
+    }
+  },
+  "selection": "validation_macro_f1_then_accuracy_1e-6_baseline_first",
+  "promotion": "not_deployed",
+  "test": "historical_only_no_inference_or_selection"
+}

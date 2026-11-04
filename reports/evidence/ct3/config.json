@@ -1,0 +1,46 @@
+{
+  "schema_version": "ct3.1",
+  "variants": {
+    "char_0.5_none": {
+      "char_weight": 0.5,
+      "weighting": "none"
+    },
+    "char_0.5_ct2": {
+      "char_weight": 0.5,
+      "weighting": "ct2"
+    },
+    "char_1_none": {
+      "char_weight": 1.0,
+      "weighting": "none"
+    },
+    "char_1_ct2": {
+      "char_weight": 1.0,
+      "weighting": "ct2"
+    },
+    "char_2_none": {
+      "char_weight": 2.0,
+      "weighting": "none"
+    },
+    "char_2_ct2": {
+      "char_weight": 2.0,
+      "weighting": "ct2"
+    }
+  },
+  "fit_split": "train",
+  "evaluation_split": "validation",
+  "test": "no_inference_or_selection",
+  "ct2_selection": {
+    "sentiment": "balanced",
+    "topic": "sqrt_balanced"
+  },
+  "train_rows": 11426,
+  "seed": 42,
+  "char_analyzer": "char_wb",
+  "char_ngram_range": [
+    3,
+    5
+  ],
+  "min_df": 2,
+  "selection": "global_macro_f1_band_then_global_accuracy_band_1e-6_control_first",
+  "promotion": "not_deployed"
+}

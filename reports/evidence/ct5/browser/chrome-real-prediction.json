@@ -1,0 +1,11 @@
+{
+  "browser": "chrome",
+  "version": "147.0.7727.101",
+  "input": "Giảng viên giải thích rất dễ hiểu.",
+  "response": {
+    "sentiment": "positive",
+    "topic": "lecturer",
+    "contract_version": "1.0"
+  },
+  "fixture": false
+}

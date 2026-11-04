@@ -1,0 +1,715 @@
+{
+  "source_groups": 11426,
+  "already_unaccented": 15,
+  "augmented_rows": 5705,
+  "transformed_collisions": [
+    {
+      "text_sha256": "1d5016b3a9b2e3fa8d8f6414ede333975e8386efa16ba1c0c586baf560f99b20",
+      "ids": [
+        "train:004211",
+        "train:005567"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "304868b90dcabc5ca971cf047a473977f17ce1ccef492e800f14808bd571059b",
+      "ids": [
+        "train:007615",
+        "train:008866"
+      ],
+      "labels": [
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "0f00771f6569771a2dcf1fa035002281468ba096a584b33bf7899ed7daaa71e7",
+      "ids": [
+        "train:003730",
+        "train:004756"
+      ],
+      "labels": [
+        {
+          "sentiment": "neutral",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5ebeae781a1030e463de3b39ea74043fcad496ba9fb02aeb7be1273199bd5428",
+      "ids": [
+        "train:006266",
+        "train:009365"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "994ecda983a3460590f1e252496b0af9f758c37d70542a97b89462042f11c8c3",
+      "ids": [
+        "train:004076",
+        "train:009461"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5acaf7f17220f88d48a01fda4bfbdda48c4b1bb4b3cac6bb7842a210e1ee9dfe",
+      "ids": [
+        "train:008619",
+        "train:010530"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ac83e47a26fab77721fc32481e202ed450dac88d811cab5832a1edf95b0d6c8d",
+      "ids": [
+        "train:002262",
+        "train:007171"
+      ],
+      "labels": [
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4ee0cd4114e8d5ba283ede37d467759a1bc033ff532777e9331c0b41f82e8d98",
+      "ids": [
+        "train:002492",
+        "train:002493"
+      ],
+      "labels": [
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b06003907782a2b56f2b57cf4384580f2b72c07ac9c164f3c81a525e9cfe0edf",
+      "ids": [
+        "train:000237",
+        "train:007255"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f33a9111bd0df5c4c146728fd5140493fa2bef966ab3f4754adef360d00e3342",
+      "ids": [
+        "train:001776",
+        "train:008785"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "38240e6b0fee5cb1bc2bfebc8554e4bd947090e3698bb174e8291b5cf7943a32",
+      "ids": [
+        "train:001939",
+        "train:008364"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5a660aa6864dff600d7993d85d2f61a1ddd335e035bd588ba07d5cd4b747d15a",
+      "ids": [
+        "train:004109",
+        "train:006883"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "21cf9befcdc5b97f73347947324cbc240e99fc05744778354ffd3ab7a806b418",
+      "ids": [
+        "train:004249",
+        "train:006578"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "40770065c2a41fb02898706cc94d64f5f1de9afac374e190839eee9ccd2d92a7",
+      "ids": [
+        "train:007088",
+        "train:007271"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d9d47d261fac1d4be9065f6907051d30e79b7613141db026933aa3ae5aaa2a1b",
+      "ids": [
+        "train:003623",
+        "train:006432"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4f86a2439136d07066ebda98ac8f0b573d84b2412c9858759eccb41a01c2d173",
+      "ids": [
+        "train:005703",
+        "train:008328"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d066e5e522cadebd00f1ebf936488d5f546a88a1f10304b160b7a5e0a8ac19b6",
+      "ids": [
+        "train:000243",
+        "train:005161"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "444ef8847661d21a5ff4420131cbd1798066e80d17189461582aea6225558484",
+      "ids": [
+        "train:004230",
+        "train:010785"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "69255313174883b1f9c0835f616340c7578265c729efd4eaa117c3f9c78caaab",
+      "ids": [
+        "train:001110",
+        "train:006847",
+        "train:008309"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "curriculum"
+        }
+      ]
+    },
+    {
+      "text_sha256": "dce234cf89d4f8defe3678872a4885bffaa97dd4392378e97e3a6459bf323768",
+      "ids": [
+        "train:000290",
+        "train:009736"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b87d371febeac03183acc3041208ce04182383f3c619c31745e424002af84db5",
+      "ids": [
+        "train:002599",
+        "train:005610"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b2c96724729fd0e8d2bab896357b285861b7c9df72c66adf402120a75a3daec5",
+      "ids": [
+        "train:011294",
+        "train:011418"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "negative",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5bad956d6c834c71c4d300b4ac332346b428e81a00ae33018c7969520427f090",
+      "ids": [
+        "train:003003",
+        "train:005646"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6202c281e7a4d57824a40a42919ae7bfef57536e0f8b416fbbaa5eb7f403c192",
+      "ids": [
+        "train:005726",
+        "train:008188"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "0d534604820bc05e6b19dbb54d44b5cab655b90fe4a2944e6b2daf29423cd477",
+      "ids": [
+        "train:000804",
+        "train:004956"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "28f097ee804162c330bb8739d4c1a29e46985fa9134f82f893e7dd0d8171fb7d",
+      "ids": [
+        "train:003005",
+        "train:006857"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f9032843f4989c5b6e4fd0eb5dd2209f471ae41b5396997062c7c40135676204",
+      "ids": [
+        "train:009089",
+        "train:009158"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "495f68bfe6a9ead3c0116aafc5253c6cb319212be26bec81594306a0b3e99e9b",
+      "ids": [
+        "train:006079",
+        "train:007277"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d1b5db6ba7ffba4b70732b104953f985f4feb3121ee13aa58d8f3f21fcfce9d7",
+      "ids": [
+        "train:006230",
+        "train:010901"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "97f6d5f0996156d03120f97caa54a3aa5fb4863d3eeffd6bc61b9db96309ba47",
+      "ids": [
+        "train:002048",
+        "train:008346"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "00fc54502d6998cd97014fea221d8fa1137623b2874149d966fc1247d9b85ab1",
+      "ids": [
+        "train:000994",
+        "train:002200"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ccf186043c55157b36c58ffc9830ea1351b1e9a309af4a1084a7575884e1b634",
+      "ids": [
+        "train:004770",
+        "train:007441"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "831ccde4b14366ae208dde58dda26788149e393302196045a83000c51e4286cd",
+      "ids": [
+        "train:004405",
+        "train:008963"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        }
+      ]
+    }
+  ],
+  "conflicting_labels": [
+    {
+      "text_sha256": "1d5016b3a9b2e3fa8d8f6414ede333975e8386efa16ba1c0c586baf560f99b20",
+      "ids": [
+        "train:004211",
+        "train:005567"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b06003907782a2b56f2b57cf4384580f2b72c07ac9c164f3c81a525e9cfe0edf",
+      "ids": [
+        "train:000237",
+        "train:007255"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        }
+      ]
+    },
+    {
+      "text_sha256": "69255313174883b1f9c0835f616340c7578265c729efd4eaa117c3f9c78caaab",
+      "ids": [
+        "train:001110",
+        "train:006847",
+        "train:008309"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "other"
+        },
+        {
+          "sentiment": "neutral",
+          "topic": "curriculum"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b2c96724729fd0e8d2bab896357b285861b7c9df72c66adf402120a75a3daec5",
+      "ids": [
+        "train:011294",
+        "train:011418"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "negative",
+          "topic": "lecturer"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ccf186043c55157b36c58ffc9830ea1351b1e9a309af4a1084a7575884e1b634",
+      "ids": [
+        "train:004770",
+        "train:007441"
+      ],
+      "labels": [
+        {
+          "sentiment": "positive",
+          "topic": "lecturer"
+        },
+        {
+          "sentiment": "positive",
+          "topic": "other"
+        }
+      ]
+    }
+  ],
+  "overlap_normalized": {
+    "validation": [],
+    "known_cases": []
+  },
+  "overlap_unaccented": {
+    "validation": [
+      {
+        "id": "validation:000039",
+        "train_ids": [
+          "train:008653"
+        ]
+      },
+      {
+        "id": "validation:000243",
+        "train_ids": [
+          "train:002451"
+        ]
+      },
+      {
+        "id": "validation:000302",
+        "train_ids": [
+          "train:004681",
+          "ct4-v1:train:004681"
+        ]
+      },
+      {
+        "id": "validation:000324",
+        "train_ids": [
+          "train:000831",
+          "ct4-v1:train:000831"
+        ]
+      },
+      {
+        "id": "validation:000466",
+        "train_ids": [
+          "train:003557"
+        ]
+      },
+      {
+        "id": "validation:001105",
+        "train_ids": [
+          "train:010848",
+          "ct4-v1:train:010848"
+        ]
+      }
+    ],
+    "known_cases": []
+  },
+  "policy": "report_only_no_filter_or_relabel",
+  "near_duplicates": "not_certified"
+}

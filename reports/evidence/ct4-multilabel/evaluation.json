@@ -1,0 +1,3432 @@
+{
+  "schema_version": "ct4-multilabel-evaluation.1",
+  "fit": false,
+  "status": "engineering_complete_independent_evaluation_pending",
+  "evaluated_at": "2026-11-01T09:06:31.219006+00:00",
+  "source_hashes": {
+    "demo_v3/detector.py": "f9abea9282759cae2f2b08588cc8892db5c10ad0e1ae4b9ab3c7a461eba2b8a6",
+    "demo_v3/main.py": "365bce72212ca1b9b7f08b930be2484476264ed377672c33e9db33e484475a0d",
+    "demo_v3/ontology.py": "d8054be0d6ac43756274056e83a4540ff68769867f5db12944ac6c42ced2f50f",
+    "demo_v3/rules.json": "87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d",
+    "demo_v3/service.py": "fa2ee4d8b12ab94f3606221b109233769cbefdb8a416df7d825b05a7b2898fd4",
+    "demo_v3/__init__.py": "08bb7a731341d5ce5aca140fcd23613a5b83412fa2a19218cdb610c955837a1b"
+  },
+  "input_sha256": "3bffa02687854a1654bac4b74119d285f7f2e759bfc6d81d69ad5de5706520f2",
+  "scope": "finite_exploratory_assistant_proposed_not_independent_or_human_reviewed",
+  "ontology": "3.0_not_comparable_to_UIT_VSFC_accuracy",
+  "groups": {
+    "specification": {
+      "rows": [
+        {
+          "id": "spec-001",
+          "text": "Thầy giảng bài rõ ràng và phòng học thì nóng.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 23,
+                "text": "Thầy giảng bài rõ ràng ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 25,
+                "end": 44,
+                "text": " phòng học thì nóng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-002",
+          "text": "Giảng viên nhiệt tình và phòng học sạch đẹp.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 22,
+                "text": "Giảng viên nhiệt tình ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 24,
+                "end": 43,
+                "text": " phòng học sạch đẹp",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-003",
+          "text": "Cô dạy rất hay nhưng đôi lúc giải thích khó hiểu.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 15,
+                "text": "Cô dạy rất hay ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 20,
+                "end": 48,
+                "text": " đôi lúc giải thích khó hiểu",
+                "topics": [],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-004",
+          "text": "Giảng viên thiếu nhiệt tình và phòng thực hành có nhiều máy hỏng.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 28,
+                "text": "Giảng viên thiếu nhiệt tình ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 30,
+                "end": 64,
+                "text": " phòng thực hành có nhiều máy hỏng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-005",
+          "text": "Giảng viên nhiệt tình, nội dung môn học thiết thực và phòng học sạch sẽ.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Giảng viên nhiệt tình",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 22,
+                "end": 51,
+                "text": " nội dung môn học thiết thực ",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 53,
+                "end": 71,
+                "text": " phòng học sạch sẽ",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-006",
+          "text": "Thầy và cô đều giảng bài dễ hiểu.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 32,
+                "text": "Thầy và cô đều giảng bài dễ hiểu",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-007",
+          "text": "Chương trình có quá nhiều lý thuyết và thiếu giờ thực hành.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 58,
+                "text": "Chương trình có quá nhiều lý thuyết và thiếu giờ thực hành",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-008",
+          "text": "Máy tính trong phòng thực hành thường xuyên bị hỏng.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 51,
+                "text": "Máy tính trong phòng thực hành thường xuyên bị hỏng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-009",
+          "text": "Môn học có ba tín chỉ.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Môn học có ba tín chỉ",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "neutral",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-010",
+          "text": "Giảng viên sử dụng slide trong các buổi học.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 43,
+                "text": "Giảng viên sử dụng slide trong các buổi học",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-011",
+          "text": "Phòng học có máy chiếu.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 22,
+                "text": "Phòng học có máy chiếu",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-012",
+          "text": "Giảng viên thông báo lịch học và phòng học ở tầng hai.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 53,
+                "text": "Giảng viên thông báo lịch học và phòng học ở tầng hai",
+                "topics": [
+                  "facility",
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-013",
+          "text": "Tốt.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 3,
+                "text": "Tốt",
+                "topics": [],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-014",
+          "text": "Thay giang bai de hieu va rat nhiet tinh.",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 40,
+                "text": "Thay giang bai de hieu va rat nhiet tinh",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "spec-015",
+          "text": "🙂🙂🙂",
+          "provenance": "user_confirmed_specification_not_holdout",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 3,
+                "text": "🙂🙂🙂",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "insufficient",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "zero_features",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "zero_features",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        }
+      ],
+      "metrics": {
+        "n_rows": 15,
+        "tasks": {
+          "sentiment": {
+            "accuracy": 1.0,
+            "label_order": [
+              "positive",
+              "negative",
+              "mixed",
+              "undetermined"
+            ],
+            "confusion_matrix": [
+              [
+                5,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5
+              ]
+            ],
+            "classification_report": {
+              "positive": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 5.0
+              },
+              "negative": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 3.0
+              },
+              "mixed": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              },
+              "undetermined": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 5.0
+              },
+              "accuracy": 1.0,
+              "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 15.0
+              },
+              "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 15.0
+              }
+            }
+          },
+          "topic": {
+            "accuracy": 1.0,
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "education_quality",
+              "other_domain"
+            ],
+            "confusion_matrix": [
+              [
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2
+              ]
+            ],
+            "classification_report": {
+              "lecturer": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 4.0
+              },
+              "curriculum": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              },
+              "facility": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              },
+              "education_quality": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 5.0
+              },
+              "other_domain": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+              },
+              "accuracy": 1.0,
+              "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 15.0
+              },
+              "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 15.0
+              }
+            }
+          }
+        },
+        "joint_exact_match": {
+          "correct": 15,
+          "total": 15,
+          "ratio": 1.0
+        }
+      },
+      "quality_errors": []
+    },
+    "exploratory": {
+      "rows": [
+        {
+          "id": "variant-01",
+          "text": "Thầy tận tình, còn phòng học thoáng mát.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 13,
+                "text": "Thầy tận tình",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 14,
+                "end": 39,
+                "text": " còn phòng học thoáng mát",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-02",
+          "text": "Cô giải thích dễ hiểu; giáo trình quá cũ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Cô giải thích dễ hiểu",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 22,
+                "end": 40,
+                "text": " giáo trình quá cũ",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": false
+        },
+        {
+          "id": "variant-03",
+          "text": "Môn học có bốn tín chỉ và phòng thí nghiệm có hai máy tính.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 58,
+                "text": "Môn học có bốn tín chỉ và phòng thí nghiệm có hai máy tính",
+                "topics": [
+                  "curriculum",
+                  "facility"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-04",
+          "text": "Giảng viên đến lớp lúc tám giờ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 30,
+                "text": "Giảng viên đến lớp lúc tám giờ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-05",
+          "text": "Phòng thực hành ở tầng ba, có hai cửa sổ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 25,
+                "text": "Phòng thực hành ở tầng ba",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 26,
+                "end": 40,
+                "text": " có hai cửa sổ",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "insufficient",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-06",
+          "text": "Thầy nhiệt tình nhưng cô giảng khó hiểu.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 16,
+                "text": "Thầy nhiệt tình ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 21,
+                "end": 39,
+                "text": " cô giảng khó hiểu",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-07",
+          "text": "Phòng học sạch sẽ nhưng máy chiếu hỏng.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 18,
+                "text": "Phòng học sạch sẽ ",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 23,
+                "end": 38,
+                "text": " máy chiếu hỏng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-08",
+          "text": "Giáo trình thiết thực. Máy tính hiện đại.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Giáo trình thiết thực",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 22,
+                "end": 40,
+                "text": " Máy tính hiện đại",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-09",
+          "text": "Chương trình lạc hậu; phòng học ồn ào.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 20,
+                "text": "Chương trình lạc hậu",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 21,
+                "end": 37,
+                "text": " phòng học ồn ào",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-10",
+          "text": "Thầy dạy hiệu quả và cô giảng rõ ràng.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 18,
+                "text": "Thầy dạy hiệu quả ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 20,
+                "end": 37,
+                "text": " cô giảng rõ ràng",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-11",
+          "text": "Nội dung môn học thiết thực nhưng thiếu giờ thực hành.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 28,
+                "text": "Nội dung môn học thiết thực ",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 33,
+                "end": 53,
+                "text": " thiếu giờ thực hành",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-12",
+          "text": "Giáo trình có mười chương.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 25,
+                "text": "Giáo trình có mười chương",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-13",
+          "text": "Thầy gửi bạn thông báo về lịch học.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 34,
+                "text": "Thầy gửi bạn thông báo về lịch học",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-14",
+          "text": "Phòng học có rất nhiều bàn ghế.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 30,
+                "text": "Phòng học có rất nhiều bàn ghế",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-15",
+          "text": "Thầy không hề nhiệt tình; phòng học sạch sẽ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 24,
+                "text": "Thầy không hề nhiệt tình",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 25,
+                "end": 43,
+                "text": " phòng học sạch sẽ",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-16",
+          "text": "Phòng học không nóng và máy tính không hỏng.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Phòng học không nóng ",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 23,
+                "end": 43,
+                "text": " máy tính không hỏng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-17",
+          "text": "Cô không giảng khó hiểu.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 23,
+                "text": "Cô không giảng khó hiểu",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": false
+        },
+        {
+          "id": "variant-18",
+          "text": "Quán cà phê ngon và thầy giảng rõ ràng.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 17,
+                "text": "Quán cà phê ngon ",
+                "topics": [],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 19,
+                "end": 38,
+                "text": " thầy giảng rõ ràng",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-19",
+          "text": "Giảng viên dạy kém; quán phở rất ngon.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 18,
+                "text": "Giảng viên dạy kém",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 19,
+                "end": 37,
+                "text": " quán phở rất ngon",
+                "topics": [],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "insufficient",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-20",
+          "text": "Quán ăn ở đầu đường.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 19,
+                "text": "Quán ăn ở đầu đường",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-21",
+          "text": "Nhà ăn nóng và thức ăn dở.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 25,
+                "text": "Nhà ăn nóng và thức ăn dở",
+                "topics": [],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-22",
+          "text": "Rất tệ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 6,
+                "text": "Rất tệ",
+                "topics": [],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "other",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-23",
+          "text": "Hiện đại và hiệu quả.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 20,
+                "text": "Hiện đại và hiệu quả",
+                "topics": [],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "other",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-24",
+          "text": "🙂 📚 🏫",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 5,
+                "text": "🙂 📚 🏫",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "insufficient",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "zero_features",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "zero_features",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-25",
+          "text": "Thay tan tinh; phong hoc on ao.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 13,
+                "text": "Thay tan tinh",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 14,
+                "end": 30,
+                "text": " phong hoc on ao",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-26",
+          "text": "Mon hoc co bon tin chi.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 22,
+                "text": "Mon hoc co bon tin chi",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-27",
+          "text": "Co day ro rang va phong hoc thoang mat.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 15,
+                "text": "Co day ro rang ",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 17,
+                "end": 38,
+                "text": " phong hoc thoang mat",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-28",
+          "text": "Giảng viên ghi hai từ 'tốt; tệ' trên slide.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 42,
+                "text": "Giảng viên ghi hai từ 'tốt; tệ' trên slide",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-29",
+          "text": "Từ cơ sở vật chất là tiêu đề của mục này.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 40,
+                "text": "Từ cơ sở vật chất là tiêu đề của mục này",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-30",
+          "text": "Không nhận xét về giảng viên.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "lecturer"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 28,
+                "text": "Không nhận xét về giảng viên",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": false
+        },
+        {
+          "id": "variant-31",
+          "text": "Giáo viên chu đáo và lớp học ngột ngạt.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 38,
+                "text": "Giáo viên chu đáo và lớp học ngột ngạt",
+                "topics": [],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": false
+        },
+        {
+          "id": "variant-32",
+          "text": "Cô giảng tốt, chương trình thiết thực, thư viện hiện đại.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "positive",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 12,
+                "text": "Cô giảng tốt",
+                "topics": [
+                  "lecturer"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 13,
+                "end": 37,
+                "text": " chương trình thiết thực",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 38,
+                "end": 56,
+                "text": " thư viện hiện đại",
+                "topics": [
+                  "facility"
+                ],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "insufficient",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-33",
+          "text": "Máy chiếu hỏng, wifi kém.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "facility"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "facility"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 14,
+                "text": "Máy chiếu hỏng",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 15,
+                "end": 24,
+                "text": " wifi kém",
+                "topics": [
+                  "facility"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "facility",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-34",
+          "text": "Chương trình lạc hậu và giáo trình khó hiểu.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "negative",
+            "topic": "curriculum"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "negative",
+            "topic": "curriculum"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 21,
+                "text": "Chương trình lạc hậu ",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              },
+              {
+                "start": 23,
+                "end": 43,
+                "text": " giáo trình khó hiểu",
+                "topics": [
+                  "curriculum"
+                ],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "curriculum",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-35",
+          "text": "Giảng viên thông báo môn học có ba tín chỉ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "undetermined",
+            "topic": "education_quality"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 42,
+                "text": "Giảng viên thông báo môn học có ba tín chỉ",
+                "topics": [
+                  "curriculum",
+                  "lecturer"
+                ],
+                "positive": false,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận cảm xúc. Bạn có thể diễn đạt rõ nhận xét hơn."
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "lecturer",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        },
+        {
+          "id": "variant-36",
+          "text": "Tốt nhưng tệ.",
+          "provenance": "assistant_proposed",
+          "expected": {
+            "sentiment": "mixed",
+            "topic": "other_domain"
+          },
+          "response": {
+            "contract_version": "3.0",
+            "sentiment": "mixed",
+            "topic": "other_domain"
+          },
+          "internal_audit": {
+            "rules_version": "experimental-1.0.0",
+            "clauses": [
+              {
+                "start": 0,
+                "end": 4,
+                "text": "Tốt ",
+                "topics": [],
+                "positive": true,
+                "negative": false,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "partial",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "positive",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "insufficient_information",
+                    "label": null,
+                    "reason": "low_margin",
+                    "message": "Chưa đủ căn cứ để kết luận chủ đề. Bạn có thể nêu rõ đối tượng được nhận xét."
+                  }
+                }
+              },
+              {
+                "start": 9,
+                "end": 12,
+                "text": " tệ",
+                "topics": [],
+                "positive": false,
+                "negative": true,
+                "ct4": {
+                  "contract_version": "2.0",
+                  "status": "complete",
+                  "sentiment": {
+                    "status": "answered",
+                    "label": "negative",
+                    "reason": null,
+                    "message": null
+                  },
+                  "topic": {
+                    "status": "answered",
+                    "label": "other",
+                    "reason": null,
+                    "message": null
+                  }
+                }
+              }
+            ],
+            "ct4_role": "audit_only_does_not_modify_evidence"
+          },
+          "exact_match": true
+        }
+      ],
+      "metrics": {
+        "n_rows": 36,
+        "tasks": {
+          "sentiment": {
+            "accuracy": 0.9166666666666666,
+            "label_order": [
+              "positive",
+              "negative",
+              "mixed",
+              "undetermined"
+            ],
+            "confusion_matrix": [
+              [
+                8,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                5,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                7,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                13
+              ]
+            ],
+            "classification_report": {
+              "positive": {
+                "precision": 0.8888888888888888,
+                "recall": 0.8888888888888888,
+                "f1-score": 0.8888888888888888,
+                "support": 9.0
+              },
+              "negative": {
+                "precision": 0.8333333333333334,
+                "recall": 1.0,
+                "f1-score": 0.9090909090909091,
+                "support": 5.0
+              },
+              "mixed": {
+                "precision": 1.0,
+                "recall": 0.7777777777777778,
+                "f1-score": 0.875,
+                "support": 9.0
+              },
+              "undetermined": {
+                "precision": 0.9285714285714286,
+                "recall": 1.0,
+                "f1-score": 0.9629629629629629,
+                "support": 13.0
+              },
+              "accuracy": 0.9166666666666666,
+              "macro avg": {
+                "precision": 0.9126984126984128,
+                "recall": 0.9166666666666666,
+                "f1-score": 0.9089856902356902,
+                "support": 36.0
+              },
+              "weighted avg": {
+                "precision": 0.9232804232804234,
+                "recall": 0.9166666666666666,
+                "f1-score": 0.9149714739992518,
+                "support": 36.0
+              }
+            }
+          },
+          "topic": {
+            "accuracy": 0.9444444444444444,
+            "label_order": [
+              "lecturer",
+              "curriculum",
+              "facility",
+              "education_quality",
+              "other_domain"
+            ],
+            "confusion_matrix": [
+              [
+                8,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                5,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                10,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                7
+              ]
+            ],
+            "classification_report": {
+              "lecturer": {
+                "precision": 0.8888888888888888,
+                "recall": 1.0,
+                "f1-score": 0.9411764705882353,
+                "support": 8.0
+              },
+              "curriculum": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 4.0
+              },
+              "facility": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 5.0
+              },
+              "education_quality": {
+                "precision": 1.0,
+                "recall": 0.9090909090909091,
+                "f1-score": 0.9523809523809523,
+                "support": 11.0
+              },
+              "other_domain": {
+                "precision": 0.875,
+                "recall": 0.875,
+                "f1-score": 0.875,
+                "support": 8.0
+              },
+              "accuracy": 0.9444444444444444,
+              "macro avg": {
+                "precision": 0.9527777777777778,
+                "recall": 0.9568181818181818,
+                "f1-score": 0.9537114845938376,
+                "support": 36.0
+              },
+              "weighted avg": {
+                "precision": 0.947530864197531,
+                "recall": 0.9444444444444444,
+                "f1-score": 0.9446000622471211,
+                "support": 36.0
+              }
+            }
+          }
+        },
+        "joint_exact_match": {
+          "correct": 32,
+          "total": 36,
+          "ratio": 0.8888888888888888
+        }
+      },
+      "quality_errors": [
+        "variant-02",
+        "variant-17",
+        "variant-30",
+        "variant-31"
+      ]
+    }
+  }
+}

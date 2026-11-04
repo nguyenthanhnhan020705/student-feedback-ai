@@ -1,0 +1,126 @@
+{
+  "status": "already_exposed_historical_only_not_recomputed_or_used_for_selection",
+  "metrics": {
+    "sentiment": {
+      "accuracy": 0.8970309538850284,
+      "macro_precision": 0.8049051354220893,
+      "macro_recall": 0.6853353476681937,
+      "macro_f1": 0.7051042339369374,
+      "per_class": [
+        {
+          "label": "negative",
+          "precision": 0.8754863813229572,
+          "recall": 0.9581263307310149,
+          "f1": 0.9149440867502542,
+          "support": 1409
+        },
+        {
+          "label": "neutral",
+          "precision": 0.6122448979591837,
+          "recall": 0.17964071856287425,
+          "f1": 0.2777777777777778,
+          "support": 167
+        },
+        {
+          "label": "positive",
+          "precision": 0.926984126984127,
+          "recall": 0.9182389937106918,
+          "f1": 0.9225908372827805,
+          "support": 1590
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1350,
+          7,
+          52
+        ],
+        [
+          74,
+          30,
+          63
+        ],
+        [
+          118,
+          12,
+          1460
+        ]
+      ],
+      "label_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "n_rows": 3166
+    },
+    "topic": {
+      "accuracy": 0.8616550852811118,
+      "macro_precision": 0.7802037491130546,
+      "macro_recall": 0.7138685486987416,
+      "macro_f1": 0.7353817115066393,
+      "per_class": [
+        {
+          "label": "lecturer",
+          "precision": 0.9095925297113752,
+          "recall": 0.9358078602620087,
+          "f1": 0.9225139905294877,
+          "support": 2290
+        },
+        {
+          "label": "curriculum",
+          "precision": 0.6911262798634812,
+          "recall": 0.708041958041958,
+          "f1": 0.6994818652849741,
+          "support": 572
+        },
+        {
+          "label": "facility",
+          "precision": 0.9225352112676056,
+          "recall": 0.903448275862069,
+          "f1": 0.9128919860627178,
+          "support": 145
+        },
+        {
+          "label": "other",
+          "precision": 0.5975609756097561,
+          "recall": 0.3081761006289308,
+          "f1": 0.4066390041493776,
+          "support": 159
+        }
+      ],
+      "confusion_matrix": [
+        [
+          2143,
+          123,
+          5,
+          19
+        ],
+        [
+          151,
+          405,
+          3,
+          13
+        ],
+        [
+          3,
+          10,
+          131,
+          1
+        ],
+        [
+          59,
+          48,
+          3,
+          49
+        ]
+      ],
+      "label_order": [
+        "lecturer",
+        "curriculum",
+        "facility",
+        "other"
+      ],
+      "n_rows": 3166
+    }
+  }
+}

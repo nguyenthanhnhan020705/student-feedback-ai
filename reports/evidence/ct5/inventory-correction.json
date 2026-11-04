@@ -1,0 +1,8 @@
+{
+  "reason": "Initial inventory was taken after creating CT5 plan and mistakenly included that new file as preexisting",
+  "excluded_new_ct5_file": "docs/superpowers/plans/2026-11-01-ct5-selective-prediction.md",
+  "initial_plan_sha256": "2d7b3a9e901204fc049e2d5d0a2ddcff28ce8ad885f9e10af5b7bbfcae1f2297",
+  "initial_count": 604,
+  "correct_preexisting_count": 603,
+  "original_hash_values_changed": false
+}

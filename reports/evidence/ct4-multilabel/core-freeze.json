@@ -1,0 +1,32 @@
+{
+  "schema_version": "ct4-v3-core-freeze.1",
+  "created_at": "2026-11-01T09:04:56.177648+00:00",
+  "status": "engineering_complete_independent_evaluation_pending",
+  "rules_version": "experimental-1.0.0",
+  "configuration": "assistant_authored_specification_exposed",
+  "core_sha256": {
+    "demo_v3/__init__.py": "08bb7a731341d5ce5aca140fcd23613a5b83412fa2a19218cdb610c955837a1b",
+    "demo_v3/detector.py": "f9abea9282759cae2f2b08588cc8892db5c10ad0e1ae4b9ab3c7a461eba2b8a6",
+    "demo_v3/main.py": "365bce72212ca1b9b7f08b930be2484476264ed377672c33e9db33e484475a0d",
+    "demo_v3/ontology.py": "d8054be0d6ac43756274056e83a4540ff68769867f5db12944ac6c42ced2f50f",
+    "demo_v3/rules.json": "87a83aab6128a04bd59c3e7c47649788a7be3838be86d8944796c1e8a073447d",
+    "demo_v3/service.py": "fa2ee4d8b12ab94f3606221b109233769cbefdb8a416df7d825b05a7b2898fd4"
+  },
+  "reused_source_sha256": {
+    "demo_v2/service.py": "5f4484dbf60f9e64094b838c73a0798c694113eb1f2d24507f3a079dc526679c",
+    "demo_v2/policy.py": "c55b938cccc9bf5982e3c6e5c303627b9323bd646900be2e46486a0cf1124ef1",
+    "backend/model_service.py": "4c7c9a24e8ec64d0bd4c5f6cda77ed964506c19538dce17721d4af6229f70536",
+    "reports/ct5_selective_prediction.py": "96a23833d3581601661c77797b7288fdb5986300e71946119132d7af2b67a6af",
+    "reports/ct_evaluation.py": "881ba6d52f361f7ef58b952bb7d8a925ea736ab30847362fcf333bb2bb632a79",
+    ".local-tools/ct4-augmentation/run-1/receipt.json": "4e535715a336106fa42c5e539ed76b71a89e301205c4e578a9f1739857b9b051",
+    ".local-tools/ct5-selective-prediction/run-1/receipt.json": "5c353500cf3b41cd8bb055f22891abefacb3e42945288e993b1709a49f93df10",
+    ".local-tools/ct5-selective-prediction/run-1/config.json": "46a7da183cd509c116c05faa11515ed1ece973be8f02d63ff35fa8caf5f450c0",
+    ".local-tools/ct5-selective-prediction/run-1/thresholds.json": "3613ca980911a72e2e06b44aeceea9397785d041a263b7b68ab340c0226c6347",
+    ".local-tools/ct4-augmentation/run-1/research-selected/sentiment_metadata.json": "fca4a2efffe3507b462e39312d6965a852929919bed707f00992f7ea8691a180",
+    ".local-tools/ct4-augmentation/run-1/research-selected/sentiment_pipeline.joblib": "512c4c27366f611d38cffa66425b6c4fe37990d5abcef6031ff3b52ffe5f5824",
+    ".local-tools/ct4-augmentation/run-1/research-selected/topic_metadata.json": "118f8d7f2f9f55d07763bbde22a0bd2355b4ea393fb662c55d48ed1a7fd88dac",
+    ".local-tools/ct4-augmentation/run-1/research-selected/topic_pipeline.joblib": "2e67129ba926ae01e5b5c7afc10469757c7f3f4ce13b518c95fee394ed69c732"
+  },
+  "ct4_role": "audit_only_does_not_modify_evidence",
+  "evaluation": "Future finite variants are assistant_proposed exploratory checks, not independent validation; no tuning after this freeze."
+}

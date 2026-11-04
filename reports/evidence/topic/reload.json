@@ -1,0 +1,25 @@
+{
+  "artifact_sha256": "5ec57b378eb9ab09924043da8b0df532f547c7c2fe90768bb20390f44987b2db",
+  "method": "Reserialize fitted winner, compare before serialization and fresh-process reload; no fit",
+  "samples": [
+    "Giảng viên giảng bài dễ hiểu",
+    "Chương trình có nhiều môn học",
+    "Phòng học thiếu máy chiếu",
+    "Hoạt động đoàn hội rất vui",
+    "Giảng viên dạy tốt nhưng phòng học quá nóng"
+  ],
+  "before": [
+    "lecturer",
+    "curriculum",
+    "facility",
+    "lecturer",
+    "facility"
+  ],
+  "after_new_process": [
+    "lecturer",
+    "curriculum",
+    "facility",
+    "lecturer",
+    "facility"
+  ]
+}

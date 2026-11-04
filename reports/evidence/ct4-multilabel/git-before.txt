@@ -1,0 +1,183 @@
+ M .env.example
+ M README.md
+ D backend/batch_service.py
+ M backend/config.py
+ D backend/dashboard_service.py
+ M backend/main.py
+ M backend/model_service.py
+ D backend/routes/batch.py
+ M backend/routes/health.py
+ M backend/routes/predict.py
+ M backend/schemas.py
+ M docs/acceptance.md
+ M docs/backend/README.md
+ M docs/backend/api-notes.md
+ M docs/backend/report.md
+ M docs/data/README.md
+ M docs/data/dataset.md
+ M docs/data/preprocessing.md
+ M docs/data/report.md
+ M docs/development.md
+ M docs/frontend/README.md
+ M docs/frontend/report.md
+ M docs/frontend/ui-notes.md
+ M docs/function-ownership.md
+ M docs/roadmap/README.md
+ M docs/roadmap/phase-0-specification.md
+ D docs/roadmap/phase-1-foundation.md
+ D docs/roadmap/phase-2-data.md
+ D docs/roadmap/phase-3-models.md
+ D docs/roadmap/phase-4-mvp.md
+ D docs/roadmap/phase-5-batch-dashboard.md
+ D docs/roadmap/phase-6-delivery.md
+ D docs/scaffold-manifest.json
+ M docs/sentiment/README.md
+ M docs/sentiment/experiment.md
+ M docs/sentiment/report.md
+ M docs/team-assignments.md
+ M docs/team-start.md
+ M docs/topic/README.md
+ M docs/topic/experiment.md
+ M docs/topic/report.md
+ M frontend/api.js
+ M frontend/app.js
+ D frontend/batch.js
+ D frontend/dashboard.js
+ M frontend/index.html
+ M frontend/styles.css
+ M ml/data.py
+ M ml/evaluate_sentiment.py
+ M ml/evaluate_topic.py
+ M ml/labels.py
+ M ml/predict_sentiment.py
+ M ml/predict_topic.py
+ M ml/preprocessing.py
+ M ml/train_sentiment.py
+ M ml/train_topic.py
+ M notebooks/01_eda.ipynb
+ M notebooks/02_sentiment.ipynb
+ M notebooks/03_topic.ipynb
+ M pytest.ini
+ M reports/data/manifest.json
+ M requirements-browser.txt
+ M requirements-test.txt
+ M requirements.txt
+ M requirements/backend.txt
+ M requirements/data.txt
+ M requirements/sentiment.txt
+ M requirements/topic.txt
+ M tests/README.md
+ M tests/frontend/test_ui.py
+ M tests/integration/test_prediction_flow.py
+ D tests/test_batch.py
+ D tests/test_dashboard_data.py
+ M tests/test_data.py
+ M tests/test_health.py
+ M tests/test_labels.py
+ M tests/test_model_service.py
+ M tests/test_predict.py
+ M tests/test_preprocessing.py
+ M tests/test_sentiment_artifacts.py
+ M tests/test_sentiment_training.py
+ M tests/test_topic_artifacts.py
+ M tests/test_topic_training.py
+?? DEMO.md
+?? demo_v2/
+?? docs/archive/
+?? docs/backend/implementation-plan.md
+?? docs/cleanup-2026-10-30.json
+?? docs/data/acquire_dataset.py
+?? docs/data/permission-request.md
+?? docs/data/run_eda.py
+?? docs/quality/
+?? docs/sentiment/complete_experiment.py
+?? docs/sentiment/implementation-plan.md
+?? docs/superpowers/
+?? docs/topic/complete_experiment.py
+?? docs/topic/implementation-plan.md
+?? docs/topic/run_notebook.py
+?? models/sentiment_metadata.json
+?? models/topic_metadata.json
+?? reports/build_delivery.py
+?? reports/ct2_class_weights.py
+?? reports/ct3_word_char.py
+?? reports/ct4_augmentation.py
+?? reports/ct5_selective_prediction.py
+?? reports/ct_evaluation.py
+?? reports/data/legacy_sentiment_manifest.json
+?? reports/data/sentiment_counts.csv
+?? reports/data/sentiment_distribution.png
+?? reports/data/source.json
+?? reports/data/summary.csv
+?? reports/data/text_length_distribution.png
+?? reports/data/topic_counts.csv
+?? reports/data/topic_distribution.png
+?? reports/demo-script.md
+?? reports/diagnose_user_examples.py
+?? reports/evidence/backend/pytest-local.txt
+?? reports/evidence/backend/requirements-local.txt
+?? reports/evidence/ct1/
+?? reports/evidence/ct2/
+?? reports/evidence/ct3/
+?? reports/evidence/ct4-multilabel/
+?? reports/evidence/ct4-partial-demo/
+?? reports/evidence/ct4/
+?? reports/evidence/ct5/
+?? reports/evidence/data/environment.json
+?? reports/evidence/data/notebook-execution.json
+?? reports/evidence/data/pip-check.txt
+?? reports/evidence/data/pytest-local.txt
+?? reports/evidence/data/requirements-local.txt
+?? reports/evidence/data/uitnlp-dataset-card.md
+?? reports/evidence/data/uitnlp-loader-source.py.txt
+?? reports/evidence/data/validation-local.json
+?? reports/evidence/frontend/chrome-real-prediction.json
+?? reports/evidence/frontend/chrome-real-prediction.png
+?? reports/evidence/frontend/msedge-real-prediction.json
+?? reports/evidence/frontend/msedge-real-prediction.png
+?? reports/evidence/phase-1/
+?? reports/evidence/phase-2/
+?? reports/evidence/phase-3/
+?? reports/evidence/phase-4/
+?? reports/evidence/phase-5/
+?? reports/evidence/phase-6/browser-red.txt
+?? reports/evidence/phase-6/pytest-core.txt
+?? reports/evidence/phase-6/source-inventory.json
+?? reports/evidence/phase-6/timeout-red.txt
+?? reports/evidence/sentiment/environment.json
+?? reports/evidence/sentiment/pip-check.txt
+?? reports/evidence/sentiment/pytest-local.txt
+?? reports/evidence/sentiment/reload.json
+?? reports/evidence/sentiment/requirements-local.txt
+?? reports/evidence/topic/environment.json
+?? reports/evidence/topic/notebook-execution.json
+?? reports/evidence/topic/pip-check.txt
+?? reports/evidence/topic/pytest-local.txt
+?? reports/evidence/topic/reload.json
+?? reports/evidence/topic/requirements-local.txt
+?? reports/evidence/user-feedback-diagnosis/
+?? reports/figures/sentiment/confusion_matrix.png
+?? reports/figures/topic/confusion_matrix.png
+?? reports/metrics/sentiment/comparison.json
+?? reports/metrics/sentiment/error_analysis.json
+?? reports/metrics/sentiment/selected_test.json
+?? reports/metrics/topic/comparison.json
+?? reports/metrics/topic/error_analysis.json
+?? reports/metrics/topic/selected_test.json
+?? reports/package_demo.py
+?? reports/quality/
+?? reports/verify_phase1.py
+?? reports/verify_phase2.py
+?? reports/verify_phase3.py
+?? reports/verify_phase5.py
+?? requirements-browser-lock.txt
+?? requirements-docs-lock.txt
+?? requirements-lock.txt
+?? tests/frontend/test_demo_v2_ui.py
+?? tests/test_backend.py
+?? tests/test_ct2_class_weights.py
+?? tests/test_ct3_word_char.py
+?? tests/test_ct4_augmentation.py
+?? tests/test_ct5_selective_prediction.py
+?? tests/test_ct_evaluation.py
+?? tests/test_demo_v2.py
