@@ -5,6 +5,12 @@ __pycache__/
 build/
 dist/
 outputs/
-artifacts/**
-data/**
+artifacts/*
+!artifacts/serving/
+data/*
+!data/raw/
+!data/visualize/
+!data/manifest.json
+!data/source.json
+.ipynb_checkpoints/
 .env

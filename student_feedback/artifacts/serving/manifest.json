@@ -1,0 +1,13 @@
+{
+  "schema": "feedback-bundle.1",
+  "files": {
+    "ct4/receipt.json": "4e535715a336106fa42c5e539ed76b71a89e301205c4e578a9f1739857b9b051",
+    "ct4/research-selected/sentiment_pipeline.joblib": "512c4c27366f611d38cffa66425b6c4fe37990d5abcef6031ff3b52ffe5f5824",
+    "ct4/research-selected/sentiment_metadata.json": "fca4a2efffe3507b462e39312d6965a852929919bed707f00992f7ea8691a180",
+    "ct4/research-selected/topic_pipeline.joblib": "2e67129ba926ae01e5b5c7afc10469757c7f3f4ce13b518c95fee394ed69c732",
+    "ct4/research-selected/topic_metadata.json": "118f8d7f2f9f55d07763bbde22a0bd2355b4ea393fb662c55d48ed1a7fd88dac",
+    "ct5/receipt.json": "5c353500cf3b41cd8bb055f22891abefacb3e42945288e993b1709a49f93df10",
+    "ct5/config.json": "46a7da183cd509c116c05faa11515ed1ece973be8f02d63ff35fa8caf5f450c0",
+    "ct5/thresholds.json": "3613ca980911a72e2e06b44aeceea9397785d041a263b7b68ab340c0226c6347"
+  }
+}

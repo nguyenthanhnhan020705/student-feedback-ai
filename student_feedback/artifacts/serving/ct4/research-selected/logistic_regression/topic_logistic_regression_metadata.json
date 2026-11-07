@@ -1,0 +1,119 @@
+{
+  "task": "topic",
+  "algorithm": "logistic_regression",
+  "artifact_filename": "topic_logistic_regression_pipeline.joblib",
+  "artifact_sha256": "ae0bb572eac14c2b49bbcd621175d6f42c3407e081110bcf60b5bf89456e0354",
+  "trained_at": "2026-11-05T14:57:26.834736+00:00",
+  "fit_split": "train",
+  "training_rows": 11426,
+  "augmentation": false,
+  "role": "report_baseline_only_not_serving",
+  "training_seconds": 1.5148316000004343,
+  "tfidf_parameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 1.0,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "strip_accents": null,
+    "lowercase": false,
+    "token_pattern": "(?u)\\b\\w+\\b"
+  },
+  "classifier_parameters": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "class_weight": null,
+    "random_state": 42
+  },
+  "dataset_sha256": {
+    "data\\raw\\test\\sentiments.txt": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+    "data\\raw\\test\\sents.txt": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+    "data\\raw\\test\\topics.txt": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+    "data\\raw\\train\\sentiments.txt": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+    "data\\raw\\train\\sents.txt": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+    "data\\raw\\train\\topics.txt": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+    "data\\raw\\validation\\sentiments.txt": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+    "data\\raw\\validation\\sents.txt": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+    "data\\raw\\validation\\topics.txt": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96"
+  },
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "validation_metrics": {
+    "accuracy": 0.86481364497789,
+    "macro_precision": 0.8269210599659684,
+    "macro_recall": 0.6355745148998875,
+    "macro_f1": 0.6822389312786592,
+    "per_class": [
+      {
+        "label": "lecturer",
+        "precision": 0.8955465587044534,
+        "recall": 0.9609035621198957,
+        "f1": 0.9270746018440905,
+        "support": 1151
+      },
+      {
+        "label": "curriculum",
+        "precision": 0.7246376811594203,
+        "recall": 0.7490636704119851,
+        "f1": 0.7366482504604052,
+        "support": 267
+      },
+      {
+        "label": "facility",
+        "precision": 0.9375,
+        "recall": 0.6428571428571429,
+        "f1": 0.7627118644067796,
+        "support": 70
+      },
+      {
+        "label": "other",
+        "precision": 0.75,
+        "recall": 0.18947368421052632,
+        "f1": 0.3025210084033613,
+        "support": 95
+      }
+    ],
+    "confusion_matrix": [
+      [
+        1106,
+        41,
+        0,
+        4
+      ],
+      [
+        64,
+        200,
+        2,
+        1
+      ],
+      [
+        11,
+        13,
+        45,
+        1
+      ],
+      [
+        54,
+        22,
+        1,
+        18
+      ]
+    ],
+    "label_order": [
+      "lecturer",
+      "curriculum",
+      "facility",
+      "other"
+    ],
+    "n_rows": 1583
+  }
+}

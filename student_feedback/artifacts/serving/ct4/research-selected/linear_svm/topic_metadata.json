@@ -1,0 +1,168 @@
+{
+  "contract_version": "1.0",
+  "task": "topic",
+  "algorithm": "linear_svm",
+  "artifact_filename": "topic_pipeline.joblib",
+  "artifact_sha256": "2e67129ba926ae01e5b5c7afc10469757c7f3f4ce13b518c95fee394ed69c732",
+  "labels": [
+    "lecturer",
+    "curriculum",
+    "facility",
+    "other"
+  ],
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_manifest_sha256": "c3cbd44e795970f1c4c2c87f5817751b4af799274e16b8d316fe9dba043d6d67",
+  "preprocessing": {
+    "name": "ml.preprocessing.normalize_text",
+    "version": "1.0"
+  },
+  "parameters": {
+    "steps": [
+      "tfidf",
+      "classifier"
+    ],
+    "tfidf": {
+      "type": "TfidfVectorizer",
+      "parameters": {
+        "analyzer": "word",
+        "binary": false,
+        "decode_error": "strict",
+        "dtype": "numpy.float64",
+        "encoding": "utf-8",
+        "input": "content",
+        "lowercase": false,
+        "max_df": 1.0,
+        "max_features": null,
+        "min_df": 2,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "norm": "l2",
+        "preprocessor": "ml.preprocessing.normalize_text",
+        "smooth_idf": true,
+        "stop_words": null,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w+\\b",
+        "tokenizer": null,
+        "use_idf": true,
+        "vocabulary": null
+      }
+    },
+    "classifier": {
+      "name": "linear_svm",
+      "C": 1.0,
+      "class_weight": {
+        "lecturer": 0.5914423603682875,
+        "curriculum": 1.1392186678171732,
+        "facility": 2.3973912716652532,
+        "other": 2.2544933385404207
+      },
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 5000,
+      "multi_class": "ovr",
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": 0
+    }
+  },
+  "selection": {
+    "algorithm": "linear_svm",
+    "metric": "macro_f1",
+    "validation_metrics": {
+      "accuracy": 0.8787113076437144,
+      "macro_precision": 0.7872677166769261,
+      "macro_recall": 0.7631577026792715,
+      "macro_f1": 0.7694835267970731,
+      "per_class": [
+        {
+          "label": "lecturer",
+          "precision": 0.9331016507384883,
+          "recall": 0.9331016507384883,
+          "f1": 0.9331016507384883,
+          "support": 1151
+        },
+        {
+          "label": "curriculum",
+          "precision": 0.7239057239057239,
+          "recall": 0.8052434456928839,
+          "f1": 0.7624113475177305,
+          "support": 267
+        },
+        {
+          "label": "facility",
+          "precision": 0.8888888888888888,
+          "recall": 0.9142857142857143,
+          "f1": 0.9014084507042254,
+          "support": 70
+        },
+        {
+          "label": "other",
+          "precision": 0.6031746031746031,
+          "recall": 0.4,
+          "f1": 0.4810126582278481,
+          "support": 95
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1074,
+          59,
+          4,
+          14
+        ],
+        [
+          40,
+          215,
+          2,
+          10
+        ],
+        [
+          2,
+          3,
+          64,
+          1
+        ],
+        [
+          35,
+          20,
+          2,
+          38
+        ]
+      ],
+      "label_order": [
+        "lecturer",
+        "curriculum",
+        "facility",
+        "other"
+      ],
+      "n_rows": 1583
+    }
+  },
+  "trained_at": "2026-10-31T15:23:05.007739+00:00",
+  "ct2": {
+    "strategy": "sqrt_balanced",
+    "fit_split": "train",
+    "deployment": "research_only"
+  },
+  "ct4": {
+    "variant": "ct3parent_aug25",
+    "original_source_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+    "augmented_manifest_sha256": "c3cbd44e795970f1c4c2c87f5817751b4af799274e16b8d316fe9dba043d6d67",
+    "fit_split": "train",
+    "deployment": "research_only",
+    "label_status": "inherited_weak_supervision_not_human_reviewed"
+  }
+}

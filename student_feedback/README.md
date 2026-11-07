@@ -16,14 +16,14 @@ python -m venv .venv
 Mọi lệnh dùng `feedback-ai --project-root <thư mục này> ...` (hoặc `python -m feedback_ai`). Đường dẫn tương đối được
 tính từ `--project-root`, không phụ thuộc thư mục làm việc. `.env.example` chỉ là tài liệu, `.env` **không** tự được nạp.
 
-## Chuẩn bị dữ liệu và model (không nằm trong Git)
+## Dữ liệu và model đã có trong Git
 
-| Cần | Cách có | Lệnh |
-| --- | --- | --- |
-| Dữ liệu UIT-VSFC (train/validation/test, 3 file mỗi split) | Tải khi bạn chủ động chạy, hoặc nhập từ thư mục có sẵn | `feedback-ai --project-root . data acquire` hoặc `data import --source <thư mục>` |
-| Bundle model đã đóng băng (serving) | Nhập một lần từ checkout cũ có `.local-tools/ct4-augmentation/run-1` và `.local-tools/ct5-selective-prediction/run-1` | `feedback-ai --project-root . bundle import --source <checkout cũ>` |
+Checkout này bao gồm `data/raw`, `data/visualize/simple_data_visualization.ipynb`
+và bundle `artifacts/serving`. Thành viên không cần import từ checkout cũ
+hoặc huấn luyện lại để chạy ứng dụng.
 
-Server, train, evaluate **không** tự tìm lại repo cũ hay tự tải dữ liệu. Bundle được kiểm tra checksum từng file khi nạp.
+Xem [hướng dẫn clone và chạy local](docs/local-setup.md) cho Windows/macOS/Linux
+và cách xem/chạy notebook. Bundle được kiểm tra checksum từng file khi nạp.
 
 ## Chạy ứng dụng
 

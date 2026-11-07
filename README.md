@@ -19,3 +19,8 @@ Repository của nhóm 06 sinh viên xây dựng hệ thống phân tích cảm 
 Tạo nhánh công việc từ `develop`, mở PR vào `develop` và chờ leader `@nguyenthanhnhan020705` duyệt. Khi bản tích hợp ổn định, mở PR `develop` → `main` để leader duyệt trước khi bàn giao. Không push trực tiếp lên `main` hoặc `develop`.
 
 Mỗi PR phải có mô tả, cách kiểm tra và minh chứng. Không đưa bí mật, dữ liệu riêng tư hoặc dataset/model chưa được phép phân phối vào repository public này.
+
+## Chạy ứng dụng Student Feedback AI
+
+Source, dữ liệu, notebook và model nằm trong [student_feedback](student_feedback/).
+Xem [hướng dẫn chạy local](student_feedback/docs/local-setup.md).

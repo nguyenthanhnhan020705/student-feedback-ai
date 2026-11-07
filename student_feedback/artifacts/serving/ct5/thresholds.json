@@ -1,0 +1,30 @@
+{
+  "original": {
+    "zero_plus_margin_q05": {
+      "sentiment": 0.3718962909479934,
+      "topic": 0.1835545178243731
+    },
+    "zero_plus_margin_q10": {
+      "sentiment": 0.6289172222920781,
+      "topic": 0.3870403645232766
+    },
+    "zero_plus_margin_q20": {
+      "sentiment": 1.0785705238290233,
+      "topic": 0.6843693740148378
+    }
+  },
+  "ct4": {
+    "zero_plus_margin_q05": {
+      "sentiment": 0.36486744863261655,
+      "topic": 0.15107577706185693
+    },
+    "zero_plus_margin_q10": {
+      "sentiment": 0.6889687043718054,
+      "topic": 0.294988454408041
+    },
+    "zero_plus_margin_q20": {
+      "sentiment": 1.2432480583889007,
+      "topic": 0.6721019995085211
+    }
+  }
+}

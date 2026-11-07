@@ -1,0 +1,179 @@
+{
+  "contract_version": "1.0",
+  "task": "sentiment",
+  "algorithm": "linear_svm",
+  "artifact_filename": "sentiment_pipeline.joblib",
+  "artifact_sha256": "512c4c27366f611d38cffa66425b6c4fe37990d5abcef6031ff3b52ffe5f5824",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_manifest_sha256": "70c375373cfb865a42d4f3442a2b89e490bceb0f061d5b686719c07c9f812883",
+  "preprocessing": {
+    "name": "ml.preprocessing.normalize_text",
+    "version": "1.0"
+  },
+  "parameters": {
+    "steps": [
+      "features",
+      "clf"
+    ],
+    "tfidf": {
+      "type": "FeatureUnion",
+      "branches": {
+        "word": {
+          "analyzer": "word",
+          "binary": false,
+          "decode_error": "strict",
+          "dtype": "numpy.float64",
+          "encoding": "utf-8",
+          "input": "content",
+          "lowercase": false,
+          "max_df": 1.0,
+          "max_features": null,
+          "min_df": 2,
+          "ngram_range": [
+            1,
+            2
+          ],
+          "norm": "l2",
+          "preprocessor": "ml.preprocessing.normalize_text",
+          "smooth_idf": true,
+          "stop_words": null,
+          "strip_accents": null,
+          "sublinear_tf": true,
+          "token_pattern": "(?u)\\b\\w+\\b",
+          "tokenizer": null,
+          "use_idf": true,
+          "vocabulary": null
+        },
+        "char": {
+          "analyzer": "char_wb",
+          "binary": false,
+          "decode_error": "strict",
+          "dtype": "numpy.float64",
+          "encoding": "utf-8",
+          "input": "content",
+          "lowercase": false,
+          "max_df": 1.0,
+          "max_features": null,
+          "min_df": 2,
+          "ngram_range": [
+            3,
+            5
+          ],
+          "norm": "l2",
+          "preprocessor": "ml.preprocessing.normalize_text",
+          "smooth_idf": true,
+          "stop_words": null,
+          "strip_accents": null,
+          "sublinear_tf": true,
+          "token_pattern": "(?u)\\b\\w\\w+\\b",
+          "tokenizer": null,
+          "use_idf": true,
+          "vocabulary": null
+        }
+      },
+      "weights": {
+        "word": 1.0,
+        "char": 2.0
+      },
+      "n_jobs": null,
+      "verbose": false
+    },
+    "classifier": {
+      "name": "linear_svm",
+      "C": 1.0,
+      "class_weight": null,
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 5000,
+      "multi_class": "ovr",
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": 0
+    }
+  },
+  "selection": {
+    "algorithm": "linear_svm",
+    "metric": "macro_f1",
+    "validation_metrics": {
+      "accuracy": 0.9128237523689198,
+      "macro_precision": 0.8339967017476632,
+      "macro_recall": 0.7738351598374661,
+      "macro_f1": 0.7973976775759289,
+      "per_class": [
+        {
+          "label": "negative",
+          "precision": 0.9199438202247191,
+          "recall": 0.9290780141843972,
+          "f1": 0.9244883556810163,
+          "support": 705
+        },
+        {
+          "label": "neutral",
+          "precision": 0.66,
+          "recall": 0.4520547945205479,
+          "f1": 0.5365853658536586,
+          "support": 73
+        },
+        {
+          "label": "positive",
+          "precision": 0.9220462850182704,
+          "recall": 0.9403726708074535,
+          "f1": 0.931119311193112,
+          "support": 805
+        }
+      ],
+      "confusion_matrix": [
+        [
+          655,
+          6,
+          44
+        ],
+        [
+          20,
+          33,
+          20
+        ],
+        [
+          37,
+          11,
+          757
+        ]
+      ],
+      "label_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "n_rows": 1583
+    }
+  },
+  "trained_at": "2026-10-31T15:23:19.970456+00:00",
+  "ct3": {
+    "variant": "char_2_none",
+    "fit_split": "train",
+    "deployment": "research_only"
+  },
+  "ct4": {
+    "variant": "ct3parent_aug100",
+    "original_source_manifest_sha256": "8938049450042710ac2cfac668de642184d409639579767ae9865b623589adf3",
+    "augmented_manifest_sha256": "70c375373cfb865a42d4f3442a2b89e490bceb0f061d5b686719c07c9f812883",
+    "fit_split": "train",
+    "deployment": "research_only",
+    "label_status": "inherited_weak_supervision_not_human_reviewed"
+  }
+}

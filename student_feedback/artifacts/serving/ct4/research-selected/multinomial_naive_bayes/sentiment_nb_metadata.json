@@ -1,0 +1,98 @@
+{
+  "task": "sentiment",
+  "algorithm": "nb",
+  "artifact_filename": "sentiment_nb_pipeline.joblib",
+  "artifact_sha256": "b1ab27220c0bce78839db5d1809f81771c15bd42df02b656f74b16e2b4ed37b7",
+  "trained_at": "2026-11-05T14:57:21.058071+00:00",
+  "fit_split": "train",
+  "training_rows": 11426,
+  "augmentation": false,
+  "role": "report_baseline_only_not_serving",
+  "training_seconds": 0.824303599999439,
+  "tfidf_parameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 1.0,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "strip_accents": null,
+    "lowercase": false,
+    "token_pattern": "(?u)\\b\\w+\\b"
+  },
+  "classifier_parameters": {
+    "alpha": 1.0
+  },
+  "dataset_sha256": {
+    "data\\raw\\test\\sentiments.txt": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+    "data\\raw\\test\\sents.txt": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+    "data\\raw\\test\\topics.txt": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+    "data\\raw\\train\\sentiments.txt": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+    "data\\raw\\train\\sents.txt": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+    "data\\raw\\train\\topics.txt": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+    "data\\raw\\validation\\sentiments.txt": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+    "data\\raw\\validation\\sents.txt": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+    "data\\raw\\validation\\topics.txt": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96"
+  },
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "validation_metrics": {
+    "accuracy": 0.8730259001895135,
+    "macro_precision": 0.5822151132906158,
+    "macro_recall": 0.6111390100289268,
+    "macro_f1": 0.5955274941742598,
+    "per_class": [
+      {
+        "label": "negative",
+        "precision": 0.8306148055207027,
+        "recall": 0.9390070921985816,
+        "f1": 0.881491344873502,
+        "support": 705
+      },
+      {
+        "label": "neutral",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 73
+      },
+      {
+        "label": "positive",
+        "precision": 0.916030534351145,
+        "recall": 0.8944099378881988,
+        "f1": 0.9050911376492772,
+        "support": 805
+      }
+    ],
+    "confusion_matrix": [
+      [
+        662,
+        0,
+        43
+      ],
+      [
+        50,
+        0,
+        23
+      ],
+      [
+        85,
+        0,
+        720
+      ]
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "n_rows": 1583
+  }
+}

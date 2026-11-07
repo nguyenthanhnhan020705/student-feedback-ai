@@ -1,0 +1,115 @@
+{
+  "task": "topic",
+  "algorithm": "nb",
+  "artifact_filename": "topic_nb_pipeline.joblib",
+  "artifact_sha256": "2ae1992ab6ee21d3e0f561e060cb44a70ec4481110b902330445aa11ff576dbf",
+  "trained_at": "2026-11-05T14:57:24.807958+00:00",
+  "fit_split": "train",
+  "training_rows": 11426,
+  "augmentation": false,
+  "role": "report_baseline_only_not_serving",
+  "training_seconds": 0.5772706999996444,
+  "tfidf_parameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 1.0,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "strip_accents": null,
+    "lowercase": false,
+    "token_pattern": "(?u)\\b\\w+\\b"
+  },
+  "classifier_parameters": {
+    "alpha": 1.0
+  },
+  "dataset_sha256": {
+    "data\\raw\\test\\sentiments.txt": "0f04ebe3ada9655aff0a4c6eec27e5e7b8f552e26d3a6f06a35831e07e102f18",
+    "data\\raw\\test\\sents.txt": "75100e0559ecc0d7052870e2e7991391bfa7442bbaee91a6e271157c6fea343b",
+    "data\\raw\\test\\topics.txt": "ba04f1bd4014be3c1f1940236a8ceae71a455aa0837295bdbe2cdbcc44bd0745",
+    "data\\raw\\train\\sentiments.txt": "480480c3b9a6bc8bdf53339c721e93f8cc30472ac8f0bd21d4440ce1171aefac",
+    "data\\raw\\train\\sents.txt": "5481dc1fa51f2fe72f22afd89b8aeb7f8945a126af7e66ac622e2ab0291130cb",
+    "data\\raw\\train\\topics.txt": "09cbb8147f419f225b171cadf82410c442d6c24997ab97f48dfa779f4e68a1b9",
+    "data\\raw\\validation\\sentiments.txt": "a9584a22c926a54c6042236380c9a65ab8c41467477f7a5d794fb2505c96a9c3",
+    "data\\raw\\validation\\sents.txt": "fb7c3cc3173e1383edc03779883d91bb4d6110c8dd881612572a256878aa23b4",
+    "data\\raw\\validation\\topics.txt": "7483805b24f5362aa5a2f708509876e0b69bf35753e90199059c2409caad7d96"
+  },
+  "python_version": "3.13.3",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "validation_metrics": {
+    "accuracy": 0.8180669614655717,
+    "macro_precision": 0.6264856794381125,
+    "macro_recall": 0.4811434819049107,
+    "macro_f1": 0.5225465215694501,
+    "per_class": [
+      {
+        "label": "lecturer",
+        "precision": 0.8305084745762712,
+        "recall": 0.9791485664639444,
+        "f1": 0.8987240829346093,
+        "support": 1151
+      },
+      {
+        "label": "curriculum",
+        "precision": 0.7076923076923077,
+        "recall": 0.5168539325842697,
+        "f1": 0.5974025974025974,
+        "support": 267
+      },
+      {
+        "label": "facility",
+        "precision": 0.967741935483871,
+        "recall": 0.42857142857142855,
+        "f1": 0.594059405940594,
+        "support": 70
+      },
+      {
+        "label": "other",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 95
+      }
+    ],
+    "confusion_matrix": [
+      [
+        1127,
+        24,
+        0,
+        0
+      ],
+      [
+        129,
+        138,
+        0,
+        0
+      ],
+      [
+        17,
+        23,
+        30,
+        0
+      ],
+      [
+        84,
+        10,
+        1,
+        0
+      ]
+    ],
+    "label_order": [
+      "lecturer",
+      "curriculum",
+      "facility",
+      "other"
+    ],
+    "n_rows": 1583
+  }
+}

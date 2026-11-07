@@ -1,0 +1,3 @@
+# Preserve exact payload bytes across Windows/macOS/Linux for checksum validation.
+artifacts/** -text
+data/raw/** -text

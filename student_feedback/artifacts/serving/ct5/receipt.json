@@ -1,0 +1,46 @@
+{
+  "schema_version": "ct5.1",
+  "promotion": "not_deployed",
+  "deployment": "offline_research_only",
+  "recommended_policy": null,
+  "decision_status": "needs_coverage_risk_decision",
+  "status": "engineering_complete_independent_evaluation_pending",
+  "completed_at": "2026-11-01T02:57:34.499318+00:00",
+  "runtime": {
+    "python": "3.13.3",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.6.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "source_hashes": {
+    "reports/ct5_selective_prediction.py": "96a23833d3581601661c77797b7288fdb5986300e71946119132d7af2b67a6af",
+    "reports/ct_evaluation.py": "881ba6d52f361f7ef58b952bb7d8a925ea736ab30847362fcf333bb2bb632a79",
+    "reports/ct2_class_weights.py": "4e1c1253f85190a7a7573ab0ec9e3e3d9d471f040854f1f88c4b2175d40f07aa",
+    "reports/ct3_word_char.py": "3647dd155691d90cc3faa3fffea5ca94aaf746a5d719cebdc18e541f4a1c7801",
+    "reports/ct4_augmentation.py": "e0d45010b2d3898f073977f8b3aab28e9e6371521f32b8ad79948688a713e568",
+    "ml/data.py": "b72195c5a46b14028bc74890f40dc6467a087d67ed1a56b7de43bb0a4d7fcc57",
+    "ml/preprocessing.py": "f046d324f66ca5abe102879adcf2ece25c520c4563d3a84e46719481f87cb148",
+    "ml/labels.py": "d6a0cc342b8b0f34c6bb673a485f0aeb05123a0dee02dd8bf35ca8ecf62c82f6",
+    "backend/model_service.py": "4c7c9a24e8ec64d0bd4c5f6cda77ed964506c19538dce17721d4af6229f70536",
+    "backend/config.py": "0ce7d908ef96355e4c48a48fc859bd1bc0343d2a5ede49596329186bc6b5fd4f",
+    "docs/quality/ct1-protocol.md": "9c92b18c96a779cffc831d80b760195d4dc7e7d3f2b434f1504a8bf0f1b6f2f6",
+    "docs/quality/ct5-agent-handoff.md": "4c5f7037617b4771fef1a2417efb7b315a388058602076e63811642e1c8b2fbf",
+    "docs/specs/api-contract.md": "a48e8215b95cfee4693f14174593d3789b1f2cc30cf1d3d9de2f212e8486cfc2",
+    "docs/specs/data-contract.md": "a46e5e1afcb3f8b34bdeedd7848dc51d158060201fc2a1a8d32ddbef5be97c94"
+  },
+  "config_sha256": "46a7da183cd509c116c05faa11515ed1ece973be8f02d63ff35fa8caf5f450c0",
+  "payload": {
+    "config.json": "46a7da183cd509c116c05faa11515ed1ece973be8f02d63ff35fa8caf5f450c0",
+    "data-status.json": "73455c5bc8e2905696e4dab060da1cb4f5edf6fee9bb3982c1950ba6b722d092",
+    "decisions.json": "040ea5cf89195174d52d24936c26199cabf110e73c0b649c2c6926a80ba743ed",
+    "metrics.json": "8792bac454cc5294920b9ecd3a813e4cf137221609bfbeb337a6f1722fac2d17",
+    "partition.json": "58b94edce4db6213f1c477b9b5dcf7b20e3e7e2d9fad10ad6667511128edc2b4",
+    "summary.md": "cdc6b4406b1257dc7bd8cc33cc6afeb3b33b64175a929a61228c3ece132f3392",
+    "thresholds.json": "3613ca980911a72e2e06b44aeceea9397785d041a263b7b68ab340c0226c6347",
+    "ungated-full-validation.json": "4aff811e146b63124d5d91cd33088d349fbfe854a095038df919735dd52d7fe3"
+  }
+}
