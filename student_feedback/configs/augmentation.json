@@ -1,0 +1,27 @@
+{
+  "data_dir": "data/raw",
+  "models": {
+    "sentiment": "artifacts/serving/ct4/research-selected/sentiment_pipeline.joblib",
+    "topic": "artifacts/serving/ct4/research-selected/topic_pipeline.joblib"
+  },
+  "model_sha256": {
+    "sentiment": "512c4c27366f611d38cffa66425b6c4fe37990d5abcef6031ff3b52ffe5f5824",
+    "topic": "2e67129ba926ae01e5b5c7afc10469757c7f3f4ce13b518c95fee394ed69c732"
+  },
+  "ct2_models": {
+    "sentiment": "artifacts/candidates/ct2/sentiment_pipeline.joblib",
+    "topic": "artifacts/candidates/ct2/topic_pipeline.joblib"
+  },
+  "ct2_sha256": {
+    "sentiment": "<fill>",
+    "topic": "<fill>"
+  },
+  "ct3_models": {
+    "sentiment": "artifacts/candidates/ct3/sentiment_pipeline.joblib",
+    "topic": "artifacts/candidates/ct3/topic_pipeline.joblib"
+  },
+  "ct3_sha256": {
+    "sentiment": "<fill>",
+    "topic": "<fill>"
+  }
+}

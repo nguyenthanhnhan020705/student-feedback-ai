@@ -1,0 +1,767 @@
+[
+ {
+  "kind": "health",
+  "response": {
+   "status": "ok",
+   "ready": true,
+   "models": {
+    "rules": "ready",
+    "sentiment": "ready",
+    "topic": "ready"
+   },
+   "model": "ct4",
+   "contract_version": "3.0"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Th\u1ea7y gi\u1ea3ng b\u00e0i r\u00f5 r\u00e0ng v\u00e0 ph\u00f2ng h\u1ecdc th\u00ec n\u00f3ng.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "mixed",
+   "topic": "education_quality",
+   "topics": [
+    "lecturer",
+    "facility"
+   ]
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Th\u1ea7y v\u00e0 c\u00f4 \u0111\u1ec1u gi\u1ea3ng d\u1ec5 hi\u1ec3u.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "positive",
+   "topic": "lecturer"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Ch\u01b0\u01a1ng tr\u00ecnh c\u00f3 qu\u00e1 nhi\u1ec1u l\u00fd thuy\u1ebft.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "negative",
+   "topic": "curriculum"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Ph\u00f2ng h\u1ecdc c\u00f3 m\u00e1y chi\u1ebfu.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "undetermined",
+   "topic": "facility"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "T\u1ed1t.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "positive",
+   "topic": "other_domain"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "\ud83d\ude42\ud83d\ude42\ud83d\ude42",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "undetermined",
+   "topic": "other_domain"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Gi\u1ea3ng vi\u00ean kh\u00f4ng nhi\u1ec7t t\u00ecnh.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "negative",
+   "topic": "lecturer"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "Th\u1ea7y d\u1ea1y hay, \"tuy\u1ec7t v\u1eddi\" nh\u01b0ng ch\u01b0\u01a1ng tr\u00ecnh n\u1eb7ng.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "positive",
+   "topic": "education_quality",
+   "topics": [
+    "lecturer",
+    "curriculum"
+   ]
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "C\u01a1 s\u1edf v\u1eadt ch\u1ea5t c\u0169 k\u1ef9, wifi y\u1ebfu.",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "undetermined",
+   "topic": "facility"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "status": 200,
+  "body": {
+   "contract_version": "3.0",
+   "sentiment": "undetermined",
+   "topic": "other_domain"
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "   ",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict",
+  "text": "\ud800",
+  "client_error": "UnicodeEncodeError"
+ },
+ {
+  "kind": "predict_raw",
+  "raw": "ew==",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict_raw",
+  "raw": "W10=",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict_raw",
+  "raw": "eyJ0ZXh0IjoiYSIsIngiOjF9",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict_raw",
+  "raw": "eyJ0ZXh0IjoxfQ==",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "N\u1ed9i dung kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1 Unicode."
+   }
+  }
+ },
+ {
+  "kind": "predict_raw",
+  "raw": "eyJ0ZXh0Ijoi/yJ9",
+  "status": 422,
+  "body": {
+   "contract_version": "3.0",
+   "error": {
+    "code": "INVALID_INPUT",
+    "message": "JSON kh\u00f4ng h\u1ee3p l\u1ec7."
+   }
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "Gi\u1ea3ng vi\u00ean nhi\u1ec7t t\u00ecnh nh\u01b0ng ph\u00f2ng h\u1ecdc n\u00f3ng.",
+  "status": 200,
+  "body": {
+   "sentiment": "mixed",
+   "topics": [
+    "lecturer",
+    "facility"
+   ],
+   "aspects": {
+    "lecturer": "positive",
+    "facility": "negative"
+   }
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "Ch\u01b0\u01a1ng tr\u00ecnh h\u1ecdc qu\u00e1 n\u1eb7ng.",
+  "status": 200,
+  "body": {
+   "sentiment": "undetermined",
+   "topics": [
+    "curriculum"
+   ],
+   "aspects": {
+    "curriculum": "undetermined"
+   }
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "T\u1ed1t.",
+  "status": 200,
+  "body": {
+   "sentiment": "positive",
+   "topics": [],
+   "aspects": {}
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "\ud83d\ude42",
+  "status": 200,
+  "body": {
+   "sentiment": "undetermined",
+   "topics": [],
+   "aspects": {}
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "",
+  "status": 422,
+  "body": {
+   "detail": "Ph\u1ea3n h\u1ed3i c\u1ea7n t\u1eeb 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1."
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": " ",
+  "status": 422,
+  "body": {
+   "detail": "Ph\u1ea3n h\u1ed3i c\u1ea7n t\u1eeb 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1."
+  }
+ },
+ {
+  "kind": "analyze_row",
+  "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "status": 422,
+  "body": {
+   "detail": "Ph\u1ea3n h\u1ed3i c\u1ea7n t\u1eeb 1 \u0111\u1ebfn 5000 k\u00fd t\u1ef1."
+  }
+ },
+ {
+  "kind": "import",
+  "filename": "a.csv",
+  "raw": "aWQscGjhuqNuIGjhu5NpCjEsIlRo4bqneSBk4bqheSBoYXkKbmjGsG5nIHBow7JuZyBuw7NuZyIKMixU4buRdAozLFThu5F0CjQsCg==",
+  "status": 200,
+  "body": {
+   "sheets": [
+    {
+     "name": "CSV",
+     "headers": [
+      "id",
+      "ph\u1ea3n h\u1ed3i"
+     ],
+     "rows": [
+      [
+       "1",
+       "Th\u1ea7y d\u1ea1y hay\nnh\u01b0ng ph\u00f2ng n\u00f3ng"
+      ],
+      [
+       "2",
+       "T\u1ed1t"
+      ],
+      [
+       "3",
+       "T\u1ed1t"
+      ],
+      [
+       "4",
+       ""
+      ]
+     ],
+     "first_row": 2
+    }
+   ]
+  }
+ },
+ {
+  "kind": "import",
+  "filename": "a.pdf",
+  "raw": "eA==",
+  "status": 422,
+  "body": {
+   "detail": "Ch\u1ec9 h\u1ed7 tr\u1ee3 CSV v\u00e0 Excel .xlsx."
+  }
+ },
+ {
+  "kind": "export",
+  "request": {
+   "name": "phi\u00ean",
+   "rows": [
+    {
+     "id": "r1",
+     "source_row": 2,
+     "text": "=SUM(1)\u0001",
+     "status": "ok",
+     "sentiment": "mixed",
+     "topics": [
+      "lecturer",
+      "facility"
+     ],
+     "aspects": {
+      "lecturer": "positive",
+      "facility": "negative"
+     },
+     "error": ""
+    },
+    {
+     "id": "r2",
+     "source_row": 3,
+     "text": "",
+     "status": "invalid",
+     "error": "D\u00f2ng tr\u1ed1ng"
+    }
+   ]
+  },
+  "status": 200,
+  "disposition": "attachment; filename=\"phan-hoi-sinh-vien.xlsx\"",
+  "sheets": {
+   "T\u1ed5ng quan": [
+    [
+     [
+      "\u0110\u1ee3t ph\u00e2n t\u00edch",
+      "s"
+     ],
+     [
+      "phi\u00ean",
+      "s"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "T\u1ed5ng ph\u1ea3n h\u1ed3i",
+      "s"
+     ],
+     [
+      2,
+      "n"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Th\u00e0nh c\u00f4ng",
+      "s"
+     ],
+     [
+      1,
+      "n"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "L\u1ed7i / kh\u00f4ng h\u1ee3p l\u1ec7",
+      "s"
+     ],
+     [
+      1,
+      "n"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ch\u01b0a ph\u00e2n t\u00edch",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Nh\u00f3m",
+      "s"
+     ],
+     [
+      "S\u1ed1 l\u01b0\u1ee3ng",
+      "s"
+     ],
+     [
+      "T\u1ef7 l\u1ec7 tr\u00ean ph\u1ea3n h\u1ed3i th\u00e0nh c\u00f4ng",
+      "s"
+     ]
+    ],
+    [
+     [
+      "T\u00edch c\u1ef1c",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      0,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ti\u00eau c\u1ef1c",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      0,
+      "n"
+     ]
+    ],
+    [
+     [
+      "H\u1ed7n h\u1ee3p",
+      "s"
+     ],
+     [
+      1,
+      "n"
+     ],
+     [
+      1,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ch\u01b0a x\u00e1c \u0111\u1ecbnh",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      0,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Gi\u1ea3ng vi\u00ean",
+      "s"
+     ],
+     [
+      1,
+      "n"
+     ],
+     [
+      1,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ch\u01b0\u01a1ng tr\u00ecnh \u0111\u00e0o t\u1ea1o",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      0,
+      "n"
+     ]
+    ],
+    [
+     [
+      "C\u01a1 s\u1edf v\u1eadt ch\u1ea5t",
+      "s"
+     ],
+     [
+      1,
+      "n"
+     ],
+     [
+      1,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ch\u1ee7 \u0111\u1ec1 ch\u01b0a x\u00e1c \u0111\u1ecbnh",
+      "s"
+     ],
+     [
+      0,
+      "n"
+     ],
+     [
+      0,
+      "n"
+     ]
+    ],
+    [
+     [
+      "L\u01b0u \u00fd",
+      "s"
+     ],
+     [
+      "M\u1ed9t ph\u1ea3n h\u1ed3i c\u00f3 th\u1ec3 c\u00f3 nhi\u1ec1u ch\u1ee7 \u0111\u1ec1. T\u1ef7 l\u1ec7 ch\u1ee7 \u0111\u1ec1 c\u00f3 th\u1ec3 v\u01b0\u1ee3t 100%.",
+      "s"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "Ph\u01b0\u01a1ng ph\u00e1p",
+      "s"
+     ],
+     [
+      "B\u1ed9 lu\u1eadt th\u1eed nghi\u1ec7m; model CT4 \u0111\u1ed1i chi\u1ebfu. Ch\u01b0a c\u00f3 \u0111\u00e1nh gi\u00e1 \u0111\u1ed9c l\u1eadp.",
+      "s"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ],
+    [
+     [
+      "K\u00fd t\u1ef1 \u0111\u1eb7c bi\u1ec7t",
+      "s"
+     ],
+     [
+      "K\u00fd t\u1ef1 kh\u00f4ng h\u1ee3p l\u1ec7 trong XML \u0111\u01b0\u1ee3c bi\u1ec3u di\u1ec5n b\u1eb1ng m\u00e3 \\uXXXX trong Excel.",
+      "s"
+     ],
+     [
+      null,
+      "n"
+     ]
+    ]
+   ],
+   "Chi ti\u1ebft": [
+    [
+     [
+      "M\u00e3",
+      "s"
+     ],
+     [
+      "D\u00f2ng ngu\u1ed3n",
+      "s"
+     ],
+     [
+      "N\u1ed9i dung",
+      "s"
+     ],
+     [
+      "Tr\u1ea1ng th\u00e1i",
+      "s"
+     ],
+     [
+      "C\u1ea3m x\u00fac",
+      "s"
+     ],
+     [
+      "Ch\u1ee7 \u0111\u1ec1",
+      "s"
+     ],
+     [
+      "L\u1ed7i",
+      "s"
+     ]
+    ],
+    [
+     [
+      "r1",
+      "s"
+     ],
+     [
+      2,
+      "n"
+     ],
+     [
+      "=SUM(1)\\u0001",
+      "s"
+     ],
+     [
+      "ok",
+      "s"
+     ],
+     [
+      "H\u1ed7n h\u1ee3p",
+      "s"
+     ],
+     [
+      "Gi\u1ea3ng vi\u00ean + C\u01a1 s\u1edf v\u1eadt ch\u1ea5t",
+      "s"
+     ],
+     [
+      null,
+      "inlineStr"
+     ]
+    ],
+    [
+     [
+      "r2",
+      "s"
+     ],
+     [
+      3,
+      "n"
+     ],
+     [
+      null,
+      "inlineStr"
+     ],
+     [
+      "invalid",
+      "s"
+     ],
+     [
+      null,
+      "inlineStr"
+     ],
+     [
+      null,
+      "inlineStr"
+     ],
+     [
+      "D\u00f2ng tr\u1ed1ng",
+      "s"
+     ]
+    ]
+   ],
+   "Theo ch\u1ee7 \u0111\u1ec1": [
+    [
+     [
+      "M\u00e3",
+      "s"
+     ],
+     [
+      "D\u00f2ng ngu\u1ed3n",
+      "s"
+     ],
+     [
+      "Ch\u1ee7 \u0111\u1ec1",
+      "s"
+     ],
+     [
+      "C\u1ea3m x\u00fac theo ch\u1ee7 \u0111\u1ec1",
+      "s"
+     ]
+    ],
+    [
+     [
+      "r1",
+      "s"
+     ],
+     [
+      2,
+      "n"
+     ],
+     [
+      "Gi\u1ea3ng vi\u00ean",
+      "s"
+     ],
+     [
+      "T\u00edch c\u1ef1c",
+      "s"
+     ]
+    ],
+    [
+     [
+      "r1",
+      "s"
+     ],
+     [
+      2,
+      "n"
+     ],
+     [
+      "C\u01a1 s\u1edf v\u1eadt ch\u1ea5t",
+      "s"
+     ],
+     [
+      "Ti\u00eau c\u1ef1c",
+      "s"
+     ]
+    ]
+   ]
+  }
+ }
+]

@@ -1,0 +1,10 @@
+-c lock.txt
+fastapi
+uvicorn
+pydantic
+numpy
+scipy
+pandas
+scikit-learn
+joblib
+openpyxl
