@@ -2,6 +2,8 @@
 (()=>{
   const el=id=>document.getElementById(id), topicNames={lecturer:'Giảng viên',curriculum:'Chương trình đào tạo',facility:'Cơ sở vật chất'};
   let rows=[],sheets=[],busy=false,stop=false;
+  let analyzedPaste=null;
+  const pasteText=()=>el('batch-text').value.replace(/\r\n?/g,'\n');
   const tabs=[...document.querySelectorAll('[role=tab]')];
   let mode='single';
   const sessions={paste:{rows:[],fields:{}},file:{rows:[],fields:{}}};
@@ -11,6 +13,7 @@
     if(busy)return;
     if(mode!=='single')sessions[mode]={rows,fields:Object.fromEntries(sessionFields.map(id=>[id,el(id).value])),message:el('batch-message').textContent,preview:el('batch-preview').textContent};
     mode=nextMode;
+    for(const id of ['batch-summary','batch-charts'])el(id).hidden=mode==='paste';
     if(mode!=='single'){
       const saved=sessions[mode];rows=saved.rows;
       sessionFields.forEach(id=>el(id).value=saved.fields[id]||'');
@@ -25,8 +28,10 @@
   function controls(){
     tabs.forEach(tab=>tab.disabled=busy);
     el('batch-results').hidden=!rows.length;
-    for(const id of ['preview-paste','batch-file','sheet-select','column-select','id-select','preview-file','batch-name','batch-text'])el(id).disabled=busy;
-    el('batch-run').disabled=busy||!rows.some(r=>r.status==='pending'||r.status==='error');
+    el('batch-actions').hidden=mode!=='paste'&&!rows.length;
+    for(const id of ['batch-file','sheet-select','column-select','id-select','preview-file','batch-name','batch-text'])el(id).disabled=busy;
+    const changed=mode==='paste'&&pasteText()!==analyzedPaste;
+    el('batch-run').disabled=busy||(mode==='paste'&&!pasteText().trim())||(!changed&&!rows.some(r=>r.status==='pending'||r.status==='error'));
     el('batch-stop').disabled=!busy;el('batch-export').disabled=busy||!rows.length;
   }
   function prepare(values,first=1,ids=[]){
@@ -40,7 +45,7 @@
     for(const id of ['batch-search','sentiment-filter','topic-filter'])el(id).value='';
     message('Danh sách đã sẵn sàng.');render();controls();
   }
-  el('preview-paste').onclick=()=>{try{prepare(el('batch-text').value.replace(/\r\n?/g,'\n').split('\n'));}catch(e){message(e.message,true);}};
+  el('batch-text').addEventListener('input',controls);
   function options(select,items){select.replaceChildren();for(const [value,label] of items){const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o);}}
   function columns(){
     const sheet=sheets[Number(el('sheet-select').value)];
@@ -68,10 +73,21 @@
     el('batch-summary').textContent=`Tổng: ${rows.length} | Thành công: ${good.length} | Lỗi / không hợp lệ: ${invalid.length} | Chưa phân tích: ${pending.length}`;
     el('batch-progress').max=Math.max(1,rows.length);el('batch-progress').value=rows.length-pending.length;el('batch-progress-text').textContent=` ${rows.length-pending.length}/${rows.length}`;
     const charts=el('batch-charts');charts.replaceChildren();
-    for(const [title,labels,count] of [['Cảm xúc',LABELS.sentiment,k=>good.filter(r=>r.sentiment===k).length],['Chủ đề',{...topicNames,unknown:'Chưa xác định'},k=>good.filter(r=>k==='unknown'?!r.topics.length:r.topics.includes(k)).length]]){
-      const chart=document.createElement('div'),heading=document.createElement('h3');heading.textContent=title;chart.append(heading);
-      for(const [k,label] of Object.entries(labels)){const n=count(k),line=document.createElement('div'),bar=document.createElement('progress');line.textContent=`${label}: ${n} (${good.length?(100*n/good.length).toFixed(1):'0'}%)`;bar.max=Math.max(1,good.length);bar.value=n;bar.setAttribute('aria-label',label);line.append(bar);chart.append(line);}charts.append(chart);
-    }
+    const colors={positive:'#238562',negative:'#d54b55',mixed:'#d69b24',undetermined:'#8795a5'},keys=Object.keys(colors);
+    const make=(tag,cls,text)=>{const n=document.createElement(tag);n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+    const percentage=n=>good.length?(100*n/good.length).toFixed(1)+'%':'?';
+    const cards=make('section','overview-cards');
+    for(const [label,value] of [['Tổng phản hồi',rows.length],['Phân tích thành công',good.length],['Tỷ lệ tích cực',percentage(good.filter(r=>r.sentiment==='positive').length)],['Tỷ lệ tiêu cực',percentage(good.filter(r=>r.sentiment==='negative').length)]]){const card=make('div','overview-stat');card.append(make('span','',label),make('strong','',value));cards.append(card);}charts.append(cards);
+    charts.append(make('p','overview-note',good.length?'Th\u1ed1ng k\u00ea to\u00e0n b\u1ed9 \u0111\u1ee3t; ch\u1ec9 t\u00ednh ph\u1ea3n h\u1ed3i th\u00e0nh c\u00f4ng. B\u1ed9 l\u1ecdc ch\u1ec9 \u00e1p d\u1ee5ng cho b\u1ea3ng.':'Ch\u01b0a c\u00f3 k\u1ebft qu\u1ea3 ph\u00e2n t\u00edch.'));
+    const panel=title=>{const n=make('div','overview-chart');n.append(make('h3','',title));charts.append(n);return n;};
+    const sentiments=panel('Phân bố cảm xúc'),donut=make('div','sentiment-donut'),legend=make('div','chart-legend');let start=0;const stops=[];
+    for(const k of keys){const n=good.filter(r=>r.sentiment===k).length,end=start+(good.length?100*n/good.length:0);stops.push(`${colors[k]} ${start}% ${end}%`);start=end;const line=make('p','',`${LABELS.sentiment[k]}: ${n} (${percentage(n)})`);line.style.borderLeft=`8px solid ${colors[k]}`;line.style.paddingLeft='8px';legend.append(line);}
+    donut.style.background=good.length?`conic-gradient(${stops.join(',')})`:'#e8edf0';donut.setAttribute('role','img');donut.setAttribute('aria-label','Phân bố cảm xúc, xem s? li?u ? ch? gi?i');donut.append(make('span','donut-center',`${good.length} phản hồi`));sentiments.append(donut,legend);
+    const topics={...topicNames,unknown:'Chưa xác định'},selected=k=>good.filter(r=>k==='unknown'?!r.topics.length:r.topics.includes(k));
+    const volume=panel('Số phản hồi theo chủ đề'),max=Math.max(1,...Object.keys(topics).map(k=>selected(k).length));
+    for(const [k,label] of Object.entries(topics)){const n=selected(k).length;volume.append(make('p','',`${label}: ${n}`));const track=make('div','volume-track'),bar=make('div','volume-fill');bar.style.width=100*n/max+'%';track.append(bar);volume.append(track);}
+    const aspects=panel('Cảm xúc theo chủ đề');aspects.classList.add('overview-wide');aspects.append(make('p','overview-note','M\u1ed9t ph\u1ea3n h\u1ed3i c\u00f3 th\u1ec3 thu\u1ed9c nhi\u1ec1u ch\u1ee7 \u0111\u1ec1. C\u1ea3m x\u00fac t\u00ednh ri\u00eang theo ch\u1ee7 \u0111\u1ec1; thi\u1ebfu k\u1ebft qu\u1ea3: ch\u01b0a x\u00e1c \u0111\u1ecbnh.'));
+    for(const [k,label] of Object.entries(topics)){const group=selected(k),track=make('div','stack-track'),details=[];aspects.append(make('p','',`${label} ? ${group.length} phản hồi`));for(const key of keys){const n=group.filter(r=>(k==='unknown'?'undetermined':r.aspects[k]||'undetermined')===key).length,pct=group.length?100*n/group.length:0;details.push(`${LABELS.sentiment[key]}: ${n} (${pct.toFixed(1)}%)`);if(n){const seg=make('span','stack-segment',pct>=10?pct.toFixed(0)+'%':'');seg.style.width=pct+'%';seg.style.background=colors[key];seg.title=details[details.length-1];track.append(seg);}}track.setAttribute('role','img');track.setAttribute('aria-label',label+': '+details.join('; '));aspects.append(track,make('p','overview-note',group.length?details.join(' ? '):'Ch\u01b0a c\u00f3 ph\u1ea3n h\u1ed3i'));}
     const query=el('batch-search').value.toLocaleLowerCase(),sf=el('sentiment-filter').value,tf=el('topic-filter').value;
     const visible=rows.filter(r=>(!query||(r.id+' '+r.text).toLocaleLowerCase().includes(query))&&(!sf||r.sentiment===sf)&&(!tf||(tf==='unknown'?r.status==='ok'&&!r.topics.length:r.topics.includes(tf))));
     el('visible-count').textContent=`Hiển thị ${visible.length}/${rows.length} phản hồi.`;
@@ -81,6 +97,12 @@
   for(const id of ['batch-search','sentiment-filter','topic-filter'])el(id).addEventListener('input',render);
   el('batch-stop').onclick=()=>{stop=true;message('Sẽ dừng sau phản hồi hiện tại.');};
   el('batch-run').onclick=async()=>{
+    if(busy)return;
+    if(mode==='paste'&&pasteText()!==analyzedPaste){
+      if(!pasteText().trim())return;
+      try{prepare(pasteText().split('\n'));analyzedPaste=pasteText();}
+      catch(e){message(e.message,true);return;}
+    }
     busy=true;stop=false;controls();message('Đang phân tích…');
     for(const row of rows){
       if(stop)break;if(!['pending','error'].includes(row.status))continue;

@@ -29,11 +29,19 @@ function message(text,isError=false) {
   paragraph.textContent=text;out.replaceChildren(paragraph);
 }
 function render(data) {
+  const icons={sentiment:{positive:'\u{1F60A}',negative:'\u{1F61E}',mixed:'\u{1F914}',undetermined:'\u{2753}'},topic:{lecturer:'\u{1F469}\u{200D}\u{1F3EB}',curriculum:'\u{1F4DA}',facility:'\u{1F3EB}',education_quality:'\u{1F393}',other_domain:'\u{2753}'}};
+  const appendLabel=(target,task,key)=>{
+    const label=document.createElement('span'),icon=document.createElement('span');
+    label.className='result-label';icon.className='result-icon';
+    icon.setAttribute('aria-hidden','true');icon.textContent=icons[task][key]||'\u{2753}';
+    label.append(document.createTextNode(LABELS[task][key]+' '),icon);target.append(label);
+  };
   const result=document.createElement("div");result.className="res";
   for(const [task,title] of [["sentiment","Cảm xúc"],["topic","Chủ đề"]]) {
     const cell=document.createElement("div"),small=document.createElement("small"),value=document.createElement("b");
-    small.textContent=title;value.textContent=task==="topic"&&data.topics
-      ?data.topics.map(topic=>LABELS.topic[topic]).join(" + "):LABELS[task][data[task]];
+    small.textContent=title;
+    const labels=task==='topic'&&data.topics?data.topics:[data[task]];
+    labels.forEach((key,index)=>{if(index)value.append(document.createTextNode(' + '));appendLabel(value,task,key);});
     cell.append(small,value);result.append(cell);
   }
   out.replaceChildren(result);

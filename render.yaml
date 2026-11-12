@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: student-feedback-ai
+    runtime: python
+    plan: free
+    branch: source/upload-2026-11-07
+    rootDir: student_feedback
+    buildCommand: pip install -r requirements/lock.txt && pip install --no-deps .
+    startCommand: feedback-ai --project-root . serve --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.3
